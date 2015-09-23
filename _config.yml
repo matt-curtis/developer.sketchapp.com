@@ -1,0 +1,16 @@
+# Site settings
+title: Sketch Developers
+email: developers@sketchapp.com
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://developer.sketchapp.com" # the base hostname & protocol for your site
+twitter_username: sketchapp
+github_username:  BohemianCoding
+
+# Build settings
+markdown: kramdown
+
+# Dynamic Content
+collections:
+  classes:
+    output: true
+    permalink: /docs/:path/

@@ -1,0 +1,92 @@
+body.sketch {
+	background-image: url("/images/home/bg.svg");
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	background-color: none;
+
+	@media screen and (max-width: 600px) {
+		background-position: auto;
+		background-size: auto;
+		background-attachment: scroll;
+	}
+	section.first {
+		background: transparent url(/images/home/rainbow.svg) center bottom no-repeat;
+		padding-bottom: 200px;
+	}
+	.rainbow {
+		position: absolute;
+		left: 50%;
+		margin-left: -142px;
+		margin-top: 80px;
+		@media screen and (max-height: 900px) {
+			margin-left: -114px;
+		}
+		@media screen and (max-width: $breakpoint_ipad_width) {
+			margin-left: -107px;
+		}
+	}
+	.main-header,
+	.masthead {
+		background: none;
+		background-color: transparent;
+		.actions {
+			margin-top: 2.5em;
+			font-size: 0.9em;
+			a.button.icon-download {
+				margin-left: 0;
+			}
+			a.button.icon-appstore {
+				margin-right: 0;
+			}
+			@media screen and (max-width: 600px) {
+				font-size: 0.85em;
+			}
+		}
+		.section-footer {
+			border-image: none;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.hero.home {
+			margin-top: 2em;
+		}
+	}
+	form.volume { display: none; }
+
+	.why {
+//		margin-top: -7em;
+	}
+	.herocontainer {
+		padding: 0;
+		margin: 0;
+		margin-top: -1em;
+		background-color: #f8f9fa;
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width:100%;
+			height:auto
+		}
+	}
+	.section-footer {
+		width: 80%;
+		margin: 0 auto;
+		.companies li {
+			display: block;
+			img {
+				width: auto;
+				height: 2.5em;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body.sketch.home .section-footer {
+		width: 100%;
+		.companies li img { height: 2em; }
+	}
+}

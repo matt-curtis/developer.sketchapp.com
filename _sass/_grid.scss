@@ -1,0 +1,101 @@
+
+/*Grid system*/
+.wrapper {
+	max-width: 61.250rem; /*980px*/
+	margin: 0 auto;
+}
+
+	.wrapper.extra {
+		padding: 2.8125rem 0; /*45px*/
+	}
+
+.row {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+	/*Horizontally center the columns*/
+	.row.center-h,
+	.col.center-h {
+		-webkit-box-pack: center;
+		-moz-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+	}
+
+	/*Justify elements without known width ('.col' + no '.span-*' class*/
+	.row.justify {
+		-webkit-box-pack: justify;
+		-moz-box-pack: justify;
+		-ms-flex-pack: justify;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		justify-content: justify;
+	}
+
+	/*Distribute elements without known width ('.col' + no '.span-*' class*/
+	.row.distribute {
+		-webkit-box-pack: justify;
+		-moz-box-pack: justify;
+		-ms-flex-pack: distribute;
+		-webkit-justify-content: space-around;
+		justify-content: space-around;
+	}
+
+.col {
+
+}
+
+	/*To vertically center contents inside each block (needs div wrapping the contents inside)*/
+	.row.center-v > .col {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+
+		-webkit-box-align: center;
+		-moz-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+	}
+
+/*Gap between columns*/
+.col + .col {
+	margin-left: 4.0816327%; /*40px*/
+}
+
+	/*Has no visual impact, but it's more elegant*/
+	.row.justify .col + .col,
+	.row.distribute .col + .col {
+		margin-left: 0;
+	}
+
+/*Column span sizes*/
+.span-1 { width: 4.5918367%; /*45px*/ }
+.span-2 { width: 13.2653061%; /*130px*/ }
+.span-3 { width: 21.93877551%; /*215px*/ }
+.span-4 { width: 30.6122449%; /*300px*/ }
+.span-5 { width: 39.2857143%; /*385px*/ }
+.span-6 { width: 47.9591837%; /*470px*/ }
+.span-7 { width: 56.6326531%; /*555px*/ }
+.span-8 { width: 65.3061224%; /*640px*/ }
+.span-9 { width: 73.9795918%; /*725px*/ }
+.span-10 { width: 82.6530612%; /*810px*/ }
+.span-11 { width: 91.3265306%; /*895px*/ }
+.span-12 { width: 100%; /*980px*/ }
+
+/*Clearfix*/
+.group:before,
+.group:before,
+.group:after { content: ""; display: table; }
+.group:after { clear: both; }
+.group { zoom: 1; }

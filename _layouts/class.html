@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">Last update: {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+  {% if page.inherits or page.rels %}
+  <div>
+    {% if page.inherits %}
+    <h3>Inherits from:</h3>
+    <ul>
+      {% for inherit in page.inherits %}
+      <li><a href="#">{{ inherit }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if page.rels %}
+    <h3>Related classes:</h3>
+    <ul>
+      {% for rel in page.rels %}
+      <li><a href="/docs/{{rel}}/">{{ rel }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <!-- <div>
+    {% if page.previous != nil %}
+    Previous
+    {% endif %}
+
+    {% if page.next %}
+    Next
+    {% endif %}
+  </div> -->
+
+</div>
