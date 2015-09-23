@@ -1,6 +1,5 @@
 ---
-layout: class
-title:  "MSGradient"
+title: MSGradient
 rels:
   - MSStyleFill
   - MSGradientStop

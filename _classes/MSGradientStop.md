@@ -1,6 +1,5 @@
 ---
-layout: class
-title:  "MSGradientStop"
+title: MSGradientStop
 rels:
   - MSGradient
 ---

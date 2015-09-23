@@ -1,6 +1,5 @@
 ---
-layout: class
-title:  "MSContentDrawView"
+title: MSContentDrawView
 rels:
   - MSDocument
 ---

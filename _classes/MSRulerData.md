@@ -1,5 +1,4 @@
 ---
-layout: class
 title: MSRulerData
 rels:
   - MSPage

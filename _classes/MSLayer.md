@@ -1,6 +1,5 @@
 ---
-layout: class
-title:  "MSLayer"
+title: MSLayer
 rels:
   - MSLayerGroup
   - MSRect

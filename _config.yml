@@ -10,7 +10,6 @@ highlighter: pygments
 markdown: redcarpet
 redcarpet:
   extensions: ['smart', 'no_intra_emphasis', 'fenced_code_blocks', 'autolink']
-
 sass:
   style: compressed
 
@@ -22,3 +21,10 @@ collections:
   examples:
     output: true
     permalink: /examples/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: "docs"
+    values:
+      layout: "class"

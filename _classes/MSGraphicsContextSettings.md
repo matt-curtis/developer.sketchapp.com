@@ -1,6 +1,5 @@
 ---
-layout: class
-title:  "MSGraphicsContextSettings"
+title: MSGraphicsContextSettings
 rels:
   - MSDocument
 ---

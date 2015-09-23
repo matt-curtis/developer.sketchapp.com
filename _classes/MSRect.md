@@ -1,6 +1,5 @@
 ---
-layout: class
-title:  "MSRect"
+title: MSRect
 rels:
   - GKRect
   - MSLayer

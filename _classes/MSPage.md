@@ -1,6 +1,5 @@
 ---
-layout: class
-title:  "MSPage"
+title: MSPage
 rels:
   - GKRect
   - MSRulerData

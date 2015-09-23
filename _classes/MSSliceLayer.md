@@ -1,6 +1,5 @@
 ---
-layout: class
-title:  MSSliceLayer
+title: MSSliceLayer
 inherits:
   - MSLayer
 rels:

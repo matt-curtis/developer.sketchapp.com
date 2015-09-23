@@ -1,6 +1,5 @@
 ---
-layout: class
-title:  "MSLayerGroup"
+title: MSLayerGroup
 rels:
   - MSArtboardGroup
   - MSLayer

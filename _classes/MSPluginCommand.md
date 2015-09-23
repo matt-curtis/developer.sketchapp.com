@@ -1,6 +1,5 @@
 ---
-layout: class
-title:  "MSPluginCommand"
+title: MSPluginCommand
 rels:
   - MSPluginBundle
 ---

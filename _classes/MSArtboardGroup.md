@@ -1,6 +1,5 @@
 ---
-layout: class
-title:  "MSArtboardGroup"
+title: MSArtboardGroup
 inherits:
   - MSLayerGroup
 rels:

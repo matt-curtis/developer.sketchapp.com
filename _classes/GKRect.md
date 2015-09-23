@@ -1,5 +1,4 @@
 ---
-layout: class
 title:  "GKRect"
 date:   2015-09-22
 author: Ale Muñoz

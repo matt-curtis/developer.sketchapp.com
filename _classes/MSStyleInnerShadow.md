@@ -1,5 +1,4 @@
 ---
-layout: class
 title: MSStyleInnerShadow
 rels:
   - MSStyle

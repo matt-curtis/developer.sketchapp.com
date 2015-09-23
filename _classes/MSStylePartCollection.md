@@ -1,5 +1,4 @@
 ---
-layout: class
 title: MSStylePartCollection
 rels:
   - MSStyle
