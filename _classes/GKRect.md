@@ -12,7 +12,7 @@ rels:
 
 ## Overview
 
-GKRect is a lightweight rectangle object that is used in many places in Sketch. It has many of the same methods as [MSRect](MSRect.html) but they cannot always be used interchangeably
+GKRect is a lightweight rectangle object that is used in many places in Sketch. It has many of the same methods as [MSRect]({{site.baseurl}}/docs/MSRect) but they cannot always be used interchangeably
 
 ## Methods & Attributes
 

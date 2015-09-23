@@ -15,9 +15,11 @@ MSDocument represents the current document and can be accessed using the `doc` v
 
 Zoom the document. 1.0 represents actual size, 2.0 means 200% etc.
 
-    [doc setZoomValue:2.0] // Sets the zoom level to 200%
+```objective-j
+[doc setZoomValue:2.0] // Sets the zoom level to 200%
+```
 
-See also [MSContentDrawView](MSContentDrawView.html) if you need more precise zooming control.
+See also [MSContentDrawView]({{site.baseurl}}/docs/MSContentDrawView) if you need more precise zooming control.
 
 ### export:
 
@@ -33,7 +35,7 @@ Pas a string to be displayed at the top of the canvas momentarily. The same meth
 
 ### artboards
 
-Both return an array representing the artboards and slices on the current page. Artboards are of type [MSArtboardGroup](MSArtboardGroup.html) and slices are of [MSSliceLayer](MSSliceLayer.html) type.
+Both return an array representing the artboards and slices on the current page. Artboards are of type [MSArtboardGroup]({{site.baseurl}}/docs/MSArtboardGroup) and slices are of [MSSliceLayer]({{site.baseurl}}/docs/MSSliceLayer) type.
 
 ### children
 
@@ -41,7 +43,7 @@ Returns an array containing all layers (including slices and artboards) on the c
 
 ### pages
 
-Returns an array of all pages in the document. Each page is an [MSPage](MSPage.html) object.
+Returns an array of all pages in the document. Each page is an [MSPage]({{site.baseurl}}/docs/MSPage) object.
 
 ### askForUserInput:initialValue:
 
@@ -54,17 +56,17 @@ The first argument is a GKRect, MSSliceLayer or MSArtboardGroup and the image ge
 
 ### currentView
 
-Returns an [MSContentDrawView](MSContentDrawView.html) subclass that represents the visible Canvas.
+Returns an [MSContentDrawView]({{site.baseurl}}/docs/MSContentDrawView) subclass that represents the visible Canvas.
 
 ### addBlankPage
 
-Adds a new [MSPage](MSPage.html) object to the document, inserting it below the current page, copying its grid and ruler position too.
+Adds a new [MSPage]({{site.baseurl}}/docs/MSPage) object to the document, inserting it below the current page, copying its grid and ruler position too.
 
 Available as of beta 184 / version 2.2.5
 
 ### removePage:
 
-Removes the given page from the document. The argument is an [MSPage](MSPage.html) object.
+Removes the given page from the document. The argument is an [MSPage]({{site.baseurl}}/docs/MSPage) object.
 
 Available as of beta 184 / version 2.2.5
 

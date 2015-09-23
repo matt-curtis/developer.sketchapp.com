@@ -8,7 +8,7 @@ rels:
 
 ## Overview
 
-MSLayerGroup represents a group in the document, but is an [MSLayer](MSLayer.html) itself. Two important subclasses of MSLayerGroup are [MSArtboardGroup](MSArtboardGroup.html) and [MSPage](MSPage.html).
+MSLayerGroup represents a group in the document, but is an [MSLayer]({{site.baseurl}}/docs/MSLayer) itself. Two important subclasses of MSLayerGroup are [MSArtboardGroup]({{site.baseurl}}/docs/MSArtboardGroup) and [MSPage]({{site.baseurl}}/docs/MSPage).
 
 ## Methods & Attributes
 
@@ -38,6 +38,8 @@ Adds a completely new layer to the group, at the group’s {0,0} origin. This me
 
 This method returns the new layer which you can then manipulate/style using the other scripting methods.
 
-    var group = context.selection[0]
-    var new_layer = [group addLayerOfType:"rectangle"]
-    log(new_layer) // <MSShapeGroup: 0x7ff3f2c42790> Rectangle (C008AC08-FB43-42E9-9267-81E9F348AF42)
+```objective-j
+var group = context.selection[0]
+var new_layer = [group addLayerOfType:"rectangle"]
+log(new_layer) // <MSShapeGroup: 0x7ff3f2c42790> Rectangle (C008AC08-FB43-42E9-9267-81E9F348AF42)
+```

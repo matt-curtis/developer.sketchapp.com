@@ -7,7 +7,11 @@ twitter_username: sketchapp
 github_username:  BohemianCoding
 
 # Build settings
-markdown: kramdown
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ['smart', 'no_intra_emphasis', 'fenced_code_blocks', 'autolink']
+
 sass:
   style: compressed
 

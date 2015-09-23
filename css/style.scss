@@ -7,6 +7,7 @@
 /* SCSS */
 @import "normalize";
 @import "mediaqueries";
+@import "syntax-highlighting";
 
 @mixin debug { background-color: red !important; }
 
@@ -122,14 +123,14 @@ a {
 	a:focus { color: #3795ff; }
 }
 
-a.highlight {
+a.highlite {
 	color: hsla(0, 100%, 100%, .9);
 
-	&.highlight:hover,
-	&.highlight:focus { color: hsla(0, 100%, 100%, 1); }
+	&:hover,
+	&:focus { color: hsla(0, 100%, 100%, 1); }
 
-	&.highlight:active,
-	&.highlight.active { color: hsla(0, 100%, 100%, 1); }
+	&:active,
+	&.active { color: hsla(0, 100%, 100%, 1); }
 }
 
 .button {
