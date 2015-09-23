@@ -1,10 +1,9 @@
 # Site settings
 title: Sketch Developers
 email: developers@sketchapp.com
-baseurl: "/developer.sketchapp.com/" # the subpath of your site, e.g. /blog/
+baseurl: "/developer.sketchapp.com" # the subpath of your site, e.g. /blog/
 url: "https://bohemiancoding.github.io" # need to change this when we use our own site
-twitter_username: sketchapp
-github_username:  BohemianCoding
+github_repo:  https://github.com/BohemianCoding/developer.sketchapp.com
 
 # Build settings
 highlighter: pygments
@@ -20,3 +19,6 @@ collections:
   classes:
     output: true
     permalink: /docs/:path/
+  examples:
+    output: true
+    permalink: /examples/:path/
