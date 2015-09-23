@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sketch Developer
+title: Hello, World
 ---
 
 We’ve worked very hard to make Sketch the dream “designer toolbox”, but everyone has slightly different needs, and there is a good chance that there’s a feature that you would like, which we’ve not implemented.
@@ -33,8 +33,8 @@ If you want to learn how to do that, you’ve come to the right place.
 
 We’ve divided the contents into four parts:
 
-1. **Introduction**, which is a general overview of the scripting features in Sketch,
-2. **Common Tasks**, which will take you on a tour of all the different things you can do with Plugins, and
+1. **Introduction**, which is a general overview of the scripting features in Sketch.
+2. **Code Examples**, which will take you on a tour of all the different things you can do with Plugins.
 3. **Reference**, which is a detailed list of all classes and methods, with relevant examples for each item.
 4. **Resources**, with links and pointers to resources you may find useful as a plugin developer.
 
