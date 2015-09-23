@@ -26,5 +26,6 @@ collections:
 defaults:
   - scope:
       path: "docs"
+      type: "classes"
     values:
       layout: "class"
