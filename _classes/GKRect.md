@@ -1,7 +1,7 @@
 ---
 layout: class
 title:  "GKRect"
-date:   2015-09-22 11:00:00
+date:   2015-09-22
 author: Ale Muñoz
 meta:
 status: active # can be 'draft', 'active' or 'deprecated'

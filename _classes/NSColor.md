@@ -1,6 +1,8 @@
 ---
 layout: class
 title: NSColor
+date: 2015-09-23
+author: Ale Muñoz
 ---
 
 ## Overview

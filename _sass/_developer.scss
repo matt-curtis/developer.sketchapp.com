@@ -1,0 +1,26 @@
+/* CSS tweaks for Developer Docs */
+.class {
+  h1 {
+    font-weight: bolder;
+  }
+  h2 {
+    margin-top: 1em;
+  }
+  h3 {
+    margin-top: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #999;
+  }
+}
+
+div.white {
+  background-color: white;
+}
+
+.content {
+  padding-top: 2em;
+}
+
+.page-metadata {
+  padding-bottom: 2em;
+}
