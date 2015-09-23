@@ -359,7 +359,7 @@ pre code {
 	width: 1.75rem; /*28px*/
 	height: 2.0625rem; /*33px*/
 	margin-right: .375rem; /*6px*/
-	background: url(/images/logo-bohemian.png) no-repeat left top;
+	background: url({{site.baseurl}}/images/logo-bohemian.png) no-repeat left top;
 	background-size: 100%;
 	vertical-align: text-top;
 	position: relative;
@@ -373,7 +373,7 @@ pre code {
 	(min-resolution: 144dpi),
 	(min-resolution: 1.5dppx) {
 		[role="banner"] {
-			background-image: url(/images/logo-bohemian@2x.png)
+			background-image: url({{site.baseurl}}/images/logo-bohemian@2x.png)
 		}
 	}
 
@@ -649,12 +649,12 @@ body.sketch.features .herocontainer {
 		&.active { color: hsla(0, 100%, 100%, .9); }
 	}
 	/*Icons*/
-	.precision { background-image: url(/images/features/nav-precision-large.png); }
-	.inspector { background-image: url(/images/features/nav-inspector-large.png); }
-	.tools { background-image: url(/images/features/nav-tools-large.png); }
-	.exporting { background-image: url(/images/features/nav-export-large.png); }
-	.native { background-image: url(/images/features/nav-native-large.png); }
-	.mirror { background-image: url(/images/features/nav-mirror-large.png); }
+	.precision { background-image: url({{site.baseurl}}/images/features/nav-precision-large.png); }
+	.inspector { background-image: url({{site.baseurl}}/images/features/nav-inspector-large.png); }
+	.tools { background-image: url({{site.baseurl}}/images/features/nav-tools-large.png); }
+	.exporting { background-image: url({{site.baseurl}}/images/features/nav-export-large.png); }
+	.native { background-image: url({{site.baseurl}}/images/features/nav-native-large.png); }
+	.mirror { background-image: url({{site.baseurl}}/images/features/nav-mirror-large.png); }
 
 	span {
 		display: block;
@@ -676,22 +676,22 @@ body.sketch.features .herocontainer {
 (min-resolution: 144dpi),
 (min-resolution: 1.5dppx) {
 	.features-nav .precision {
-		background-image: url(/images/features/nav-precision-large@2x.png);
+		background-image: url({{site.baseurl}}/images/features/nav-precision-large@2x.png);
 	}
 	.features-nav .inspector {
-		background-image: url(/images/features/nav-inspector-large@2x.png);
+		background-image: url({{site.baseurl}}/images/features/nav-inspector-large@2x.png);
 	}
 	.features-nav .tools {
-		background-image: url(/images/features/nav-tools-large@2x.png);
+		background-image: url({{site.baseurl}}/images/features/nav-tools-large@2x.png);
 	}
 	.features-nav .exporting {
-		background-image: url(/images/features/nav-export-large@2x.png);
+		background-image: url({{site.baseurl}}/images/features/nav-export-large@2x.png);
 	}
 	.features-nav .native {
-		background-image: url(/images/features/nav-native-large@2x.png);
+		background-image: url({{site.baseurl}}/images/features/nav-native-large@2x.png);
 	}
 	.features-nav .mirror {
-		background-image: url(/images/features/nav-mirror-large@2x.png);
+		background-image: url({{site.baseurl}}/images/features/nav-mirror-large@2x.png);
 	}
 }
 
@@ -707,12 +707,12 @@ body.sketch.features .herocontainer {
 		background-size: 100%; /*110px*/
 	}
 	/*Icons*/
-	.precision > h1::before { background-image: url(/images/features/nav-precision-small.png); }
-	.inspector > h1::before { background-image: url(/images/features/nav-inspector-small.png); }
-	.tools > h1::before { background-image: url(/images/features/nav-tools-small.png); }
-	.exporting > h1::before { background-image: url(/images/features/nav-export-small.png); }
-	.native > h1::before { background-image: url(/images/features/nav-native-small.png); }
-	.mirror > h1::before { background-image: url(/images/features/nav-mirror-small.png); }
+	.precision > h1::before { background-image: url({{site.baseurl}}/images/features/nav-precision-small.png); }
+	.inspector > h1::before { background-image: url({{site.baseurl}}/images/features/nav-inspector-small.png); }
+	.tools > h1::before { background-image: url({{site.baseurl}}/images/features/nav-tools-small.png); }
+	.exporting > h1::before { background-image: url({{site.baseurl}}/images/features/nav-export-small.png); }
+	.native > h1::before { background-image: url({{site.baseurl}}/images/features/nav-native-small.png); }
+	.mirror > h1::before { background-image: url({{site.baseurl}}/images/features/nav-mirror-small.png); }
 
 	h1,
 	h2 { margin-top: 0; }
@@ -746,22 +746,22 @@ body.sketch.features .herocontainer {
 (min-resolution: 144dpi),
 (min-resolution: 1.5dppx) {
 	.feature .precision > h1::before {
-		background-image: url(/images/features/nav-precision-small@2x.png);
+		background-image: url({{site.baseurl}}/images/features/nav-precision-small@2x.png);
 	}
 	.feature .inspector > h1::before {
-		background-image: url(/images/features/nav-inspector-small@2x.png);
+		background-image: url({{site.baseurl}}/images/features/nav-inspector-small@2x.png);
 	}
 	.feature .tools > h1::before {
-		background-image: url(/images/features/nav-tools-small@2x.png);
+		background-image: url({{site.baseurl}}/images/features/nav-tools-small@2x.png);
 	}
 	.feature .exporting > h1::before {
-		background-image: url(/images/features/nav-export-small@2x.png);
+		background-image: url({{site.baseurl}}/images/features/nav-export-small@2x.png);
 	}
 	.feature .native > h1::before {
-		background-image: url(/images/features/nav-native-small@2x.png);
+		background-image: url({{site.baseurl}}/images/features/nav-native-small@2x.png);
 	}
 	.feature .mirror > h1::before {
-		background-image: url(/images/features/nav-mirror-small@2x.png);
+		background-image: url({{site.baseurl}}/images/features/nav-mirror-small@2x.png);
 	}
 }
 
@@ -836,67 +836,67 @@ body.sketch.features .herocontainer {
 
 	/*Objects*/
 	.illustrate.snap-to-pixel::before {
-		background-image: url(/images/features/precision-snap.png);
+		background-image: url({{site.baseurl}}/images/features/precision-snap.png);
 	}
 	.illustrate.pixel-zoom::before {
 		height: 4.3125rem; /*69px*/
 		margin-top: -.1875rem; /*3px*/
 		margin-bottom: 1.0625rem; /*20px -3px*/
-		background-image: url(/images/features/precision-vector.png);
+		background-image: url({{site.baseurl}}/images/features/precision-vector.png);
 	}
 	.illustrate.beautiful-text::before {
-		background-image: url(/images/features/precision-text.png);
+		background-image: url({{site.baseurl}}/images/features/precision-text.png);
 	}
 
 	/*Tools*/
 	.illustrate.symbols::before {
-		background-image: url(/images/features/tools-symbols.png);
+		background-image: url({{site.baseurl}}/images/features/tools-symbols.png);
 	}
 	.illustrate.layer-styles::before {
-		background-image: url(/images/features/tools-styles.png);
+		background-image: url({{site.baseurl}}/images/features/tools-styles.png);
 	}
 	.illustrate.text-styles::before {
-		background-image: url(/images/features/tools-textstyle.png);
+		background-image: url({{site.baseurl}}/images/features/tools-textstyle.png);
 	}
 	.illustrate.artboards::before {
-		background-image: url(/images/features/tools-pages.png);
+		background-image: url({{site.baseurl}}/images/features/tools-pages.png);
 	}
 	.illustrate.grids::before {
-		background-image: url(/images/features/tools-grids.png);
+		background-image: url({{site.baseurl}}/images/features/tools-grids.png);
 	}
 	.illustrate.bitmap::before {
-		background-image: url(/images/features/tools-bitmap.png);
+		background-image: url({{site.baseurl}}/images/features/tools-bitmap.png);
 	}
 
 	/*Export*/
 	.illustrate.assets::before {
-		background-image: url(/images/features/export-assets.png);
+		background-image: url({{site.baseurl}}/images/features/export-assets.png);
 	}
 	.illustrate.css-styles::before {
-		background-image: url(/images/features/export-css.png);
+		background-image: url({{site.baseurl}}/images/features/export-css.png);
 	}
-	.illustrate.print::before { background-image: url(/images/features/print.png); }
+	.illustrate.print::before { background-image: url({{site.baseurl}}/images/features/print.png); }
 
 	/*Native*/
 	.illustrate.fast::before {
-		background-image: url(/images/features/native-speed.png);
+		background-image: url({{site.baseurl}}/images/features/native-speed.png);
 	}
 	.illustrate.auto-save::before {
-		background-image: url(/images/features/native-versions.png);
+		background-image: url({{site.baseurl}}/images/features/native-versions.png);
 	}
 	.illustrate.icloud::before {
-		background-image: url(/images/features/native-icloud.png);
+		background-image: url({{site.baseurl}}/images/features/native-icloud.png);
 	}
 
 	/*Mirror*/
 	.illustrate.made-for::before {
-		background-image: url(/images/features/mirror-sketch.png);
+		background-image: url({{site.baseurl}}/images/features/mirror-sketch.png);
 	}
 	.illustrate.swipe::before {
-		background-image: url(/images/features/mirror-swipe.png);
+		background-image: url({{site.baseurl}}/images/features/mirror-swipe.png);
 	}
 	.illustrate.devices::before {
-		background-image: url(/images/features/mirror-devices.png);
+		background-image: url({{site.baseurl}}/images/features/mirror-devices.png);
 	}
 
 	@media
@@ -907,66 +907,66 @@ body.sketch.features .herocontainer {
 	(min-resolution: 1.5dppx) {
 		/*Objects*/
 		.illustrate.snap-to-pixel::before {
-			background-image: url(/images/features/precision-snap@2x.png);
+			background-image: url({{site.baseurl}}/images/features/precision-snap@2x.png);
 		}
 		.illustrate.pixel-zoom::before {
-			background-image: url(/images/features/precision-vector@2x.png);
+			background-image: url({{site.baseurl}}/images/features/precision-vector@2x.png);
 		}
 		.illustrate.beautiful-text::before {
-			background-image: url(/images/features/precision-text@2x.png);
+			background-image: url({{site.baseurl}}/images/features/precision-text@2x.png);
 		}
 
 		/*Tools*/
 		.illustrate.symbols::before {
-			background-image: url(/images/features/tools-symbols@2x.png);
+			background-image: url({{site.baseurl}}/images/features/tools-symbols@2x.png);
 		}
 		.illustrate.layer-styles::before {
-			background-image: url(/images/features/tools-styles@2x.png);
+			background-image: url({{site.baseurl}}/images/features/tools-styles@2x.png);
 		}
 		.illustrate.text-styles::before {
-			background-image: url(/images/features/tools-textstyle@2x.png);
+			background-image: url({{site.baseurl}}/images/features/tools-textstyle@2x.png);
 		}
 		.illustrate.artboards::before {
-			background-image: url(/images/features/tools-pages@2x.png);
+			background-image: url({{site.baseurl}}/images/features/tools-pages@2x.png);
 		}
 		.illustrate.grids::before {
-			background-image: url(/images/features/tools-grids@2x.png);
+			background-image: url({{site.baseurl}}/images/features/tools-grids@2x.png);
 		}
 		.illustrate.bitmap::before {
-			background-image: url(/images/features/tools-bitmap@2x.png);
+			background-image: url({{site.baseurl}}/images/features/tools-bitmap@2x.png);
 		}
 
 		/*Export*/
 		.illustrate.assets::before {
-			background-image: url(/images/features/export-assets@2x.png);
+			background-image: url({{site.baseurl}}/images/features/export-assets@2x.png);
 		}
 		.illustrate.css-styles::before {
-			background-image: url(/images/features/export-css@2x.png);
+			background-image: url({{site.baseurl}}/images/features/export-css@2x.png);
 		}
 		.illustrate.print::before {
-		background-image: url(/images/features/print@2x.png);
+		background-image: url({{site.baseurl}}/images/features/print@2x.png);
 		}
 
 		/*Native*/
 		.illustrate.fast::before {
-			background-image: url(/images/features/native-speed@2x.png);
+			background-image: url({{site.baseurl}}/images/features/native-speed@2x.png);
 		}
 		.illustrate.auto-save::before {
-			background-image: url(/images/features/native-versions@2x.png);
+			background-image: url({{site.baseurl}}/images/features/native-versions@2x.png);
 		}
 		.illustrate.icloud::before {
-			background-image: url(/images/features/native-icloud@2x.png);
+			background-image: url({{site.baseurl}}/images/features/native-icloud@2x.png);
 		}
 
 		/*Mirror*/
 		.illustrate.made-for::before {
-			background-image: url(/images/features/mirror-sketch@2x.png);
+			background-image: url({{site.baseurl}}/images/features/mirror-sketch@2x.png);
 		}
 		.illustrate.swipe::before {
-			background-image: url(/images/features/mirror-swipe@2x.png);
+			background-image: url({{site.baseurl}}/images/features/mirror-swipe@2x.png);
 		}
 		.illustrate.devices::before {
-			background-image: url(/images/features/mirror-devices@2x.png);
+			background-image: url({{site.baseurl}}/images/features/mirror-devices@2x.png);
 		}
 	}
 
@@ -1094,7 +1094,7 @@ body.sketch.features .herocontainer {
 			padding: 0 !important;
 		}
 		.col.span-2 {
-			background: transparent url(/images/whats-new/bg.png) repeat-y top left;
+			background: transparent url({{site.baseurl}}/images/whats-new/bg.png) repeat-y top left;
 			padding: 2em 0 3em 0 !important;
 			@include mobile {
 				background: none;
@@ -1103,7 +1103,7 @@ body.sketch.features .herocontainer {
 		}
 		&.version-three {
 			.col.span-2 {
-				background: transparent url(/images/whats-new/bg.png) no-repeat top left;
+				background: transparent url({{site.baseurl}}/images/whats-new/bg.png) no-repeat top left;
 				@include mobile {
 					background: none;
 				}
@@ -1270,7 +1270,7 @@ body.sketch.features .herocontainer {
 	input[type=search] {
 		border: none;
 		padding: 0.3rem 1rem;
-		background: #eee url(/static/images/icons/loupe.svg) 0.5rem center no-repeat;
+		background: #eee url({{site.baseurl}}/static/images/icons/loupe.svg) 0.5rem center no-repeat;
 		display: block;
 		width: 100%;
 		box-sizing: border-box;
@@ -1282,7 +1282,7 @@ body.sketch.features .herocontainer {
 	}
 	input:focus {
 		text-align: left;
-		background: #fff url(/static/images/icons/loupe.svg) -2rem center no-repeat;
+		background: #fff url({{site.baseurl}}/static/images/icons/loupe.svg) -2rem center no-repeat;
 	}
 }
 
@@ -1677,7 +1677,7 @@ body.sketch.features .herocontainer {
 }
 
 .file-online {
-	background: transparent url(/static/images/learn/download.svg) center center no-repeat;
+	background: transparent url({{site.baseurl}}/static/images/learn/download.svg) center center no-repeat;
 	float: right;
 	height: 31px;
 	width: 31px;
@@ -1721,7 +1721,7 @@ body.sketch.features .herocontainer {
 	li:before {
 		content: '';
 		float: left;
-		background-image: url('/static/images/jobs/check.svg');
+		background-image: url('{{site.baseurl}}/static/images/jobs/check.svg');
 		width: 20px;
 		height: 20px;
 		background-size:contain;
