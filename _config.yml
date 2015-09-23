@@ -1,8 +1,8 @@
 # Site settings
 title: Sketch Developers
 email: developers@sketchapp.com
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://developer.sketchapp.com" # the base hostname & protocol for your site
+baseurl: "/developer.sketchapp.com/" # the subpath of your site, e.g. /blog/
+url: "https://bohemiancoding.github.io" # need to change this when we use our own site
 twitter_username: sketchapp
 github_username:  BohemianCoding
 
