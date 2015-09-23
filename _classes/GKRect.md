@@ -1,9 +1,7 @@
 ---
-title:  "GKRect"
-date:   2015-09-22
+title: GKRect
+date: 2015-09-22
 author: Ale Muñoz
-meta:
-status: active # can be 'draft', 'active' or 'deprecated'
 rels:
   - MSRect
   - MSLayer
