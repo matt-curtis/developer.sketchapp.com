@@ -8,6 +8,8 @@ github_username:  BohemianCoding
 
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed
 
 # Dynamic Content
 collections:
