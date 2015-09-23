@@ -1,5 +1,8 @@
+---
+# Frontmatter
+---
 body.sketch {
-	background-image: url("/images/home/bg.svg");
+	background-image: url("{{site.baseurl}}/images/home/bg.svg");
 	background-position: top center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -13,7 +16,7 @@ body.sketch {
 		background-attachment: scroll;
 	}
 	section.first {
-		background: transparent url(/images/home/rainbow.svg) center bottom no-repeat;
+		background: transparent url({{site.baseurl}}/images/home/rainbow.svg) center bottom no-repeat;
 		padding-bottom: 200px;
 	}
 	.rainbow {
