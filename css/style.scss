@@ -1270,7 +1270,7 @@ body.sketch.features .herocontainer {
 	input[type=search] {
 		border: none;
 		padding: 0.3rem 1rem;
-		background: #eee url({{site.baseurl}}/static/images/icons/loupe.svg) 0.5rem center no-repeat;
+		background: #eee url({{site.baseurl}}/images/icons/loupe.svg) 0.5rem center no-repeat;
 		display: block;
 		width: 100%;
 		box-sizing: border-box;
@@ -1282,7 +1282,7 @@ body.sketch.features .herocontainer {
 	}
 	input:focus {
 		text-align: left;
-		background: #fff url({{site.baseurl}}/static/images/icons/loupe.svg) -2rem center no-repeat;
+		background: #fff url({{site.baseurl}}/images/icons/loupe.svg) -2rem center no-repeat;
 	}
 }
 
@@ -1677,7 +1677,7 @@ body.sketch.features .herocontainer {
 }
 
 .file-online {
-	background: transparent url({{site.baseurl}}/static/images/learn/download.svg) center center no-repeat;
+	background: transparent url({{site.baseurl}}/images/learn/download.svg) center center no-repeat;
 	float: right;
 	height: 31px;
 	width: 31px;
@@ -1721,7 +1721,7 @@ body.sketch.features .herocontainer {
 	li:before {
 		content: '';
 		float: left;
-		background-image: url('{{site.baseurl}}/static/images/jobs/check.svg');
+		background-image: url('{{site.baseurl}}/images/jobs/check.svg');
 		width: 20px;
 		height: 20px;
 		background-size:contain;
@@ -2167,8 +2167,101 @@ div.sb-message{font-size:12px;padding:10px;text-align:center;}
 div.sb-message a:link,div.sb-message a:visited{color:#fff;text-decoration:underline;}
 /* @end */
 
-// Chris' changes for the home page
-@import "home";
+---
+# Frontmatter
+---
+body.sketch {
+	background-image: url("{{site.baseurl}}/images/home/bg.svg");
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	background-color: none;
+
+	@media screen and (max-width: 600px) {
+		background-position: auto;
+		background-size: auto;
+		background-attachment: scroll;
+	}
+	section.first {
+		background: transparent url({{site.baseurl}}/images/home/rainbow.svg) center bottom no-repeat;
+		padding-bottom: 200px;
+	}
+	.rainbow {
+		position: absolute;
+		left: 50%;
+		margin-left: -142px;
+		margin-top: 80px;
+		@media screen and (max-height: 900px) {
+			margin-left: -114px;
+		}
+		@media screen and (max-width: $breakpoint_ipad_width) {
+			margin-left: -107px;
+		}
+	}
+	.main-header,
+	.masthead {
+		background: none;
+		background-color: transparent;
+		.actions {
+			margin-top: 2.5em;
+			font-size: 0.9em;
+			a.button.icon-download {
+				margin-left: 0;
+			}
+			a.button.icon-appstore {
+				margin-right: 0;
+			}
+			@media screen and (max-width: 600px) {
+				font-size: 0.85em;
+			}
+		}
+		.section-footer {
+			border-image: none;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.hero.home {
+			margin-top: 2em;
+		}
+	}
+	form.volume { display: none; }
+
+	.why {
+//		margin-top: -7em;
+	}
+	.herocontainer {
+		padding: 0;
+		margin: 0;
+		margin-top: -1em;
+		background-color: #f8f9fa;
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width:100%;
+			height:auto
+		}
+	}
+	.section-footer {
+		width: 80%;
+		margin: 0 auto;
+		.companies li {
+			display: block;
+			img {
+				width: auto;
+				height: 2.5em;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body.sketch.home .section-footer {
+		width: 100%;
+		.companies li img { height: 2em; }
+	}
+}
 
 #subscribe {
 	background: #061524;
