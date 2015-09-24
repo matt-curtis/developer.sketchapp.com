@@ -1,10 +1,8 @@
+---
 title: More on CocoaScript
+permalink: /introduction/cocoascript/
 summary: Some more details on how to use CocoaScript
-
-{% extends "developer.html" %}
-
-{% block body %}
-
+---
 
 ## CocoaScript
 
@@ -20,17 +18,23 @@ You can use two different styles when writing your scripts: **dot notation** and
 
 If you have spent some time writing JavaScript code, you already know about the dot notation:
 
-    var l = a.length()
+```JavaScript
+var l = a.length()
+```
 
 Here, a dot is used to say: “Call the ‘length’ method on the ‘a’ object”.
 
 However, if you come from a Cocoa background, you may be happy to learn that you can also use a bracket notation, very similar to that in Objective-C:
 
-    var l = [a length]
+```Objective-C
+var l = [a length]
+```
 
 You can even mix and match dot and bracket notation:
 
-    var l = [a length].toString()
+```Objective-C
+var l = [a length].toString()
+```
 
 However, it’s probably a good idea to stick with just one style.
 
@@ -38,23 +42,21 @@ However, it’s probably a good idea to stick with just one style.
 
 You can access all Cocoa APIs from CocoaScript. For example, if you want to open a File Picker panel, you can use the [NSOpenPanel](https://developer.apple.com/library/mac/documentation/cocoa/reference/applicationkit/Classes/NSOpenPanel_Class/Reference/Reference.html) class:
 
-    var openPanel = [NSOpenPanel openPanel]
-    [openPanel setCanChooseDirectories:false]
-    [openPanel setCanChooseFiles:true]
-    [openPanel setCanCreateDirectories:false]
-    [openPanel setDirectoryURL:[NSURL fileURLWithPath:"~/Documents/"]]
+```Objective-C
+var openPanel = [NSOpenPanel openPanel]
+[openPanel setCanChooseDirectories:false]
+[openPanel setCanChooseFiles:true]
+[openPanel setCanCreateDirectories:false]
+[openPanel setDirectoryURL:[NSURL fileURLWithPath:"~/Documents/"]]
 
-    [openPanel setTitle:"Choose a file"]
-    [openPanel setPrompt:"Choose"]
-    [openPanel runModal]
+[openPanel setTitle:"Choose a file"]
+[openPanel setPrompt:"Choose"]
+[openPanel runModal]
+```
 
-If you need more information about Cocoa, check the [Resources](../04-resources/02.html) section.
+If you need more information about Cocoa, check the [Resources]({{site.baseurl}}/resources/) section.
 
 ## Other CocoaScript Syntax Notes
 
 - Semicolons are optional in CocoaScript.
-{# - You can evaluate falseness by using `false` or `NO` #}
-{# - You can evaluate truthiness by using `true` or `YES` #}
 - You can evaluate nullness by using `null` or `nil`
-
-{% endblock %}

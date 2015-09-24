@@ -1,9 +1,8 @@
+---
 title: Plugin Scripts
 summary: An introduction to writing plugin scripts.
-
-{% extends "developer.html" %}
-
-{% block body %}
+permalink: /introduction/plugin-scripts/
+---
 
 ## Plugins, Scripts, and Commands
 
@@ -15,13 +14,13 @@ Each script can contain as many handlers as you need, and each command can be im
 
 So to find out how to make Plugins, you first need to know how to write Sketch scripts.
 
-Teaching you how to write JavaScript code is beyond the scope of these pages, so we’re going to assume that you already know that bit. If not, there are lots of good [learning resources](../04-resources/02.html) on the internet!
+Teaching you how to write JavaScript code is beyond the scope of these pages, so we’re going to assume that you already know that bit. If not, there are lots of good [learning resources]({{site.baseurl}}/resources/) on the internet!
 
 ## Script Syntax
 
 Scripts in Sketch are written using [CocoaScript](https://github.com/ccgus/CocoaScript).
 
-This is a bridge that lets you write JavaScript scripts that can call native Objective-C/Cocoa. 
+This is a bridge that lets you write JavaScript scripts that can call native Objective-C/Cocoa.
 
 Using it, you can write the logic of your Plugin in JavaScript, but can call the actual classes and methods that implement Sketch itself when you want to make it do something.
 
@@ -33,7 +32,7 @@ The basics are as follows:
 - you can read and write properties on custom Objective-C objects as you would in JS
 - you can call methods on custom Objective-C objects, using either the familiar JavaScript syntax, or the Objective-C square bracket syntax.
 
-(See the [More On CocoaScript](05.html) page for more details.)
+(See the [More On CocoaScript](cocoascript) page for more details.)
 
 When your script is called by Sketch, you are passed some *context*, including the Objective-C objects representing the current Sketch document and selection.
 
@@ -47,22 +46,23 @@ When the handler is called, it is passed a single *context* variable. This conta
 
 For example, the selection property gives you a list of the selected layers in the current document:
 
-	var onRun = function(context) {            
-	  var selection = context.selection; 
-    
-	  for (var i=0; i<selection.count(); i++) {
-		  var layer = selection[i];
-		  log('layer ' + layer.name + ' is selected.');
-		};                                    
-	};                                      
+```JavaScript
+var onRun = function(context) {
+  var selection = context.selection
+  for (var i=0; i<selection.count(); i++) {
+    var layer = selection[i]
+    log('layer ' + layer.name + ' is selected.')
+  }
+}
+```
 
 All Plugins in Sketch have access to the following default variables:
 
-- **command**: an [`MSPluginCommand`](../03-reference/MSPluginCommand.html) object representing the script command currently executing
-- **document**: an [`MSDocument`](../03-reference/MSDocument.html) object representing the current document
+- **command**: an [`MSPluginCommand`]({{site.baseurl}}/docs/MSPluginCommand/) object representing the script command currently executing
+- **document**: an [`MSDocument`]({{site.baseurl}}/docs/MSDocument/) object representing the current document
 - **scriptPath**: an `NSString` containing the full path to the currently executing script
 - **scriptURL**: like **scriptPath**, but as an NSURL object
-- **selection**, an `NSArray` of the layer(s) that are selected in the current document; each item of this array is an [`MSLayer`](../03-reference/MSLayer.html) object
+- **selection**, an `NSArray` of the layer(s) that are selected in the current document; each item of this array is an [`MSLayer`]({{site.baseurl}}/docs/MSLayer/) object
 
 
 ## Trying Out Scripts
@@ -79,7 +79,7 @@ You can use this interface to explore and experiment.
 
 Once you have a script that you want to develop into a proper Plugin, you can use the **Save…** button in the **Run Custom Script…** sheet.
 
-This will create a Plugin folder (known as a [Plugin Bundle](03.html)) and save your script into it.
+This will create a Plugin folder (known as a [Plugin Bundle]({{site.baseurl}}/introduction/plugin-bundles/)) and save your script into it.
 
 The resulting Plugin will have a single command and a single script file. Executing the command will call the `onRun` function in the script, which will contain the code you entered.
 
@@ -89,6 +89,4 @@ You can add more code to your `onRun` function, add more functions, and even mor
 
 By editing the `manifest.json` file in the Plugin folder, you can customise the name of the command, enter a description, and even expand the Plugin to define multiple commands.
 
-For more information on this, see [Plugin Bundles](03.html).
-
-{% endblock %}
+For more information on this, see [Plugin Bundles]({{site.baseurl}}/introduction/plugin-bundles/).

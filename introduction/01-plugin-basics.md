@@ -1,20 +1,20 @@
 ---
 title: Plugin Basics
 summary: Basic concepts for plugin users.
-permalink: /introduction/plugin-basics/
+permalink: /introduction/
 ---
 
 ## What is a Plugin?
 
 A Plugin is a collection of one or more **scripts**. Each script defines one or more **commands** which extend Sketch in some way.
 
-On disk, a Plugin is simply represented as a folder with the `.sketchplugin` file extension, containing a number of files and sub-folders, arranged in a [standard layout](03.html).
+On disk, a Plugin is simply represented as a folder with the `.sketchplugin` file extension, containing a number of files and sub-folders, arranged in a [standard layout](plugin-bundles).
 
 One special file in this folder - `manifest.json` - describes the Plugin. Sketch uses this to find the names of the commands that the Plugin implements, and to create menu commands which allow you to execute them.
 
 Other files in the Plugin folder include the actual scripts which implement the commands, and optional resources (such as images) that the commands make use of to do whatever they do.
 
-Plugin scripts are written using [CocoaScript](https://github.com/ccgus/CocoaScript), which is a variation of JavaScript. We’ll talk more about CocoaScript in the [Plugin Scripts](02.html) section.
+Plugin scripts are written using [CocoaScript](https://github.com/ccgus/CocoaScript), which is a variation of JavaScript. We’ll talk more about CocoaScript in the [Plugin Scripts](plugin-scripts) section.
 
 ## Where are Plugins located?
 
@@ -22,7 +22,7 @@ When Sketch starts up, it scans a folder on your disk looking for Plugins.
 
 You can access this Plugins folder easily by using the **Reveal Plugins Folder…** menu option from Sketch:
 
-![](/static/images/developer/menu-plugins-reveal.png)
+![]({{site.baseurl}}/images/developer/menu-plugins-reveal.png)
 
 
 Exactly where this folder actually lives depends on whether you bought Sketch from the App Store, or from our website:
@@ -55,6 +55,6 @@ Often the best place to start is with some existing examples. With this in mind,
 
 These aren’t intended to actually be massively useful additions to Sketch, but they illustrate how to get a Plugin working, and can be copied to form the basis of something new.
 
-The [Links](../04-resources/02.html) page also lists a number of good places to find other Plugins.
+The [Resources]({{site.baseurl}}/resources/) page also lists a number of good places to find other Plugins.
 
-When you feel ready to dive in and make something of your own, more information can be found in [Plugin Scripts](02.html).
+When you feel ready to dive in and make something of your own, more information can be found in [Plugin Scripts](plugin-scripts).

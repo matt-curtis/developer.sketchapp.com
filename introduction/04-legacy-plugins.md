@@ -1,8 +1,7 @@
+---
 title: Legacy Plugins and Implicit Menus
-
-{% extends "developer.html" %}
-
-{% block body %}
+permalink: /introduction/legacy-plugins/
+---
 
 ## Legacy Script Support
 
@@ -26,28 +25,30 @@ This is still supported, but again, we encourage you to convert your Plugins to 
 
 When Sketch encounters old-style Plugin scripts, it uses their file names as the titles of their menu commands. If they are in sub-folders, it creates sub-menus using the folder names.
 
-Some "fallback" behaviour is also supported within new-style Plugins, if the *menu* key is missing from the manifest. In this case we try to build the menu items implicitly. We recommend that you use the *menu* key, but the following describes the implicit mechanism:
+Some "fallback" behavior is also supported within new-style Plugins, if the *menu* key is missing from the manifest. In this case we try to build the menu items implicitly. We recommend that you use the *menu* key, but the following describes the implicit mechanism:
 
 Commands in scripts with a `.cocoascript` file extension and an `onRun` command handler will be added to the Plugins menu automatically, using the file name of the script as the menu item title.
 
 For a bundle like this:
 
-    Select Shapes.sketchpluginbundle
-      Contents/
-        Sketch/
-          manifest.json
-          Select Circles.cocoascript
-          Select Rectangles.cocoascript
+```
+Select Shapes.sketchpluginbundle
+  Contents/
+    Sketch/
+      manifest.json
+      Select Circles.cocoascript
+      Select Rectangles.cocoascript
+```
 
 if the menu key was missing from the manifest, the resulting menu would look like this:
 
-    Plugins >
-      Select Shapes >
-        Select Circles
-        Select Rectangles
-      --
-      Custom Plugin…
-      Run Last Plugin
-	  etc...
-
-{% endblock %}
+```
+Plugins >
+  Select Shapes >
+    Select Circles
+    Select Rectangles
+  --
+  Custom Plugin…
+  Run Last Plugin
+etc...
+```

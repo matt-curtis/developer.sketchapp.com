@@ -1,14 +1,13 @@
+---
 title: Plugin Bundles
+permalink: /introduction/plugin-bundles/
+---
 
-{% extends "developer.html" %}
-
-{% block body %}
-
-A Plugin is a collection of one or more **scripts**. Each script defines one or more **commands** which extend Sketch in some way. 
+A Plugin is a collection of one or more **scripts**. Each script defines one or more **commands** which extend Sketch in some way.
 
 On disk, a Plugin is represented as a folder with the `.sketchplugin` file extension, containing a number of files and sub-folders.
 
-Strictly speaking, a Plugin is actually an [OS X package](https://developer.apple.com/library/mac/documentation/CoreFoundation/Conceptual/CFBundles/DocumentPackages/DocumentPackages.html#//apple_ref/doc/uid/10000123i-CH106-SW1), arranged as an [OS X bundle](https://developer.apple.com/library/mac/documentation/CoreFoundation/Conceptual/CFBundles/AboutBundles/AboutBundles.html#//apple_ref/doc/uid/10000123i-CH100-SW1). 
+Strictly speaking, a Plugin is actually an [OS X package](https://developer.apple.com/library/mac/documentation/CoreFoundation/Conceptual/CFBundles/DocumentPackages/DocumentPackages.html#//apple_ref/doc/uid/10000123i-CH106-SW1), arranged as an [OS X bundle](https://developer.apple.com/library/mac/documentation/CoreFoundation/Conceptual/CFBundles/AboutBundles/AboutBundles.html#//apple_ref/doc/uid/10000123i-CH100-SW1).
 
 A package is any directory that the Finder presents to the user as if it were a single file (you can use the **Reveal Package Contents** command in the Finder to look inside).
 
@@ -29,27 +28,28 @@ Before we get any further, let’s define a bit of terminology.
 
 ## Plugin Bundle Folder Structure
 
-
 Bundles contain a `manifest.json` file, one or more `.cocoascript` files (containing scripts written in CocoaScript or JavaScript) which implement commands shown in the Plugins menu, and any number of shared library scripts and resource files.
 
 Here’s an example:
 
-    mrwalker.sketchpluginbundle
-      Contents/
-        Sketch/
-          manifest.json
-          shared.js
-          Select Circles.cocoascript
-          Select Rectangles.cocoascript
-        Resources/
-          Screenshot.png
-          Icon.png
+```
+mrwalker.sketchpluginbundle
+  Contents/
+    Sketch/
+      manifest.json
+      shared.js
+      Select Circles.cocoascript
+      Select Rectangles.cocoascript
+    Resources/
+      Screenshot.png
+      Icon.png
+```
 
 The most critical file in all of this is the manifest.json file, which tells Sketch where everything else lives.
 
 ## Manifest
 
-The manifest is a JSON file containing metadata about the Plugin, its commands and resources. 
+The manifest is a JSON file containing metadata about the Plugin, its commands and resources.
 
 It describes such things as the full name, a description, and the name of the author. It lists the names of any commands defined by the Plugin, and tells Sketch what to call the corresponding menu items and which menus to put them in.
 
@@ -57,43 +57,45 @@ Here’s an example:
 
 <a id="manifest-json-example"></a>
 
+```json
+{
+  "name": "Select Shapes",
+  "description": "Plugins to select and deselect shapes",
+  "author": "Joe Bloggs",
+  "homepage": "http://github.com/example/sketchplugins",
+  "version": 1.0,
+  "identifier": "com.example.sketch.shape-plugins",
+  "updateURL": "https://github.com/downloads/example/sketchplugins/sketchplugins.json",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
     {
-      "name": "Select Shapes",
-      "description": "Plugins to select and deselect shapes",
-      "author": "Joe Bloggs",
-      "homepage": "http://github.com/example/sketchplugins",
-      "version": 1.0,
-      "identifier": "com.example.sketch.shape-plugins",
-      "updateURL": "https://github.com/downloads/example/sketchplugins/sketchplugins.json",
-      "compatibleVersion": 3,
-      "bundleVersion": 1,
-      "commands": [
-        {
-          "name": "All",
-          "identifier": "all",
-          "shortcut": "ctrl shift a",
-          "script": "shared.js",
-          "handler": "selectAll"
-        },
-        {
-          "name": "Circles",
-          "identifier": "circles",
-          "script": "Select Circles.js"
-        },
-        {
-          "name": "Rectangles",
-          "identifier": "rectangles",
-          "script": "Select Rectangles.js"
-        }
-      ],
-      "menu": {
-        "items": [
-          "all",
-          "circles",
-          "rectangles"
-        ]
-      }
+      "name": "All",
+      "identifier": "all",
+      "shortcut": "ctrl shift a",
+      "script": "shared.js",
+      "handler": "selectAll"
+    },
+    {
+      "name": "Circles",
+      "identifier": "circles",
+      "script": "Select Circles.js"
+    },
+    {
+      "name": "Rectangles",
+      "identifier": "rectangles",
+      "script": "Select Rectangles.js"
     }
+  ],
+  "menu": {
+    "items": [
+      "all",
+      "circles",
+      "rectangles"
+    ]
+  }
+}
+```
 
 This Plugin is called “Select Shapes”. It defines three commands “All”, “Circles”, and “Rectangles”, which will be placed in a “Select Shapes” menu.
 
@@ -123,10 +125,9 @@ An optional string specifying an online resource for the user to find out more i
 
 A string specifying the [semantic version][Semantic Versioning] for the Plugin, for example `1.0`, `1.1.1`.
 
-
 #### Identifier
 
-A string specifying a unique identifier for the Plugin. 
+A string specifying a unique identifier for the Plugin.
 
 Reverse-domain syntax is strongly encouraged, for example `com.example.sketch.shape-plugins`.
 
@@ -140,10 +141,9 @@ A string specifying the [version][Semantic Versioning] of Sketch in which the au
 
 The version for the layout of the bundle an metadata. If excluded it is assumed the value is 1.
 
-
 #### Commands
 
-An array of commands that the Plugin defines. 
+An array of commands that the Plugin defines.
 
 Each item within the array is a dictionary specifying the name, shortcut and other properties of the command. See [Plugin Commands](#plugin-commands) for more details.
 
@@ -180,14 +180,15 @@ The relative path within the Plugin bundle’s `Sketch` folder for the script th
 
 The name of the function with the script to call this command. The function must take a single `context` parameter, which is a dictionary with keys for things like the current document and selection. If unspecified the command is expected to be `onRun`:
 
-    var onRun = function (context) {
-      var doc = context.document;
-      var selection = context.selection;
-      …
-    }
+```objective-j
+var onRun = function (context) {
+  var doc = context.document;
+  var selection = context.selection;
+  …
+}
+```
 
-
-<a id="plugins-menu"></a> 
+<a id="plugins-menu"></a>
 ## Plugins Menu
 
 When it loads a Plugin, Sketch creates a menu for it, and populates that menu using information from the “menu” dictionary in the manifest file.
@@ -220,48 +221,49 @@ If the the isRoot key is specified, with a value of true, the items will instead
 
 Here’s an example. It defines three commands in a menu called “My Plugin Menu”. The first two items of the menu correspond to two of the Plugin’s commands, but the third item is a submenu called “My Plugin Submenu”. This submenu has a single item in it (the third of the Plugin’s commands):
 
-    menu : {
-      title: "My Plugin Menu",
-      items: [
-        "command1-identifier",
-        "command2-identifier",
-        {
-           title: "My Plugin Submenu",
-           items: [
-             "command3-identifier"
-           ],
-         }
-      ]
-    }
-
-
-
+```json
+{
+  "menu": {
+    "title": "My Plugin Menu",
+    "items": [
+      "command1-identifier",
+      "command2-identifier",
+      {
+         "title": "My Plugin Submenu",
+         "items": [
+           "command3-identifier"
+         ]
+       }
+    ]
+  }
+}
+```
 
 ## Handlers
 
 Plugin commands are implemented by handlers.
 
-These are simply JavaScript functions which live in a `.cocoascript` file in the Plugin bundle, and which take a single parameter containing some context. 
+These are simply JavaScript functions which live in a `.cocoascript` file in the Plugin bundle, and which take a single parameter containing some context.
 
 Here’s a simple example:
 
-    var doMyCommand = function(context) {
-      [[[context document] currentPage] deselectAllLayers];
-    }
+```objective-j
+var doMyCommand = function(context) {
+  [[[context document] currentPage] deselectAllLayers];
+}
+```
 
 In the manifest file, you specify a dictionary describing each command that the Plugin defines.
 
-In this dictionary, *script* and *handler* keys tell Sketch which script file to look in, and which handler to run. 
+In this dictionary, *script* and *handler* keys tell Sketch which script file to look in, and which handler to run.
 
 You are free to put each command implementation into its own script file, or to put them all in a single file.
 
-You must specify the *script* key for each command. 
+You must specify the *script* key for each command.
 
-If you put each command in its own script file, you can omit the *handler* key. In this case, Sketch will default to calling the `onRun` handler. 
+If you put each command in its own script file, you can omit the *handler* key. In this case, Sketch will default to calling the `onRun` handler.
 
 If you put multiple command handlers into the same script file, you need to use the *handler* key for each one, since they can’t all use the `onRun` handler!.
 
 
 [Semantic Versioning]: http://semver.org
-
-{% endblock %}

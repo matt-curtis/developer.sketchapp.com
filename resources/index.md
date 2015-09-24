@@ -1,5 +1,6 @@
 ---
-title: Links
+title: Resources
+permalink: /resources/
 ---
 
 ## JavaScript
