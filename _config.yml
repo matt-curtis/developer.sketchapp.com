@@ -9,7 +9,7 @@ github_repo:  https://github.com/BohemianCoding/developer.sketchapp.com
 highlighter: pygments
 markdown: redcarpet
 redcarpet:
-  extensions: ['smart', 'no_intra_emphasis', 'fenced_code_blocks', 'autolink']
+  extensions: ['smart', 'no_intra_emphasis', 'fenced_code_blocks', 'autolink', 'with_toc_data']
 sass:
   style: compressed
 

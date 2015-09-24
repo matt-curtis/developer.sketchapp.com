@@ -153,7 +153,6 @@ A dictionary describing the menu layout for the commands in this Plugin.
 
 See [Plugins Menu](#plugins-menu) for more details on the contents of this dictionary, and how the menu for each Plugin is built.
 
-<a id="plugin-commands"></a>
 ## Plugin Commands
 
 A Plugin defines one or more commands for the user to execute.
@@ -188,7 +187,6 @@ var onRun = function (context) {
 }
 ```
 
-<a id="plugins-menu"></a>
 ## Plugins Menu
 
 When it loads a Plugin, Sketch creates a menu for it, and populates that menu using information from the “menu” dictionary in the manifest file.
