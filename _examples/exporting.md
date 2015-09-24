@@ -1,5 +1,4 @@
 ---
-layout: page
 title:  "Exporting Examples"
 date: 2015-09-23
 ---

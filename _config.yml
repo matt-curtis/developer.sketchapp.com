@@ -25,6 +25,10 @@ collections:
 # Defaults
 defaults:
   - scope:
+      path: ""
+    values:
+      layout: "page"
+  - scope:
       path: "docs"
       type: "classes"
     values:

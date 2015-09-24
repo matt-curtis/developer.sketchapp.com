@@ -1,6 +1,5 @@
 ---
 title: Plugin Basics
-layout: page
 ---
 
 ## What is a Plugin?
