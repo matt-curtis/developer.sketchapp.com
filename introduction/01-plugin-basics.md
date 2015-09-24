@@ -51,7 +51,7 @@ Any commands that the Plugin provided will be removed from the **Plugins** menu 
 
 By now, probably you’re wondering how to get started writing your own.
 
-Often the best place to start is with some existing examples. With this in mind, we’ve included [Some Example Plugins](../04-resources/01.html) along with this documentation.
+Often the best place to start is with some existing examples. With this in mind, we’ve included [Some Example Plugins]({{site.baseurl}}/resources/#sample-plugins) along with this documentation.
 
 These aren’t intended to actually be massively useful additions to Sketch, but they illustrate how to get a Plugin working, and can be copied to form the basis of something new.
 
