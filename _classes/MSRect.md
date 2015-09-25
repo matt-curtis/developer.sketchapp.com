@@ -7,7 +7,7 @@ rels:
 
 ## Overview
 
-Represents a size and position of a layer on the screen. See [MSLayer]({{site.baseurl}}/docs/MSLayer) for more information
+Represents a size and position of a layer on the screen. See [MSLayer](/docs/MSLayer) for more information
 
 
 ## Methods & Attributes
@@ -51,4 +51,4 @@ Keeps the width and height proportionally the same. the -constrainProportions re
 
 ### GKRect
 
-Returns a [GKRect]({{site.baseurl}}/docs/GKRect) representation of the rectangle
+Returns a [GKRect](/docs/GKRect) representation of the rectangle

@@ -7,7 +7,7 @@ rels:
 
 ## Overview
 
-Stores the guides used on its ruler. [MSPage]({{site.baseurl}}/docs/MSPage) and [MSArtboardGroup]({{site.baseurl}}/docs/MSArtboardGroup) both return their ruler data using `horizontalRulerData` and `verticalRulerData`.
+Stores the guides used on its ruler. [MSPage](/docs/MSPage) and [MSArtboardGroup](/docs/MSArtboardGroup) both return their ruler data using `horizontalRulerData` and `verticalRulerData`.
 
 ## Methods & Attributes
 

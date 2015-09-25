@@ -14,7 +14,7 @@ Each script can contain as many handlers as you need, and each command can be im
 
 So to find out how to make Plugins, you first need to know how to write Sketch scripts.
 
-Teaching you how to write JavaScript code is beyond the scope of these pages, so we’re going to assume that you already know that bit. If not, there are lots of good [learning resources]({{site.baseurl}}/resources/) on the internet!
+Teaching you how to write JavaScript code is beyond the scope of these pages, so we’re going to assume that you already know that bit. If not, there are lots of good [learning resources](/resources/) on the internet!
 
 ## Script Syntax
 
@@ -58,11 +58,11 @@ var onRun = function(context) {
 
 All Plugins in Sketch have access to the following default variables:
 
-- **command**: an [`MSPluginCommand`]({{site.baseurl}}/docs/MSPluginCommand/) object representing the script command currently executing
-- **document**: an [`MSDocument`]({{site.baseurl}}/docs/MSDocument/) object representing the current document
+- **command**: an [`MSPluginCommand`](/docs/MSPluginCommand/) object representing the script command currently executing
+- **document**: an [`MSDocument`](/docs/MSDocument/) object representing the current document
 - **scriptPath**: an `NSString` containing the full path to the currently executing script
 - **scriptURL**: like **scriptPath**, but as an NSURL object
-- **selection**, an `NSArray` of the layer(s) that are selected in the current document; each item of this array is an [`MSLayer`]({{site.baseurl}}/docs/MSLayer/) object
+- **selection**, an `NSArray` of the layer(s) that are selected in the current document; each item of this array is an [`MSLayer`](/docs/MSLayer/) object
 
 
 ## Trying Out Scripts
@@ -79,7 +79,7 @@ You can use this interface to explore and experiment.
 
 Once you have a script that you want to develop into a proper Plugin, you can use the **Save…** button in the **Run Custom Script…** sheet.
 
-This will create a Plugin folder (known as a [Plugin Bundle]({{site.baseurl}}/introduction/plugin-bundles/)) and save your script into it.
+This will create a Plugin folder (known as a [Plugin Bundle](/introduction/plugin-bundles/)) and save your script into it.
 
 The resulting Plugin will have a single command and a single script file. Executing the command will call the `onRun` function in the script, which will contain the code you entered.
 
@@ -89,4 +89,4 @@ You can add more code to your `onRun` function, add more functions, and even mor
 
 By editing the `manifest.json` file in the Plugin folder, you can customise the name of the command, enter a description, and even expand the Plugin to define multiple commands.
 
-For more information on this, see [Plugin Bundles]({{site.baseurl}}/introduction/plugin-bundles/).
+For more information on this, see [Plugin Bundles](/introduction/plugin-bundles/).

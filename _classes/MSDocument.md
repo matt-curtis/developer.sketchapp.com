@@ -30,15 +30,15 @@ if (currentDocSelection.count() == anotherDocSelection.count()) {
 }
 ```
 
-See also [MSContentDrawView]({{site.baseurl}}/docs/MSContentDrawView) if you need more precise zooming control.
+See also [MSContentDrawView](/docs/MSContentDrawView) if you need more precise zooming control.
 
 ### currentPage:
 
-Returns an [MSPage]({{site.baseurl}}/docs/MSPage/) object, representing the current page.
+Returns an [MSPage](/docs/MSPage/) object, representing the current page.
 
 ### findCurrentArtboardGroup:
 
-Returns an [MSArtboardGroup]({{site.baseurl}}/docs/MSArtboardGroup/) object, representing the current Artboard.
+Returns an [MSArtboardGroup](/docs/MSArtboardGroup/) object, representing the current Artboard.
 
 ### export:
 
@@ -50,7 +50,7 @@ Pas a string to be displayed at the top of the canvas momentarily. The same meth
 
 ### artboards
 
-Both return an array representing the artboards and slices on the current page. Artboards are of type [MSArtboardGroup]({{site.baseurl}}/docs/MSArtboardGroup) and slices are of [MSSliceLayer]({{site.baseurl}}/docs/MSSliceLayer) type.
+Both return an array representing the artboards and slices on the current page. Artboards are of type [MSArtboardGroup](/docs/MSArtboardGroup) and slices are of [MSSliceLayer](/docs/MSSliceLayer) type.
 
 ### children
 
@@ -58,7 +58,7 @@ Returns an array containing all layers (including slices and artboards) on the c
 
 ### pages
 
-Returns an array of all pages in the document. Each page is an [MSPage]({{site.baseurl}}/docs/MSPage) object.
+Returns an array of all pages in the document. Each page is an [MSPage](/docs/MSPage) object.
 
 ### askForUserInput:initialValue:
 
@@ -71,7 +71,7 @@ The first argument is a GKRect, MSSliceLayer or MSArtboardGroup and the image ge
 
 ### currentView:
 
-Returns an [MSContentDrawView]({{site.baseurl}}/docs/MSContentDrawView) subclass that represents the visible Canvas.
+Returns an [MSContentDrawView](/docs/MSContentDrawView) subclass that represents the visible Canvas.
 
 ### toolbar:
 
@@ -120,11 +120,11 @@ MSPDFBookExporter.exportPages(pageArray)
 
 ### addBlankPage
 
-Adds a new [MSPage]({{site.baseurl}}/docs/MSPage/) object to the document, inserting it below the current page, copying its grid and ruler position too.
+Adds a new [MSPage](/docs/MSPage/) object to the document, inserting it below the current page, copying its grid and ruler position too.
 
 ### removePage:(MSPage)page
 
-Removes the given page from the document. The argument is an [MSPage]({{site.baseurl}}/docs/MSPage) object.
+Removes the given page from the document. The argument is an [MSPage](/docs/MSPage) object.
 
 ### addLayer:(MSLayer)layer
 

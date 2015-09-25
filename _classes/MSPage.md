@@ -9,16 +9,20 @@ inherits:
 
 ## Overview
 
-MSPage is a subclass of [MSLayerGroup]({{site.baseurl}}/docs/MSLayerGroup/) that represents a page of the document.
+MSPage is a subclass of [MSLayerGroup](/docs/MSLayerGroup/) that represents a page of the document.
 The `frame` parameter of an MSPage is not useful as its not guaranteed to contain all layers on the page.
 
 Hoever do check out MSLayerGroup as there are useful methods in there as well.
 
 ## Methods & Attributes
 
+### currentArtboard:
+
+Returns the currently active [MSArtboardGroup](/docs/MSArtboardGroup/)
+
 ### contentBounds
 
-If you want a rectangle around everything on the canvas, use this. It returns a [GKRect]({{site.baseurl}}/docs/GKRect) object that you can use to export from.
+If you want a rectangle around everything on the canvas, use this. It returns a [GKRect](/docs/GKRect) object that you can use to export from.
 
 ### exportableLayers
 
@@ -30,7 +34,7 @@ Returns a readonly array of all artboards on the page. If you want to add a new 
 
 ### addLayer
 
-Adds an [MSLayer]({{site.baseurl}}/docs/MSLayer) to the page. For example, if you want to add an 800x600 artboard to the current page, you'd do this:
+Adds an [MSLayer](/docs/MSLayer) to the page. For example, if you want to add an 800x600 artboard to the current page, you'd do this:
 
 ```objective-j
 var artboard = [MSArtboardGroup new]
@@ -66,4 +70,4 @@ newPage.setName([page name] + " Copy") // Or anything you like
 
 ### horizontalRulerData / verticalRulerData
 
-Both return the [MSRulerData]({{site.baseurl}}/docs/MSRulerData) object used to store rulers for their respective axes. Note that this data is only used if there’s no artboard on the page ([MSArtboardGroup]({{site.baseurl}}/docs/MSArtboardGroup) has similar methods for itself).
+Both return the [MSRulerData](/docs/MSRulerData) object used to store rulers for their respective axes. Note that this data is only used if there’s no artboard on the page ([MSArtboardGroup](/docs/MSArtboardGroup) has similar methods for itself).

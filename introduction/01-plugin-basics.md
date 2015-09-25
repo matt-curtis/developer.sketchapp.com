@@ -22,7 +22,7 @@ When Sketch starts up, it scans a folder on your disk looking for Plugins.
 
 You can access this Plugins folder easily by using the **Reveal Plugins Folder…** menu option from Sketch:
 
-![]({{site.baseurl}}/images/developer/menu-plugins-reveal.png)
+![](/images/developer/menu-plugins-reveal.png)
 
 
 Exactly where this folder actually lives depends on whether you bought Sketch from the App Store, or from our website:
@@ -51,10 +51,10 @@ Any commands that the Plugin provided will be removed from the **Plugins** menu 
 
 By now, probably you’re wondering how to get started writing your own.
 
-Often the best place to start is with some existing examples. With this in mind, we’ve included [Some Example Plugins]({{site.baseurl}}/resources/#sample-plugins) along with this documentation.
+Often the best place to start is with some existing examples. With this in mind, we’ve included [Some Example Plugins](/resources/#sample-plugins) along with this documentation.
 
 These aren’t intended to actually be massively useful additions to Sketch, but they illustrate how to get a Plugin working, and can be copied to form the basis of something new.
 
-The [Resources]({{site.baseurl}}/resources/) page also lists a number of good places to find other Plugins.
+The [Resources](/resources/) page also lists a number of good places to find other Plugins.
 
 When you feel ready to dive in and make something of your own, more information can be found in [Plugin Scripts](plugin-scripts).

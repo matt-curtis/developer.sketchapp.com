@@ -55,7 +55,7 @@ log(choice)
 
 This is what it looks like when running:
 
-![]({{site.baseurl}}/images/developer/select.png)
+![](/images/developer/select.png)
 
 ## Feedback
 
@@ -79,6 +79,6 @@ app.displayDialog_withTitle("The operation is complete", "We’re done")
 
 and you’ll get a dialog like this:
 
-![]({{site.baseurl}}/images/developer/alert.png)
+![](/images/developer/alert.png)
 
-If you want to use feedback for debugging purposes, we recommend you to take a look at the [Debugging]({{site.baseurl}}/examples/debugging/) section.
+If you want to use feedback for debugging purposes, we recommend you to take a look at the [Debugging](/examples/debugging/) section.

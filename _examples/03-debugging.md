@@ -18,7 +18,7 @@ log("The value of count is:" + count)
 
 To see the output of the `log()` function, you need to open Console.app:
 
-![]({{site.baseurl}}/images/developer/console.png)
+![](/images/developer/console.png)
 
 where you’ll see:
 
@@ -34,7 +34,7 @@ Once you start debugging more complex plugins, you’ll probably want to filter 
 
 If you want to create a permanent filter, click **File › New System Log Query…** and fill the window with these values:
 
-![]({{site.baseurl}}/images/developer/console-query.png)
+![](/images/developer/console-query.png)
 
 Then click 'Ok', and you’ll have a new section called 'Sketch' on the 'System Log Queries' at the left column.
 
@@ -48,6 +48,6 @@ $ tail -f /var/log/system.log|grep Sketch
 
 Sometimes, when debugging Plugins, you may want to check the output of a command without having to switch to another app. For those cases, you have two options:
 
-1. You can use one of the techniques discussed in [User Input & Feedback]({{site.baseurl}}/examples/user-interaction/) (`alert`, `[doc showMessage]` or Cocoa dialogs), or
+1. You can use one of the techniques discussed in [User Input & Feedback](/examples/user-interaction/) (`alert`, `[doc showMessage]` or Cocoa dialogs), or
 2. There are some excellent Sketch plugins which improve the plugin development process. For example, try [sketch devtool](https://github.com/turbobabr/sketch-devtools), which includes a persistent log panel you can see without leaving Sketch.
 3. Consider using text-to-speech to output information that you can hear. The plugin [Sketch Speaker](https://github.com/marcosvidal/sketch-speaker ) illustrates this technique. They use it for the actual command implementation, but there's nothing to stop you using a similar approach for debugging.

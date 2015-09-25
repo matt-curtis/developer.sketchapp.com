@@ -54,7 +54,7 @@ var openPanel = [NSOpenPanel openPanel]
 [openPanel runModal]
 ```
 
-If you need more information about Cocoa, check the [Resources]({{site.baseurl}}/resources/) section.
+If you need more information about Cocoa, check the [Resources](/resources/) section.
 
 ## Other CocoaScript Syntax Notes
 

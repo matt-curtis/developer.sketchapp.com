@@ -16,11 +16,11 @@ MSLayer is the base class that represents a layer object.
 
 ### frame (readonly)
 
-An instance of [MSRect]({{site.baseurl}}/docs/MSRect). Determines size and position on the canvas
+An instance of [MSRect](/docs/MSRect). Determines size and position on the canvas
 
 ### style (readonly)
 
-An instance of [MSStyle]({{site.baseurl}}/docs/MSStyle). Determines all style-related attributes such as Borders, Fills, Shadows and more
+An instance of [MSStyle](/docs/MSStyle). Determines all style-related attributes such as Borders, Fills, Shadows and more
 
 ### name / setName
 
@@ -73,7 +73,7 @@ Flips the layer horizontally or vertically.
 
 ### parentGroup
 
-Returns the parent group of this layer. Note that this can return an [MSPage]({{site.baseurl}}/docs/MSPage) or [MSArtboardGroup]({{site.baseurl}}/docs/MSArtboardGroup) as well as an [MSLayerGroup]({{site.baseurl}}/docs/MSLayerGroup)
+Returns the parent group of this layer. Note that this can return an [MSPage](/docs/MSPage) or [MSArtboardGroup](/docs/MSArtboardGroup) as well as an [MSLayerGroup](/docs/MSLayerGroup)
 
 ### isSelected / setIsSelected
 
@@ -85,7 +85,7 @@ Check the [Working with Selections](../02-common-tasks/02.html) section for some
 
 ### absoluteRect (readonly)
 
-Returns a [GKRect]({{site.baseurl}}/docs/GKRect) object that returns the bounds of this layer in absolute coordinates; it takes into account the layer’s rotation and that of any of its parents.
+Returns a [GKRect](/docs/GKRect) object that returns the bounds of this layer in absolute coordinates; it takes into account the layer’s rotation and that of any of its parents.
 
 ### duplicate
 

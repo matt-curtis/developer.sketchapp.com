@@ -34,10 +34,10 @@ If you want to learn how to do that, you’ve come to the right place.
 
 We’ve divided the contents into four parts:
 
-1. **[Introduction]({{site.baseurl}}/introduction/)**, which is a general overview of the scripting features in Sketch.
-2. **[Code Examples]({{site.baseurl}}/examples/)**, which will take you on a tour of all the different things you can do with Plugins.
-3. **[Reference]({{site.baseurl}}/reference/)**, which is a detailed list of all classes and methods, with relevant examples for each item.
-4. **[Resources]({{site.baseurl}}/resources/)**, with links and pointers to resources you may find useful as a plugin developer.
+1. **[Introduction](/introduction/)**, which is a general overview of the scripting features in Sketch.
+2. **[Code Examples](/examples/)**, which will take you on a tour of all the different things you can do with Plugins.
+3. **[Reference](/reference/)**, which is a detailed list of all classes and methods, with relevant examples for each item.
+4. **[Resources](/resources/)**, with links and pointers to resources you may find useful as a plugin developer.
 
 ## Help us improve!
 

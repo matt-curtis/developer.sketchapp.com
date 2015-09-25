@@ -6,7 +6,7 @@ permalink: /examples/sharing-code/
 
 ## Sharing Code Between Commands
 
-With the new [plugin bundle format]({{site.baseurl}}/introduction/plugin-bundles/), you have a way to group similar commands together into a single package which users can install.
+With the new [plugin bundle format](/introduction/plugin-bundles/), you have a way to group similar commands together into a single package which users can install.
 
 Once your collection of commands starts growing, you’ll probably want to split them up into separate script files, and reuse functions between some of them.
 

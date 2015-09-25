@@ -352,7 +352,7 @@ pre code {
 	width: 1.75rem; /*28px*/
 	height: 2.0625rem; /*33px*/
 	margin-right: .375rem; /*6px*/
-	background: url({{site.baseurl}}/images/logo-bohemian.png) no-repeat left top;
+	background: url(/images/logo-bohemian.png) no-repeat left top;
 	background-size: 100%;
 	vertical-align: text-top;
 	position: relative;
@@ -366,7 +366,7 @@ pre code {
 (min-resolution: 144dpi),
 (min-resolution: 1.5dppx) {
 	[role="banner"] {
-		background-image: url({{site.baseurl}}/images/logo-bohemian@2x.png)
+		background-image: url(/images/logo-bohemian@2x.png)
 	}
 }
 
@@ -585,7 +585,7 @@ section .section-header {
 	input[type=search] {
 		border: none;
 		padding: 0.3rem 1rem;
-		background: #eee url({{site.baseurl}}/images/icons/loupe.svg) 0.5rem center no-repeat;
+		background: #eee url(/images/icons/loupe.svg) 0.5rem center no-repeat;
 		display: block;
 		width: 100%;
 		box-sizing: border-box;
@@ -597,7 +597,7 @@ section .section-header {
 	}
 	input:focus {
 		text-align: left;
-		background: #fff url({{site.baseurl}}/images/icons/loupe.svg) -2rem center no-repeat;
+		background: #fff url(/images/icons/loupe.svg) -2rem center no-repeat;
 	}
 }
 
@@ -992,7 +992,7 @@ section .section-header {
 }
 
 .file-online {
-	background: transparent url({{site.baseurl}}/images/learn/download.svg) center center no-repeat;
+	background: transparent url(/images/learn/download.svg) center center no-repeat;
 	float: right;
 	height: 31px;
 	width: 31px;
@@ -1036,7 +1036,7 @@ section .section-header {
 	li:before {
 		content: '';
 		float: left;
-		background-image: url('{{site.baseurl}}/images/jobs/check.svg');
+		background-image: url('/images/jobs/check.svg');
 		width: 20px;
 		height: 20px;
 		background-size:contain;
@@ -1455,7 +1455,7 @@ section .section-header {
 }
 
 body.sketch {
-	background-image: url("{{site.baseurl}}/images/home/bg.svg");
+	background-image: url("/images/home/bg.svg");
 	background-position: top center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -1469,7 +1469,7 @@ body.sketch {
 		background-attachment: scroll;
 	}
 	section.first {
-		background: transparent url({{site.baseurl}}/images/home/rainbow.svg) center bottom no-repeat;
+		background: transparent url(/images/home/rainbow.svg) center bottom no-repeat;
 		padding-bottom: 200px;
 	}
 	.rainbow {

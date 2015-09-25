@@ -7,7 +7,7 @@ rels:
 
 ## Overview
 
-MSLayerGroup represents a group in the document, but is an [MSLayer]({{site.baseurl}}/docs/MSLayer) itself. Two important subclasses of MSLayerGroup are [MSArtboardGroup]({{site.baseurl}}/docs/MSArtboardGroup) and [MSPage]({{site.baseurl}}/docs/MSPage).
+MSLayerGroup represents a group in the document, but is an [MSLayer](/docs/MSLayer) itself. Two important subclasses of MSLayerGroup are [MSArtboardGroup](/docs/MSArtboardGroup) and [MSPage](/docs/MSPage).
 
 ## Methods & Attributes
 

@@ -28,7 +28,7 @@ A color fill (0) or a gradient (1). Other values make no sense and can lead to u
 
 ### gradient
 
-An [MSGradient]({{site.baseurl}}/docs/MSGradient) object that will only be used if the `fillType` is set to a gradient.
+An [MSGradient](/docs/MSGradient) object that will only be used if the `fillType` is set to a gradient.
 
 ### isEnabled
 
