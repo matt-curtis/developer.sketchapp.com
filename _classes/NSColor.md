@@ -2,11 +2,13 @@
 title: NSColor
 date: 2015-09-23
 author: Ale Muñoz
+rels:
+  - MSColor
 ---
 
 ## Overview
 
-Sketch uses NSColor instances to represent colors internally. On top of the default [NSColor methods](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSColor_Class/), Sketch adds the following methods:
+Sketch uses [MSColor]({{site.baseurl}}/docs/MSColor/) instances to represent colors internally, but NSColor is used in some places. On top of the default [NSColor methods](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSColor_Class/), Sketch adds the following methods:
 
 ## Methods & Attributes
 
@@ -30,7 +32,7 @@ var grayColor = NSColor.colorWithGray_alpha(0.5, 0.2)
 
 Used to compare two NSColor instances. Returns `1` if both instances are similar (i.e: their color components differ by less than 0.001), `0` otherwise.
 
-```objective-j
+```JavaScript
 var grayOne = NSColor.colorWithGray(0.8)
 var grayTwo = NSColor.colorWithGray(0.8001)
 

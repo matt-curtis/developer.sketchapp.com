@@ -1,7 +1,7 @@
 ---
 title: GKRect
-date: 2015-09-22
-author: Ale Muñoz
+date: 2015-09-25
+author: Pieter Omvlee
 rels:
   - MSRect
   - MSLayer
@@ -11,7 +11,7 @@ rels:
 
 GKRect is nowadays mostly unused in the app, but there are a few places where it can still be set. Using the plain NSRect struct from Foundation is preferred; many objects will have a setRect method which accepts an NSRect, not a GKRect.
 
-GKRect is a lightweight rectangle object that is used in some places in Sketch. It has many of the same methods as [MSRect]({{site.baseurl}}/docs/MSRect) but they cannot be used interchangeably.
+GKRect is a lightweight rectangle object that is used in some places in Sketch. It has many of the same methods as [MSRect]({{site.baseurl}}/docs/MSRect/) but they cannot be used interchangeably.
 
 
 ## Methods & Attributes

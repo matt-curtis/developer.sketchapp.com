@@ -1,32 +1,48 @@
 ---
 title: MSDocument
+date: 2015-09-25
+author: Ale Muñoz
 rels:
   - MSContentDrawView
 ---
 
 ## Overview
 
-MSDocument represents the current document and can be accessed using the `doc` variable defined by the preamble.
+MSDocument represents a document object. The current document can be accessed using the `context.document` variable defined by the preamble.
 
 ## Methods & Attributes
 
-### setZoomValue
+### MSDocument.currentDocument()
 
-Zoom the document. 1.0 represents actual size, 2.0 means 200% etc.
+Returns the current document. It is equivalent to `context.document`.
 
-```objective-j
-[doc setZoomValue:2.0] // Sets the zoom level to 200%
+### selectedLayers()
+
+Returns an NSArray of selected layers in the document. To get the selection in the current document, it's easier to just use `context.selection`, but if you need to work with selected layers in multiple documents, `selectedLayers` is the way to go:
+
+```JavaScript
+// Assume currentDoc and anotherDoc are defined elsewhere
+var currentDocSelection = currentDoc.selectedLayers()
+var anotherDocSelection = anotherDoc.selectedLayers()
+
+if (currentDocSelection.count() == anotherDocSelection.count()) {
+  // Do something if the number of selected layers on each doc is the same
+}
 ```
 
 See also [MSContentDrawView]({{site.baseurl}}/docs/MSContentDrawView) if you need more precise zooming control.
 
+### currentPage:
+
+Returns an [MSPage]({{site.baseurl}}/docs/MSPage/) object, representing the current page.
+
+### findCurrentArtboardGroup:
+
+Returns an [MSArtboardGroup]({{site.baseurl}}/docs/MSArtboardGroup/) object, representing the current Artboard.
+
 ### export:
 
 Takes you to the the export tool. Pass nil as the argument.
-
-### exportPDFBook:
-
-A nice method not exposed in the UI at the moment; exports each slice on each page to a multi-page PDF file. Pass nil as the argument.
 
 ### showMessage:
 
@@ -53,22 +69,67 @@ Asks for user input and returns the value they chosen. The first argument is the
 Saves an area of the canvas to an image file.
 The first argument is a GKRect, MSSliceLayer or MSArtboardGroup and the image gets written to the file specified in the second argument. The file format is derived from the extension.
 
-### currentView
+### currentView:
 
 Returns an [MSContentDrawView]({{site.baseurl}}/docs/MSContentDrawView) subclass that represents the visible Canvas.
 
+### toolbar:
+
+Returns an MSToolbar object.
+
+### scrollOrigin:
+
+Returns an NSPoint with the current page's scroll origin.
+
+### setScrollOrigin:(NSPoint)origin
+
+Sets the scroll origin of the current page.
+
+### zoomValue:
+
+Returns a CGFloat representing the document's zoom value (1.0 = 100%, 2.0 = 200%, etc…)
+
+### setZoomValue:(CGFloat)zoomValue
+
+Zoom the document to the specified zoomValue.
+
+```JavaScript
+context.document.setZoomValue(2.0) // Sets the zoom level to 200%
+```
+
+### selectedLayersOfClass:(Class)className
+
+Returns an NSArray of selected layers of class `className`:
+
+```JavaScript
+// Get all bitmap layers in the selection
+context.document.selectedLayersOfClass(MSBitmapLayer)
+```
+
+### allExportableLayers:
+
+Returns an NSArray of all the exportable layers in the document (this includes slices and layers & Artboards set to export).
+
+### exportPDFBook:
+
+Equivalent to the File › Export Artboards as PDF menu item. Exports a multipage PDF, with a page for each artboard in all pages. Requires a `nil` argument. If you want to export just some pages, you can use:
+
+```JavaScript
+MSPDFBookExporter.exportPages(pageArray)
+```
+
 ### addBlankPage
 
-Adds a new [MSPage]({{site.baseurl}}/docs/MSPage) object to the document, inserting it below the current page, copying its grid and ruler position too.
+Adds a new [MSPage]({{site.baseurl}}/docs/MSPage/) object to the document, inserting it below the current page, copying its grid and ruler position too.
 
-Available as of beta 184 / version 2.2.5
-
-### removePage:
+### removePage:(MSPage)page
 
 Removes the given page from the document. The argument is an [MSPage]({{site.baseurl}}/docs/MSPage) object.
 
-Available as of beta 184 / version 2.2.5
+### addLayer:(MSLayer)layer
 
-### allExportableLayers
+Adds `layer` to the document.
 
-Returns an array of all exportable layers in the document.
+### close()
+
+Closes the document immediately, without asking for user confirmation. Keep in mind that all unsaved changes will be lost!
