@@ -13,6 +13,11 @@ Since Sketch 2.2, an Artboard is just special kind of layer.
 
 ## Methods & Attributes
 
+### setName:(NSString)name
+
+Sets the name of the Artboard.
+
+
 ### frame
 
 An [MSRect]({{site.baseurl}}/docs/MSRect) which determines its position in the canvas.
@@ -31,8 +36,8 @@ Both return the [MSRulerData]({{site.baseurl}}/docs/MSRulerData) object used to 
 
 To export an artboard you can use something like the following code:
 
-```objective-j
-var doc = context.document;
-var artboard = [[[doc currentPage] artboards] firstObject];
-[doc saveArtboardOrSlice:artboard toFile:"~/desktop/test.png"];
+```JavaScript
+var doc = context.document
+var artboard = doc.currentPage().artboards().firstObject()
+doc.saveArtboardOrSlice_toFile(artboard,"~/desktop/test.png")
 ```
