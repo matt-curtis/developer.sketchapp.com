@@ -100,3 +100,15 @@ log(whiteColor.isBlack()) // 0
 log(blackColor.isWhite()) // 0
 log(blackColor.isBlack()) // 1
 ```
+
+### colorWithAlpha:(CGFloat)alpha
+
+Returns an MSColor instance, with its alpha set to `alpha`:
+
+```JavaScript
+var blackColor = MSColor.colorWithNSColor(NSColor.colorWithGray(0.0))
+var alphaBlack = blackColor.colorWithAlpha(0.5)
+
+log(blackColor.stringValueWithAlpha(true)) // #000000
+log(alphaBlack.stringValueWithAlpha(true)) // rgba(0,0,0,0.50)
+```
