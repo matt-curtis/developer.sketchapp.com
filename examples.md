@@ -9,6 +9,6 @@ Sometimes the best way of learning how to do something is reading about it. So h
 
 <ul>
 {% for example in site.examples %}
-  <li><a href="{{site.baseurl}}{{example.url}}">{{example.title}}</a></li>
+  <li><a href="{{site.baseurl}}{{example.url}}">{{example.title}}</a> {{example.summary}}</li>
 {% endfor %}
 </ul>
