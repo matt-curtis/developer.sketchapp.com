@@ -4,7 +4,7 @@ inherits:
   - MSLayer
 rels:
   - MSRect
-  - MSSliceLayer
+  - MSArtboardGroup
 ---
 
 ## Overview
@@ -15,10 +15,10 @@ MSSliceLayer has —like MSLayer— a `frame` property that is an [MSRect](/docs
 
 To export a slice you can use something like the following code:
 
-```objective-j
+```JavaScript
 var doc = context.document
-var slice = [[[doc currentPage] slices] firstObject]
-[doc saveArtboardOrSlice:slice toFile:"~/desktop/test.png"]
+var slice = doc.currentPage().slices().firstObject()
+doc.saveArtboardOrSlice_toFile(slice,"~/desktop/test.png")
 ```
 
 (See the [Exporting](/examples/exporting) section for more advanced examples.)
