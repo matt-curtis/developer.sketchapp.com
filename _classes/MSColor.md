@@ -6,6 +6,8 @@ author: Ale Muñoz
 
 ## Overview
 
+MSColor is used to represent color instances internally.
+
 ## Methods & Attributes
 
 ### whiteColor:
@@ -27,6 +29,10 @@ Returns `1` is both color instances are equal, `0` otherwise.
 ### colorWithNSColor:(NSColor)color
 
 Creates an MSColor instance from an [NSColor]({{site.baseurl}}/docs/NSColor/)
+
+```JavaScript
+var blackColor = MSColor.colorWithNSColor(NSColor.colorWithGray(0.0))
+```
 
 ### hexValue:
 
