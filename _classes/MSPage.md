@@ -20,15 +20,15 @@ Hoever do check out MSLayerGroup as there are useful methods in there as well.
 
 Returns the currently active [MSArtboardGroup](/docs/MSArtboardGroup/)
 
-### contentBounds
+### contentBounds:
 
 If you want a rectangle around everything on the canvas, use this. It returns a [GKRect](/docs/GKRect) object that you can use to export from.
 
-### exportableLayers
+### exportableLayers:
 
 Returns an array of all exportable layers in the page. To get an array of just the artboards, use:
 
-### artboards
+### artboards:
 
 Returns a readonly array of all artboards on the page. If you want to add a new artboard to a page, use the `addLayer` method.
 
@@ -71,3 +71,15 @@ newPage.setName([page name] + " Copy") // Or anything you like
 ### horizontalRulerData / verticalRulerData
 
 Both return the [MSRulerData](/docs/MSRulerData) object used to store rulers for their respective axes. Note that this data is only used if there’s no artboard on the page ([MSArtboardGroup](/docs/MSArtboardGroup) has similar methods for itself).
+
+### selectedLayers:
+
+Returns an NSArray of the selected layers in a page.
+
+### deselectAllLayers:
+
+Deselects all the layers in the page.
+
+### name:, setName:(string)name
+
+Get / set the name for a page.

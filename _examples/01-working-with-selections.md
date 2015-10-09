@@ -45,7 +45,7 @@ while (item = loop.nextObject()) {
 
 ## Clearing the selection
 
-You’ll probably want to clear the selected items in some plugins. The way to do that is to run `[page deselectAllLayers]`. For this, you need access to the document, which is another value given to you in the context.
+You’ll probably want to clear the selected items in some plugins. The way to do that is to run `page.deselectAllLayers()`. For this, you need access to the document, which is another value given to you in the context.
 
 For example, to unselect everything on the current page, you’d do this:
 
