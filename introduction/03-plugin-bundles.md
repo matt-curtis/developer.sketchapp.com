@@ -145,6 +145,11 @@ The version for the layout of the bundle an metadata. If excluded it is assumed 
 
 This is an advanced setting, and it defaults to `false`. When set to `true`, it will disable CocoaScript's own preprocessor. This way, you'll be able to use build systems like browserify or ES6 module syntax to develop your plugins.
 
+Setting this option to `true` does the following:
+
+- disables `@import` support, you'll have to take care of your imports manually
+- disables bracket syntax (i.e: `[obj msg:]`), you'll have to use dot-syntax only
+
 #### Commands
 
 An array of commands that the Plugin defines.
