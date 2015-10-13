@@ -2,6 +2,7 @@
 title: MSPluginBundle
 rels:
   - MSPluginCommand
+  - AppController
 ---
 
 ## Overview
