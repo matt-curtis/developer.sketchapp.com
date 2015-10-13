@@ -25,17 +25,17 @@ Zooms in by 2x or out by the same amount.
 
 For example, if your document is currently displayed at a 100% zoom, this will set the zoom to 200%:
 
-```objective-j
-var view = [[context document] currentView]
-[view zoomIn]
+```javascript
+var view = context.document.currentView()
+view.zoomIn()
 ```
 
 ### actualSize:
 
 Zooms back to 100%.
 
-```objective-j
-[view actualSize]
+```javascript
+view.actualSize()
 ```
 
 ### centerRect:NSRect
@@ -44,10 +44,10 @@ Centers an arbitrary NSRect in the canvas.
 
 To center the view on the selected object (equivalent to hitting the <kbd>⌘3</kbd> shortcut):
 
-```objective-j
+```javascript
 var selected_object = context.selection[0],
-    view = [[context document] currentView]
-[view centerRect:[selected_object rect]]
+    view = context.document.currentView()
+view.centerRect(selected_object.rect())
 ```
 
 ### zoomToFitRect:NSRect
@@ -56,10 +56,10 @@ Zooms the canvas in or out and scrolls to fit supplied NSRect argument in the vi
 
 As an example, if you want to fit the view to the selected object, you’d do:
 
-```objective-j
+```javascript
 var selected_object = context.selection[0],
-    view = [[context document] currentView]
-[view zoomToFitRect:[selected_object rect]]
+    view = context.document.currentView()
+view.zoomToFitRect(selected_object.rect())
 ```
 
 ### refresh:

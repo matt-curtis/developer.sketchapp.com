@@ -32,14 +32,14 @@ Returns `true` if the layer is visible, and `false` if it is hidden.
 
 To **hide** a layer, do:
 
-```objective-j
-[layer setIsVisible:false]
+```javascript
+layer.setIsVisible(false)
 ```
 
 If you want to toggle a layer’s visibility, do:
 
-```objective-j
-[layer setIsVisible:![layer isVisible]]
+```javascript
+layer.setIsVisible(!layer.isVisible())
 ```
 
 
@@ -49,14 +49,14 @@ Returns `true` if the layer is locked, and `false` if it isn’t locked.
 
 To **lock** a layer, do:
 
-```objective-j
-[layer setIsLocked:true]
+```javascript
+layer.setIsLocked(true)
 ```
 
 If you want to toggle a layer’s lock status, do:
 
-```objective-j
-[layer setIsLocked:![layer isLocked]]
+```javascript
+layer.setIsLocked(!layer.isLocked())
 ```
 
 ### rotation / setRotation
@@ -67,8 +67,8 @@ An integer denoting the rotation of the layer - in degrees. Rotation happens cou
 
 Flips the layer horizontally or vertically.
 
-```objective-j
-[layer isFlippedHorizontal]
+```javascript
+layer.isFlippedHorizontal()
 ```
 
 ### parentGroup

@@ -28,19 +28,6 @@ For each axis the minimum, middle and maximum of the rectangle. All floats
 
 All point structures, representing a corner each
 
-### expandBy:(CGFloat);
-
-Make the rectangle smaller or larger by adding to each side, or scale the rectangle.
-
-For example, to add 2 pixels around a rectangle, do this (assuming you have a rectangle selected on the canvas):
-
-```objective-j
-var rectangle = context.selection[0],
-    frame = [rectangle absoluteRect]
-
-[frame expandBy:2]
-```
-
 ### constrainProportions
 
 ### calculateProportions

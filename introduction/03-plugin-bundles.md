@@ -188,7 +188,7 @@ The relative path within the Plugin bundle’s `Sketch` folder for the script th
 
 The name of the function with the script to call this command. The function must take a single `context` parameter, which is a dictionary with keys for things like the current document and selection. If unspecified the command is expected to be `onRun`:
 
-```objective-j
+```javascript
 var onRun = function (context) {
   var doc = context.document;
   var selection = context.selection;
@@ -254,9 +254,9 @@ These are simply JavaScript functions which live in a `.cocoascript` file in the
 
 Here’s a simple example:
 
-```objective-j
+```javascript
 var doMyCommand = function(context) {
-  [[[context document] currentPage] deselectAllLayers];
+  context.document.currentPage().deselectAllLayers();
 }
 ```
 

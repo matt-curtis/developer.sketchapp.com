@@ -16,7 +16,7 @@ Sketch uses [MSColor](/docs/MSColor/) instances to represent colors internally, 
 
 Creates a new color with a gray component (0 is black, 1 is white):
 
-```objective-j
+```javascript
 var grayColor = NSColor.colorWithGray(0.5)
 ```
 
@@ -24,7 +24,7 @@ var grayColor = NSColor.colorWithGray(0.5)
 
 Creates a new color with a gray component, with alpha:
 
-```objective-j
+```javascript
 var grayColor = NSColor.colorWithGray_alpha(0.5, 0.2)
 ```
 
@@ -43,7 +43,7 @@ log(grayOne.fuzzyIsEqual(grayTwo)) // 1
 
 Returns `1` if the color is white (or close enough), `0` otherwise.
 
-```objective-j
+```javascript
 var whiteColor = NSColor.colorWithGray(1.0)
 var blackColor = NSColor.colorWithGray(0.0)
 

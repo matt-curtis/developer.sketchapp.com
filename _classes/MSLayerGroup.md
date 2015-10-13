@@ -37,8 +37,8 @@ Adds a completely new layer to the group, at the group’s {0,0} origin. This me
 
 This method returns the new layer which you can then manipulate/style using the other scripting methods.
 
-```objective-j
+```javascript
 var group = context.selection[0]
-var new_layer = [group addLayerOfType:"rectangle"]
+var new_layer = group.addLayerOfType("rectangle")
 log(new_layer) // <MSShapeGroup: 0x7ff3f2c42790> Rectangle (C008AC08-FB43-42E9-9267-81E9F348AF42)
 ```

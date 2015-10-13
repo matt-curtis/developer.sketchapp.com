@@ -32,18 +32,18 @@ Returns an array of all exportable layers in the page. To get an array of just t
 
 Returns a readonly array of all artboards on the page. If you want to add a new artboard to a page, use the `addLayer` method.
 
-### addLayer
+### addLayers:(NSArray)array
 
-Adds an [MSLayer](/docs/MSLayer) to the page. For example, if you want to add an 800x600 artboard to the current page, you'd do this:
+Adds an array of [MSLayer](/docs/MSLayer) objects to the page. For example, if you want to add an 800x600 artboard to the current page, you'd do this:
 
-```objective-j
-var artboard = [MSArtboardGroup new]
-var frame = [artboard frame]
-[frame setX:0]
-[frame setY:0]
-[frame setWidth:800]
-[frame setHeight:600]
-[[doc currentPage] addLayer:artboard]
+```javascript
+var artboard = MSArtboardGroup.new()
+var frame = artboard.frame()
+frame.setX(0)
+frame.setY(0)
+frame.setWidth(800)
+frame.setHeight(600)
+doc.currentPage().addLayers([artboard])
 ```
 
 ### slices
@@ -57,15 +57,15 @@ Available as of beta 184 / version 2.2.5
 
 **This is no longer working in Sketch 3.0**. If you need to duplicate a page, do this:
 
-```objective-j
+```javascript
 var doc = context.document
-var page = [doc currentPage]
-var newPage = [page copy]
+var page = doc.currentPage()
+var newPage = page.copy()
 
-newPage.setName([page name] + " Copy") // Or anything you like
+newPage.setName(page.name() + " Copy") // Or anything you like
 
-[[doc documentData] addPage:newPage]
-[doc setCurrentPage:newPage]
+doc.documentData().addPage(newPage)
+doc.setCurrentPage(newPage)
 ```
 
 ### horizontalRulerData / verticalRulerData
