@@ -6,8 +6,6 @@ rels:
   - MSStyleFill
 ---
 
-- Related to: [MSStyle](MSStyle.html), [MSGradient](MSGradient.html), [MSStyleFill](MSStyleFill.html)
-
 ## Overview
 
 Represents a border on a layer. Can be either a color or gradient fill.
@@ -28,7 +26,7 @@ A color fill (0) or a gradient (1). Other values make no sense and can lead to u
 
 ### gradient
 
-An [MSGradient](/docs/MSGradient) object that will only be used if the `fillType` is set to a gradient.
+An [MSGradient](/docs/MSGradient/) object that will only be used if the `fillType` is set to a gradient.
 
 ### isEnabled
 
