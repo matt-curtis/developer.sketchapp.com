@@ -40,6 +40,16 @@ layout: page
       {% endfor %}
     </ul>
     {% endif %}
+
+    {% if page.pages %}
+    <h3>Related content:</h3>
+    <ul>
+      {% for rel in page.pages %}
+      <li><a href="{{rel.path}}">{{ rel.name }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
   </div>
   {% endif %}
 

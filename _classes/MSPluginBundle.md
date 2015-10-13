@@ -3,6 +3,9 @@ title: MSPluginBundle
 rels:
   - MSPluginCommand
   - AppController
+pages:
+  - name: Plugin Bundles
+    path: /introduction/plugin-bundles/
 ---
 
 ## Overview
