@@ -141,6 +141,10 @@ A string specifying the [version][Semantic Versioning] of Sketch in which the au
 
 The version for the layout of the bundle an metadata. If excluded it is assumed the value is 1.
 
+This is just a future-proofing mechanism for us. If, in the future, we see a plugin with a bundleVersion > 1, we'd know that we could treat the other values in the metadata differently.
+
+For now it's fine to omit it.
+
 #### disableCocoaScriptPreprocessor
 
 This is an advanced setting, and it defaults to `false`. When set to `true`, it will disable CocoaScript's own preprocessor. This way, you'll be able to use build systems like browserify or ES6 module syntax to develop your plugins.
