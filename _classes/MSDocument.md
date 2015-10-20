@@ -38,7 +38,7 @@ Closes the document. No warnings are displayed to the user, so don't use it on u
 
 ### (NSWindow)window:
 
-Returns an instance of [MSDocumentWindow](/docs/MSDocumentWindow/).
+Returns an instance of MSDocumentWindow, which is a subclass of [NSWindow](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSWindow_Class/).
 
 ### currentPage:, setCurrentPage:(MSPage)page
 
