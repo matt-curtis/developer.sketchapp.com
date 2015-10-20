@@ -11,18 +11,18 @@ Stores the guides used on its ruler. [MSPage](/docs/MSPage) and [MSArtboardGroup
 
 ## Methods & Attributes
 
-### addGuideWithValue:
+### addGuideWithValue:(CGFloat)value
 
 Supply an integer value (measured from the origin of the ruler). Adds a new guide at the given value.
 
-### numberOfGuides
+### numberOfGuides:
 
 Returns the number of guides on this ruler.
 
-### guideAtIndex:
+### guideAtIndex:(NSUInteger)index
 
 Returns the integer value of the given guide. The argument is a zero-based index value.
 
-### removeGuideAtIndex:
+### removeGuideAtIndex:(NSUInteger)index
 
 Remove the guide at the given index.
