@@ -19,6 +19,10 @@ permalink: /resources/
 - [AppKit](https://developer.apple.com/library/mac/navigation/#section=Frameworks&topic=AppKit), one the main Apple frameworks that Sketch is built on.
 - [Foundation](https://developer.apple.com/library/mac/navigation/#section=Frameworks&topic=Foundation), more essential Apple classes and services.
 
+## CocoaScript
+
+- [Sketch Plugins Cookbook](https://github.com/turbobabr/Sketch-Plugins-Cookbook), an amazing collection of tips and information, from [Andrey Shakhmin](https://github.com/turbobabr)
+
 ## Sample Plugins
 
 - Some example plugins are [available on Github](https://github.com/BohemianCoding/ExampleSketchPlugins)
