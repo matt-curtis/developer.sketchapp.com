@@ -18,7 +18,7 @@ A color fill (0), gradient (1) or pattern (4). Other values make no sense and ca
 
 ### gradient
 
-An [MSGradient](/docs/MSGradient) object that will only be used if the `fillType` is set to a gradient.
+An [MSGradient](/docs/MSGradient/) object that will only be used if the `fillType` is set to a gradient.
 
 ### image
 

@@ -6,6 +6,7 @@ rels:
   - GKRect
   - MSStyle
   - MSPage
+  - MSShapeGroup
 ---
 
 ## Overview
@@ -14,21 +15,21 @@ MSLayer is the base class that represents a layer object.
 
 ## Methods & Attributes
 
-### frame (readonly)
+### frame: (readonly)
 
-An instance of [MSRect](/docs/MSRect). Determines size and position on the canvas
+An instance of [MSRect](/docs/MSRect/). Determines size and position on the canvas.
 
-### style (readonly)
+### style: (readonly)
 
-An instance of [MSStyle](/docs/MSStyle). Determines all style-related attributes such as Borders, Fills, Shadows and more
+An instance of [MSStyle](/docs/MSStyle/). Determines all style-related attributes such as Borders, Fills, Shadows and more
 
-### name / setName
+### name: setName:(NSString)name
 
-The name of the layer as it appears in the layer list. An NSString.
+Get /set the name of the layer, as it appears in the layer list.
 
-### isVisible / setIsVisible
+### isVisible:, setIsVisible:(BOOL)value
 
-Returns `true` if the layer is visible, and `false` if it is hidden.
+Get / set the layer's visibility. Returns `true` if the layer is visible, and `false` if it is hidden.
 
 To **hide** a layer, do:
 
@@ -43,7 +44,7 @@ layer.setIsVisible(!layer.isVisible())
 ```
 
 
-### isLocked / setIsLocked
+### isLocked:, setIsLocked:(BOOL)value
 
 Returns `true` if the layer is locked, and `false` if it isn’t locked.
 
@@ -59,11 +60,11 @@ If you want to toggle a layer’s lock status, do:
 layer.setIsLocked(!layer.isLocked())
 ```
 
-### rotation / setRotation
+### rotation:, setRotation:(CGFloat)newRotation
 
-An integer denoting the rotation of the layer - in degrees. Rotation happens counter-clockwise.
+Get / set layer rotation, in degrees.
 
-### isFlippedHorizontal / setIsFlippedHorizontal | isFlippedVertical / setIsFlippedVertical
+### isFlippedHorizontal:, setIsFlippedHorizontal:(BOOL)isFlippedHorizontal, isFlippedVertical:, setIsFlippedVertical:(BOOL)isFlippedVertical
 
 Flips the layer horizontally or vertically.
 
@@ -71,22 +72,22 @@ Flips the layer horizontally or vertically.
 layer.isFlippedHorizontal()
 ```
 
-### parentGroup
+### parentGroup:
 
-Returns the parent group of this layer. Note that this can return an [MSPage](/docs/MSPage) or [MSArtboardGroup](/docs/MSArtboardGroup) as well as an [MSLayerGroup](/docs/MSLayerGroup)
+Returns the parent group of this layer. Note that this can return an [MSPage](/docs/MSPage/) or [MSArtboardGroup](/docs/MSArtboardGroup/) as well as an [MSLayerGroup](/docs/MSLayerGroup/)
 
-### isSelected / setIsSelected
+### isSelected:, setIsSelected:
 
 True if the layer is selected, false otherwise.
 
 ### select:byExpandingSelection
 
-Check the [Working with Selections](../02-common-tasks/02.html) section for some examples.
+Check the [Working with Selections](/examples/working-with-selections/) section for some examples.
 
-### absoluteRect (readonly)
+### absoluteRect: (readonly)
 
-Returns a [GKRect](/docs/GKRect) object that returns the bounds of this layer in absolute coordinates; it takes into account the layer’s rotation and that of any of its parents.
+Returns a [MSAbsoluteRect](/docs/MSAbsoluteRect/) object that returns the bounds of this layer in absolute coordinates; it takes into account the layer’s rotation and that of any of its parents.
 
-### duplicate
+### duplicate:
 
 Duplicates the layer and insert the copy above itself.

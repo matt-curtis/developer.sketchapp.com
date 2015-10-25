@@ -8,13 +8,13 @@ permalink: /introduction/
 
 A Plugin is a collection of one or more **scripts**. Each script defines one or more **commands** which extend Sketch in some way.
 
-On disk, a Plugin is simply represented as a folder with the `.sketchplugin` file extension, containing a number of files and sub-folders, arranged in a [standard layout](plugin-bundles).
+On disk, a Plugin is simply represented as a folder with the `.sketchplugin` file extension, containing a number of files and sub-folders, arranged in a [standard layout](/introduction/plugin-bundles/).
 
 One special file in this folder - `manifest.json` - describes the Plugin. Sketch uses this to find the names of the commands that the Plugin implements, and to create menu commands which allow you to execute them.
 
 Other files in the Plugin folder include the actual scripts which implement the commands, and optional resources (such as images) that the commands make use of to do whatever they do.
 
-Plugin scripts are written using [CocoaScript](https://github.com/ccgus/CocoaScript), which is a variation of JavaScript. We’ll talk more about CocoaScript in the [Plugin Scripts](plugin-scripts) section.
+Plugin scripts are written using [CocoaScript](https://github.com/ccgus/CocoaScript), which is a variation of JavaScript. We’ll talk more about CocoaScript in the [Plugin Scripts](/introduction/plugin-scripts/) section.
 
 ## Where are Plugins located?
 

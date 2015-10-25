@@ -21,7 +21,7 @@ Point are point structures in the coordinate system of the layer. For example: f
 
 ### stops
 
-An array of [MSGradientStop](/docs/MSGradientStop) objects representing color and position (0..1) on the line between the from and to points.
+An array of [MSGradientStop](/docs/MSGradientStop/) objects representing color and position (0..1) on the line between the from and to points.
 
 ### addStopAtLength:
 

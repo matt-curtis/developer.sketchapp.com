@@ -6,13 +6,13 @@ permalink: /resources/
 ## JavaScript
 
 ### Absolute beginners
-- http://www.codecademy.com/tracks/javascript
-- http://eloquentjavascript.net
+- Learn the fundamentals of JavaScript at [CodeAcademy](https://www.codecademy.com/tracks/javascript)
+- [Eloquent JavaScript](http://eloquentjavascript.net), a book about JavaScript, programming, and the wonders of the digital.
 
 ### Experienced developers
-- https://developer.mozilla.org/en/Learn/JavaScript
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
-- http://shop.oreilly.com/product/9780596517748.do
+- Learning the Web › JavaScript, at [Mozilla](https://developer.mozilla.org/en/Learn/JavaScript)
+- [A re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+- [JavaScript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do), an O'Reilly book.
 
 ## Cocoa
 

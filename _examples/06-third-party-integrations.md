@@ -11,18 +11,18 @@ One of the great things about Sketch is it's extensibility. If you're developing
 Here are some services and tools that already support Sketch:
 
 - [Avocode](http://avocode.com)
-- [Flinto](http://flinto.com/mac)
+- [Flinto](https://www.flinto.com/mac)
 - [Folio for Mac](http://folioformac.com)
-- [Invision](http://invisionapp.com)
+- [Invision](http://www.invisionapp.com)
 - [Markly](http://marklyapp.com)
-- [Marvel](http://marvelapp.com)
+- [Marvel](https://marvelapp.com)
 - [Origami](http://facebook.github.io/origami/)
-- [Pixate](http://pixate.com)
+- [Pixate](http://www.pixate.com)
 - [Pixave](http://www.littlehj.com)
 - [Qwikly](http://getqwikly.com)
-- [UXPin](http://uxpin.com)
-- [Wake](http://wake.io)
-- [Zeplin](http://zeplin.io)
+- [UXPin](http://www.uxpin.com)
+- [Wake](https://wake.io)
+- [Zeplin](https://zeplin.io)
 
 Is yours missing? Add it by [editing this page]({{site.github_repo}}/tree/gh-pages/{% if page.relative_path %}{{page.relative_path}}{% else %}{{page.path}}{% endif %}).
 

@@ -30,7 +30,7 @@ if (currentDocSelection.count() == anotherDocSelection.count()) {
 }
 ```
 
-See also [MSContentDrawView](/docs/MSContentDrawView) if you need more precise zooming control.
+See also [MSContentDrawView](/docs/MSContentDrawView/) if you need more precise zooming control.
 
 ### close:
 
@@ -58,7 +58,7 @@ Pass a string to be displayed at the top of the canvas momentarily. The same met
 
 ### artboards:
 
-Returns an NSArray representing the artboards and slices on the current page. Artboards are of type [MSArtboardGroup](/docs/MSArtboardGroup) and slices are of [MSSliceLayer](/docs/MSSliceLayer) type.
+Returns an NSArray representing the artboards and slices on the current page. Artboards are of type [MSArtboardGroup](/docs/MSArtboardGroup/) and slices are of [MSSliceLayer](/docs/MSSliceLayer/) type.
 
 ### children
 
@@ -66,7 +66,7 @@ Returns an array containing all layers (including slices and artboards) on the c
 
 ### (NSArray)pages:
 
-Returns an array of all pages in the document. Each page is an [MSPage](/docs/MSPage) object.
+Returns an array of all pages in the document. Each page is an [MSPage](/docs/MSPage/) object.
 
 ### askForUserInput:(NSString)label initialValue:(NSString)defaultString
 
@@ -79,7 +79,7 @@ The first argument is a GKRect, MSSliceLayer or MSArtboardGroup and the image ge
 
 ### (MSContentDrawView)currentView:
 
-Returns an [MSContentDrawView](/docs/MSContentDrawView) subclass that represents the visible Canvas.
+Returns an [MSContentDrawView](/docs/MSContentDrawView/) subclass that represents the visible Canvas.
 
 ### toolbar:
 
@@ -188,7 +188,7 @@ Adds `layer` to the document.
 
 ### deleteArtboards:(NSArray)array
 
-Deletes the given `array` of [MSArtboardGroup](/docs/MSArtboardGroup) objects from the page.
+Deletes the given `array` of [MSArtboardGroup](/docs/MSArtboardGroup/) objects from the page.
 
 ### reloadInspector:
 

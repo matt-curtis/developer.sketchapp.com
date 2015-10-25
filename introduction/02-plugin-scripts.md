@@ -32,7 +32,7 @@ The basics are as follows:
 - you can read and write properties on custom Objective-C objects as you would in JS
 - you can call methods on custom Objective-C objects, using either the familiar JavaScript syntax, or the Objective-C square bracket syntax.
 
-(See the [More On CocoaScript](cocoascript) page for more details.)
+(See the [More On CocoaScript](/introduction/cocoascript/) page for more details.)
 
 When your script is called by Sketch, you are passed some *context*, including the Objective-C objects representing the current Sketch document and selection.
 
