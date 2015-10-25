@@ -57,4 +57,4 @@ These aren’t intended to actually be massively useful additions to Sketch, but
 
 The [Resources](/resources/) page also lists a number of good places to find other Plugins.
 
-When you feel ready to dive in and make something of your own, more information can be found in [Plugin Scripts](plugin-scripts).
+When you feel ready to dive in and make something of your own, more information can be found in [Plugin Scripts](/introduction/plugin-scripts/).

@@ -180,7 +180,7 @@ Adds a new [MSPage](/docs/MSPage/) object to the document, inserting it below th
 
 ### removePage:(MSPage)page
 
-Removes the given page from the document. The argument is an [MSPage](/docs/MSPage) object.
+Removes the given page from the document. The argument is an [MSPage](/docs/MSPage/) object.
 
 ### addLayer:(MSLayer)layer
 
