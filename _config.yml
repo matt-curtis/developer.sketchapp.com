@@ -1,7 +1,7 @@
 # Site settings
 title: Sketch Developers
 email: developers@sketchapp.com
-url: "https://developer.bohemiancoding.com" # need to change this when we use our own site
+url: "http://developer.sketchapp.com"
 github_repo:  https://github.com/BohemianCoding/developer.sketchapp.com
 
 # Build settings
