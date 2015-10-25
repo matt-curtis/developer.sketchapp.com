@@ -570,36 +570,6 @@ section .section-header {
 	overflow: hidden;
 }
 
-/*Aside navigation container*/
-.support aside {
-	padding: 1.4rem;
-	background: #000;
-	border-top-left-radius: .125rem;
-	border-bottom-left-radius: .125rem;
-}
-/* Search Field */
-.support form {
-	margin: -0.5em;
-	margin-bottom: 1em;
-	input[type=text],
-	input[type=search] {
-		border: none;
-		padding: 0.3rem 1rem;
-		background: #eee url(/images/icons/loupe.svg) 0.5rem center no-repeat;
-		display: block;
-		width: 100%;
-		box-sizing: border-box;
-		border-radius: 4px;
-		font-size: 0.9rem;
-		text-align: center;
-		// Animate
-		transition: all 0.4s ease;
-	}
-	input:focus {
-		text-align: left;
-		background: #fff url(/images/icons/loupe.svg) -2rem center no-repeat;
-	}
-}
 
 /*Common styles for all the support navigation*/
 .support-nav a {
@@ -989,27 +959,6 @@ section .section-header {
 	margin-top: -32px;
 }
 
-.file-online {
-	background: transparent url(/images/learn/download.svg) center center no-repeat;
-	float: right;
-	height: 31px;
-	width: 31px;
-	margin-top: -37px;
-	&:hover {
-		opacity: 0.6;
-	}
-}
-
-.learn .treehouse,
-.treehouse .treehouse {
-	text-align: center;
-}
-
-.treeh {
-	margin: 0 auto;
-	margin-top: 40px;
-}
-
 .blue {
 	color: #4084D0;
 	padding-bottom: 18px;
@@ -1017,37 +966,6 @@ section .section-header {
 
 /* @end */
 
-/* @group Jobs page */
-
-.jobs-h3 {
-	padding-bottom: 15px;
-}
-
-.jobs-respon {
-	list-style: none;
-	padding-left: 0;
-}
-
-.jobs-require {
-	list-style: none;
-	margin-left: 1em;
-	li:before {
-		content: '';
-		float: left;
-		background-image: url('/images/jobs/check.svg');
-		width: 20px;
-		height: 20px;
-		background-size:contain;
-		background-repeat:no-repeat;
-		margin-left: -2em;
-	}
-}
-
-.jobs-li {
-	padding-bottom: 20px;
-}
-
-/* @end */
 
 // Site sections
 @import "footer";
@@ -1462,22 +1380,6 @@ body.sketch {
 		background-position: auto;
 		background-size: auto;
 		background-attachment: scroll;
-	}
-	section.first {
-		background: transparent url(/images/home/rainbow.svg) center bottom no-repeat;
-		padding-bottom: 200px;
-	}
-	.rainbow {
-		position: absolute;
-		left: 50%;
-		margin-left: -142px;
-		margin-top: 80px;
-		@media screen and (max-height: 900px) {
-			margin-left: -114px;
-		}
-		@media screen and (max-width: $breakpoint_ipad_width) {
-			margin-left: -107px;
-		}
 	}
 	.main-header,
 	.masthead {
