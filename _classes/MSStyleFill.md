@@ -26,9 +26,7 @@ An NSImage object that will be used if the `fillType` is set to pattern.
 
 ### noiseIntensity
 
-Sketch 2.0: A float representing the intensity of the noise from 0..1
-
-{# TODO: check if this still works on Sketch 3.0 #}
+A float representing the intensity of the noise from 0..1
 
 ### isEnabled
 
