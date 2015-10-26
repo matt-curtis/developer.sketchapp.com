@@ -41,4 +41,4 @@ We’ve divided the contents into four parts:
 
 ## Help us improve!
 
-If you find any error or omission on the documentation, or you’d like us to cover or clarify something, just [let us know](mailto:mail@bohemiancoding.com?subject=Developer%20Documentation%20Suggestion) and we’ll try to make you happy. Of course, since all the content on this site is open source, you can help us improve by [suggesting an edit on GitHub]({{site.github_repo}}) (there's also an "Improve this page" link at the bottom of every page, in case you find something wrong while browsing the site).
+If you find any error or omission on the documentation, or you’d like us to cover or clarify something, just [file an issue](https://github.com/BohemianCoding/developer.sketchapp.com/issues) and we’ll try to fix it. Of course, since all the content on this site is open source, you can help us improve by [suggesting an edit on GitHub]({{site.github_repo}}) (there's also an "Improve this page" link at the bottom of every page, in case you find something wrong while browsing the site).

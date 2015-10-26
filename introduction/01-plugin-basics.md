@@ -43,9 +43,13 @@ Alternatively, you can install plugins by simply moving them into the Plugins fo
 
 ### Removing Plugins
 
-To remove a Plugin, just select the **Plugins › Reveal Plugins Folder…** menu option and drag the Plugin you want to remove to the Trash.
+To remove a Plugin, just select the **Plugins › Manage Plugins…** menu option, select the Plugin you want to remove from the list, and either right click the plugin or click the gear icon and select *Uninstall "Plugin Name"*:
+
+![](/images/developer/plugin-uninstall.png)
 
 Any commands that the Plugin provided will be removed from the **Plugins** menu immediately.
+
+Alternatively, you can just uncheck any Plugin on the list to disable it without uninstalling it.
 
 ## Getting Started
 
