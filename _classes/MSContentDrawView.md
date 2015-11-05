@@ -7,19 +7,17 @@ rels:
 ## Overview
 
 This object is canvas view. You can get to it via `[MSDocument currentView]`.
-Many of the standard Cocoa actions work here as expected such as
-
-	- cut:, -copy:, -paste:
+Many of the standard Cocoa actions work here as expected such as `cut:, copy:, paste:`
 
 Each of these take argument that is not used further, so just supply `nil`.
 
 ## Methods & Attributes
 
-### frame
+### frame:
 
 Returns a CGRect of the current view.
 
-### zoomIn: zoomOut:
+### zoomIn:, zoomOut:
 
 Zooms in by 2x or out by the same amount.
 
@@ -38,7 +36,7 @@ Zooms back to 100%.
 view.actualSize()
 ```
 
-### centerRect:NSRect
+### centerRect:(NSRect)rect
 
 Centers an arbitrary NSRect in the canvas.
 
@@ -50,7 +48,7 @@ var selected_object = context.selection[0],
 view.centerRect(selected_object.rect())
 ```
 
-### zoomToFitRect:NSRect
+### zoomToFitRect:(NSRect)rect
 
 Zooms the canvas in or out and scrolls to fit supplied NSRect argument in the view.
 
