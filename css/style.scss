@@ -11,16 +11,19 @@
 
 @mixin debug { background-color: red !important; }
 
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 // Dark color, to be used in backgrounds
 $color-dark: #061524;
 
 $font-stack: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-stack: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 300 16px / 1.5 $font-stack;
+  color: #111418;
+  text-rendering: optimizeLegibility
+}
 
 /* @group Base styles */
 /*CSS Transitions Only After Page Load*/
