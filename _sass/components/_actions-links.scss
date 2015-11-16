@@ -1,0 +1,20 @@
+/*Basic link styles*/
+a {
+  text-decoration: none;
+  color: $action-high;
+  transition: color .1s ease-out, border-color .1s ease-out, background-color .1s ease-out, background-image .1s ease-out;
+  font-weight: 400;
+  &:hover,
+  &:active,
+  &:focus { color: $action; }
+}
+
+a.highlight {
+  color: $text-light;
+
+  &.highlight:hover,
+  &.highlight:focus { color: $text-light-high; }
+
+  &.highlight:active,
+  &.highlight.active { color: $text-light-high; }
+}

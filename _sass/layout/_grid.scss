@@ -1,0 +1,62 @@
+@include tablet-and-above {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+    /*Horizontally center the columns*/
+    .row.center-h,
+    .col.center-h {
+      justify-content: center;
+    }
+
+    /*Justify elements without known width ('.col' + no '.span-*' class*/
+    .row.justify {
+      justify-content: space-between;
+      justify-content: justify;
+    }
+
+    /*Distribute elements without known width ('.col' + no '.span-*' class*/
+    .row.distribute {
+      justify-content: space-around;
+    }
+
+    .row.col-reverse {
+      flex-direction: column-reverse;
+    }
+
+  .col {
+
+  }
+
+    /*To vertically center contents inside each block (needs div wrapping the contents inside)*/
+    .row.center-v > .col {
+      display: flex;
+      align-items: center;
+    }
+    
+  /*Gap between columns*/
+  .col:not(.span-12) + .col {
+    margin-left: 5.6%; /*56/1000*/
+  }
+
+    /*Has no visual impact, but it's more elegant*/
+    .row.justify .col + .col,
+    .row.distribute .col + .col {
+      margin-left: 0;
+    }
+
+  /*Column span sizes*/
+  .span-1  { width: 3.2%; /*32px*/ }
+  .span-2  { width: 12.0%; /*120px*/ }
+  .span-3  { width: 20.8%; /*208px*/ }
+  .span-4  { width: 29.6%; /*296px*/ }
+  .span-5  { width: 38.4%; /*384px*/ }
+  .span-6  { width: 47.2%; /*472px*/ }
+  .span-7  { width: 56.0%; /*560px*/ }
+  .span-8  { width: 64.8%; /*648px*/ }
+  .span-9  { width: 73.6%; /*736px*/ }
+  .span-10 { width: 82.4%; /*824px*/ }
+  .span-11 { width: 91.2%; /*912px*/ }
+  .span-12 { width: 100%; /*1000px*/ }
+}

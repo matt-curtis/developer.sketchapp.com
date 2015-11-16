@@ -22,8 +22,15 @@ div.white {
   h2 {
     margin-top: 1em;
   }
-  @include tablet { margin: 0 3em; }
-  @include mobile { margin: 0 2em; }
+//  @include tablet { margin: 0 3em; }
+//  @include mobile { margin: 0 2em; }
+}
+
+.page-metadata {
+  margin-top: 3em;
+  font-size: 0.9em;
+  color: #999;
+  text-align: right;
 }
 
 .page-metadata {
@@ -31,3 +38,4 @@ div.white {
   padding-top: 1em;
   padding-bottom: 2em;
 }
+

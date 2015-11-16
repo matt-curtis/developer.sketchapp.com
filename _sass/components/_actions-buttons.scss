@@ -1,0 +1,26 @@
+//Common styles
+.button {
+  display: inline-block;
+  padding: .625em 1.5625em; /*10px 25px (in EMs)*/
+  border-radius: $radius-normal;
+  border: 1px solid $action-border;
+  font-weight: $font-regular;
+  &:hover,
+  &:active,
+  &:focus {
+    background: rgba($action,.04);
+    color: $action;
+    border-color: rgba($action,.4);
+  }
+
+  // Primary action button
+  &.full {
+    background: $action-high;
+    color: $text-light-high;
+    &:hover,
+    &:active,
+    &:focus {
+      background: $action;
+    }
+  }
+}

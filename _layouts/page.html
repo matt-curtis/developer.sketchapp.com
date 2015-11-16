@@ -11,9 +11,23 @@ layout: default
 
 <div class="white">
   <div class="wrapper">
-    <div class="content">
-      {{ content }}
-    </div>
+    <section class="sidebar">
+      <div class="wrapper row">
+        <aside class="col span-3 toc-nav" role="complementary">
+          <h1 class="h3 nav-toggle">Contents</h1>
+          <nav role="navigation">
+            <ul>
+              {% for item in site.classes %}
+              <li><a class="{% if page.title == item.title %}selected{% endif %}" href="/docs/{{item.title}}/">{{item.title}}</a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </aside>
+        <article class="col span-9" role="main">
+          {{ content }}
+        </article>
+      </div>
+    </section>
     <div class="page-metadata">
       {% if page.date %}
       Last update: {{page.date}} •

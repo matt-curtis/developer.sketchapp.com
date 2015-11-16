@@ -1,0 +1,128 @@
+.what-is-new {
+  section.version {
+
+    .wrapper {
+      background: transparent url(images/whats-new/bg.png) repeat-y top left;
+      image-rendering: pixelated;
+
+      @include tablet-and-below {
+        background: none;
+      }
+    }
+
+    .col.span-2 {
+      padding: 2em 0 3em 0;
+      @include tablet-and-below {
+        padding: 0;
+      }
+    }
+
+    .col.span-10 {
+      padding: 2em 0 3em 0;
+      border-bottom: 1px #EBEAEA solid;
+      @include tablet-and-below {
+        padding: 0 0 2em 0;
+      }
+    }
+
+    @include tablet-and-below {
+      [class*="span-"]+[class*="span-"] { margin: 0; }
+    }
+    &.version-three {
+      .span-10 {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .view-more {
+    padding-top: 3em;
+    @include tablet-and-below {
+      padding-top: 2em;
+    }
+  }
+
+  .version-update {
+    margin-top: -54px;
+    margin-left: 132px;
+    padding-bottom: 50px;
+    border-bottom: 1px #EBEAEA solid;
+  }
+
+  .update-major {
+    font-size: 32px;
+    color: $text-light-high;
+    height: 72px;
+    width: 72px;
+    border-radius: $radius-big;
+    background-color: $action;
+    text-align: center;
+    padding-top: 13px;
+    @include tablet-and-below {
+      margin: 0 auto;
+    }
+  }
+
+  .update-point {
+    color: $action;
+    height: 32px;
+    width: 32px;
+    border-radius: $radius-big;
+    background-color: $action;
+    padding-top: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-indent: -3em;
+    @include tablet {
+      text-indent: 3em;
+    }
+    @include tablet-and-below {
+      text-indent: 0;
+      background-color: transparent;
+      margin: 0 auto;
+      width: auto;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .update-feature {
+    margin: 1em 0 2em 0;
+    @include tablet-and-below {
+      margin: 2em 0;
+    }
+    img.max {
+      margin-left: 0;
+      @include tablet-and-below {
+        margin: 0;
+      }
+    }
+  }
+
+  .h1-feature {
+    font-size: 22px;
+    padding-top: 8px;
+  }
+
+  .h2-feature {
+    margin-top: -15px;
+    padding-right: 1.5em;
+  }
+
+  .update-list {
+    list-style: none;
+    font-size: 12px;
+    margin: 2em 0;
+    padding: 0;
+    padding-right: 1.5em;
+    line-height: 1.5em;
+    li {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.what-is-new .version section:last-child .span-10 {
+  border-bottom: 0 none;
+}

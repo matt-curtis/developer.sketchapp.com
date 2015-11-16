@@ -1,0 +1,51 @@
+// Variables
+
+// Font weights
+$font-light: 300;
+$font-regular: 400;
+
+// Colors
+
+//Action (Links and buttons)
+$action-high:           hsl(211, 75%, 50%);
+$action:                hsl(210, 92%, 55%);
+$action-border:         hsla(211, 75%, 50%,.4);
+$action-accent:         hsl(197, 100%, 62%);
+
+// Backgrounds
+$background-dark:       #061524;
+
+$background-light:      hsl(0,100%,100%);
+$background-light-dark: hsl(210, 25%, 98%);
+
+//Borders and Dividers (dark on light backgrounds)
+$border-dark-high:      hsla(0, 0%, 0%, .10);
+$border-dark:           hsla(0, 0%, 0%, .06);
+$divider-dark:          hsla(0, 0%, 0%, .03);
+
+//Borders and Dividers (dark on light backgrounds)
+$border-light-high:     hsla(0, 100%, 100%, .3);
+$border-light:          hsla(0, 100%, 100%, .2);
+$divider-light:         hsla(0, 100%, 100%, .1);
+
+//Text (dark on light backgrounds)
+$text-dark-high:        hsl(214, 17%, 8%);
+$text-dark:             hsl(219, 13%, 25%);
+$text-dark-low:         hsla(219, 13%, 25%,.8);
+$text-dark-ultra-low:   hsla(219, 13%, 25%,.6);
+
+//Text (light on dark backgrounds)
+$text-light-high:       hsl(0,100%,100%);
+$text-light:            hsla(0,100%,100%,.8);
+$text-light-low:        hsla(0,100%,100%,.7);
+$text-light-ultra-low:  hsla(0,100%,100%,.6);
+
+
+
+
+
+
+// Radii
+$radius-big: 10rem; /*In order to make circular elements*/
+$radius-normal: .1875rem; /*3px*/
+$radius-small: .125rem; /*2px*/

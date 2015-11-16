@@ -1,0 +1,56 @@
+/* @group Learn page */
+.video-wrapper {
+  display: block;
+  position: relative;
+  .video-small {
+    $size: 48px;
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    margin-left: -$size/2;
+    margin-top: -$size/2;
+    height: $size;
+    width: $size;
+  }
+  &:hover {
+    .video-small .bg {
+      fill-opacity: 0.7;
+    }
+  }
+}
+
+.row-padding {
+  padding-bottom: 30px;
+}
+
+.timestamp {
+  float: right;
+  height: 22px;
+  width: 44px;
+  border: 1px solid #4084D0;
+  border-radius: $radius-normal;
+  text-align: center;
+  color: #4084D0;
+  margin-top: -32px;
+}
+
+.file-online {
+  background: transparent url(/static/images/learn/download.svg) center center no-repeat;
+  float: right;
+  height: 31px;
+  width: 31px;
+  margin-top: -37px;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.learn header {
+  margin-bottom: 6rem;
+}
+
+.learn .treehouse,
+.treehouse .treehouse {
+  text-align: center;
+}

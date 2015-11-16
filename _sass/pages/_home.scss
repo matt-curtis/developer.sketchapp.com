@@ -1,0 +1,172 @@
+/* @group Home page */
+.two-cols {
+  position: relative;
+  padding: 2.8125rem 0; /*45px*/
+}
+
+  .two-cols::after {
+    content: "";
+    position: absolute;
+    top: 2em;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: linear-gradient(180deg,
+      hsla(0, 0%, 90%, 0),
+      hsla(0, 0%, 90%, 1) 50%,
+      hsla(0, 0%, 90%, 0) 100%) 2%;
+    z-index: 0;
+  }
+
+  .two-cols::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: $background-light;
+    color: #bac6d5;
+    font-size: 3rem; /*48px*/
+    z-index: 1;
+    -webkit-font-smoothing: none;
+  }
+
+.awards {
+  margin-bottom: -2.8125rem !important; /*45px*/
+}
+
+.companies > .col,
+.awards > .col {
+  margin-bottom: 2.8125rem !important; /*45px*/
+  /*4 items per row*/
+  padding: 0 1.25rem; /*20px (half a gap)*/
+}
+
+.companies img,
+.awards img  {
+  display: block;
+  margin: 0 auto;
+}
+
+.companies > .col > img {
+    height: 34px;
+    width: auto;
+  }
+
+  .awards img {
+    height: 39px;
+    width: auto;
+  }
+
+.testimonials {
+  margin-top: 5rem; /*80px*/
+  padding-bottom: 2.875rem; /*40px Compensating*/
+  position: relative;
+  color: $text-dark-low;
+
+  p {
+    margin: 0;
+    display: inline;
+  }
+
+  footer {
+    position: absolute;
+    bottom: -2.875rem; /*46px*/
+  }
+
+  img {
+    vertical-align: middle;
+    width: 2rem; /*32px*/
+    height: 2rem;
+    border-radius: $radius-big;
+  }
+}
+/* @end */
+
+.hero {
+  section.first {
+    background: transparent url(images/home/rainbow.svg) center bottom no-repeat;
+    padding-bottom: 7.5rem;
+  }
+  .main-header,
+  .masthead {
+    background: none;
+    background-color: transparent;
+
+    .section-footer {
+      border-image: none;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: .8125rem;
+    }
+    .hero.hero {
+      margin-top: 2em;
+    }
+  }
+  form.volume { display: none; }
+}
+
+.actions {
+  display: block;
+  text-align: center;
+}
+
+.actions li {
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+  .actions li:nth-child(2n) {
+    padding-right: 0;
+  }
+
+  @include tablet-and-below {
+    .actions li {
+      display: block;
+      padding-right: 0;
+      margin-bottom: .5rem;
+    }
+
+    .actions li a {
+      display: block;
+    }
+  }
+
+  .actions + .actions {
+    margin-top: 3rem;
+  }
+
+.sketch-diamond {
+  width: 14rem;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.who .section-footer {
+  margin-top: 0;
+}
+
+.who .footer-title {
+  margin: 0;
+  position: absolute;
+  top: -.55rem;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.who .footer-title > span {
+  padding: 0 1rem;
+  background: $background-light-dark;
+  color: $text-dark-ultra-low;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .hero .section-footer {
+    width: 100%;
+    .companies li img { height: 2em; }
+  }
+}

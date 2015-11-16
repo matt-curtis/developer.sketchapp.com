@@ -1,0 +1,28 @@
+.subscribe {
+  background: $background-dark !important;
+  text-align: center;
+}
+
+.subscribe h2 {
+  color: $text-light-high;
+}
+
+.subscribe p {
+  margin: 2rem;
+  color: $text-light-low;
+}
+
+.subscribe .disclaimer {
+  margin-bottom: 4rem;
+  font-size: 12px;
+}
+
+.subscribe input[type=text] {
+  display: inline-block;
+  padding: .625em 1em; /*10px 16px*/
+  color: $text-light-high;
+  background-color: transparent;
+  border-radius: $radius-normal;
+  border: 1px solid $action-border;
+  margin-bottom: 1em;
+}

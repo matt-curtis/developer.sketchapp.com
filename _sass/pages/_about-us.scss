@@ -1,0 +1,58 @@
+/* @group About us */
+.team {
+	margin-top: 5.625rem; /*90px*/
+	margin-bottom: -2.8125rem; /*45px*/
+}
+
+.team li {
+	margin-bottom: 2.8125rem; /*45px*/
+	text-align: center;
+}
+
+.team .col:nth-child(3n+1) {
+	margin-left: 0;
+}
+
+.team h3 {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+.team small {
+	display: block;
+	font-size: .8125rem;
+	font-style: italic;
+}
+
+.contact-us h2 {
+	margin-top: 0;
+}
+/* @end */
+
+.jobs-h3 {
+  padding-bottom: 15px;
+}
+
+.jobs-respon {
+  list-style: none;
+  padding-left: 0;
+}
+
+.jobs-require {
+  list-style: none;
+  margin-left: 1em;
+  li:before {
+    content: '';
+    float: left;
+    background-image: url('/static/images/jobs/check.svg');
+    width: 20px;
+    height: 20px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    margin-left: -2em;
+  }
+}
+
+.jobs-li {
+  padding-bottom: 20px;
+}

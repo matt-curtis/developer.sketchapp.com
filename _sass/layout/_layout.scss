@@ -1,0 +1,121 @@
+@include tablet-and-above {
+  html,
+  body {
+    height: 100%;
+  }
+
+  body > * {
+    padding: 0 2rem; /*32px*/
+  }
+}
+
+@include tablet-and-below {
+  body > * {
+    padding: 0 1rem; /*16px*/
+  }
+
+  [class*="span-"] + [class*="span-"] {
+    margin-top: 3rem; /*48px*/
+    margin-left: 0 !important;
+  }
+}
+
+.hero {
+  background: $background-dark;
+}
+
+body > section {
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 62.5rem; /*1000px*/
+  margin: 0 auto;
+}
+
+  section .wrapper {
+    padding: 3rem 0; /*48px*/
+  }
+
+  section .wrapper.extra {
+    padding: 6rem 0; /*96px*/
+  }
+
+body > section {
+  background-color: $background-light-dark;
+  box-shadow: inset 0 -1px 0 $border-dark;
+}
+
+body > section:nth-child(odd) {
+  background-color: $background-light;
+}
+
+body .col {
+  vertical-align: middle;
+}
+
+/* @group Common styles */
+/*Masthead styles*/
+.hero .masthead {
+  text-align: center;
+  position: relative;
+  color: $text-light-low;
+
+  h1 {
+    color: $text-light-high;
+  }
+
+  blockquote {
+    color: $text-light-ultra-low;
+    font-size: 1.125rem; /*18px*/
+    &::before { content: none; }
+    & > footer { display: inline-block; }
+  }
+}
+
+.view-all::after { content: "\0020\203a"; }
+/* @end */
+
+
+/*Product blocks*/
+section .section-header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-footer {
+  margin-top: 2.8125rem; /*45px*/
+  padding-top: 2.8125rem; /*45px*/
+  // font-size: 1rem;.footer-title
+  text-align: center;
+  position: relative;
+  border-width: 1px 0 0;
+  border-image: linear-gradient(90deg,
+    hsla(0, 0%, 90%, 0),
+    hsla(0, 0%, 90%, 1) 50%,
+    hsla(0, 0%, 90%, 0) 100%) 2%;
+}
+
+  .masthead .section-footer {
+    color: $text-light-ultra-low;
+    border-image: linear-gradient(90deg,
+      hsla(0, 100%, 100%, 0),
+      hsla(0, 100%, 100%, .15) 50%,
+      hsla(0, 100%, 100%, 0) 100%) 2%;
+  }
+
+  .wrapper.extra .section-footer {
+    margin-bottom: -2.8125rem !important; /*Compensating 45px*/
+  }
+
+  body > section:nth-child(odd) .footer-title > span {
+    background-color: $background-light-dark;
+  }
+
+/*Masthead styles for product sections*/
+body .masthead {
+  .hero.hero {
+    display: inline-block;
+    margin: 5.625rem -90rem 0; /*90px top -1440px left*/
+  }
+}

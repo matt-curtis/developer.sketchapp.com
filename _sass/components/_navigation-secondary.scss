@@ -1,0 +1,44 @@
+.secondary-nav {
+  text-align: center;
+}
+
+.secondary-nav ul {
+  white-space: nowrap;
+  overflow: auto;
+  -webkit-mask-image: -webkit-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,1) 4%, hsla(0,0%,0%,1) 92%, hsla(0,0%,0%,0) 100%);
+}
+
+.secondary-nav ul::-webkit-scrollbar {
+  display: none;
+}
+
+  @include tablet-and-below {
+    .secondary-nav ul {
+      margin: 0 -1rem;
+    }
+  }
+
+.secondary-nav li {
+  margin-right: .25rem;
+  display: inline-block;
+  font-size: .875rem; /*14px*/
+}
+
+  @include tablet-and-above {
+    .secondary-nav li {
+      margin-right: 3.5rem; /*56px (1col)*/
+    }
+
+    .secondary-nav li:last-child {
+      margin-right: 0;
+    }
+  }
+
+.secondary-nav a {
+  display: inline-block;
+  padding: 1rem; /*16px*/
+  &:active,
+  &.active {
+    color: $text-dark-high;
+  }
+}
