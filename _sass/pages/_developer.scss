@@ -17,6 +17,11 @@
   }
 }
 
+.developer img {
+  max-width: 100%;
+  height: auto;
+}
+
 body > section {
   background-color: $background-light;
   box-shadow: inset 0 -1px 0 $border-dark;
