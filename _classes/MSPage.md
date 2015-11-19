@@ -7,7 +7,7 @@ inherits:
   - MSLayerGroup
 ---
 
-## Overview
+
 
 MSPage is a subclass of [MSLayerGroup](/docs/MSLayerGroup/) that represents a page of the document.
 The `frame` parameter of an MSPage is not useful as its not guaranteed to contain all layers on the page.

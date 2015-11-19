@@ -4,7 +4,7 @@ rels:
   - MSStyle
 ---
 
-## Overview
+
 
 Basically a wrapper around an array that holds style objects such as fill, border and more. See [MSStyle](/docs/MSStyle/) for possible values.
 

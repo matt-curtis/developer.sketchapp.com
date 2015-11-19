@@ -4,7 +4,7 @@ inherits:
   - MSLayer
 ---
 
-## Overview
+
 
 Represents text. Subclass of [MSLayer](/docs/MSLayer/).
 

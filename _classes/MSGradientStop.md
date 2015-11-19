@@ -4,7 +4,7 @@ rels:
   - MSGradient
 ---
 
-## Overview
+
 
 Represents a gradient stop on a gradient line.
 

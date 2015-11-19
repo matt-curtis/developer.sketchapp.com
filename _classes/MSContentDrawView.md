@@ -4,7 +4,7 @@ rels:
   - MSDocument
 ---
 
-## Overview
+
 
 This object is canvas view. You can get to it via `[MSDocument currentView]`.
 Many of the standard Cocoa actions work here as expected such as `cut:, copy:, paste:`

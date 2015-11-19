@@ -6,7 +6,7 @@ rels:
   - MSContentDrawView
 ---
 
-## Overview
+
 
 MSDocument represents a document object. The current document can be accessed using the `context.document` variable defined by the preamble.
 

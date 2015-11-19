@@ -5,7 +5,7 @@ rels:
   - MSGradientStop
 ---
 
-## Overview
+
 
 Represents a gradient for either a border or fill.
 

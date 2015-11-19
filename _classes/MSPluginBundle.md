@@ -8,7 +8,7 @@ pages:
     path: /introduction/plugin-bundles/
 ---
 
-## Overview
+
 
 Represents a bundle of MSPluginCommands. This can be used to access metadata about the currently executing command's bundle.
 

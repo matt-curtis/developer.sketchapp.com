@@ -9,7 +9,7 @@ rels:
   - MSShapeGroup
 ---
 
-## Overview
+
 
 MSLayer is the base class that represents a layer object.
 

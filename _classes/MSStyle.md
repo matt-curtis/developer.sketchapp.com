@@ -9,7 +9,7 @@ rels:
   - MSGraphicsContextSettings
 ---
 
-## Overview
+
 
 Represents all style attributes on a layer. Whatever kind of layer you have, each has a valid style object.
 

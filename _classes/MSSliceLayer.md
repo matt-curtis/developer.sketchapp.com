@@ -7,7 +7,7 @@ rels:
   - MSArtboardGroup
 ---
 
-## Overview
+
 
 Subclass of [MSLayer](/docs/MSLayer/) representing a slice in the document. Although it may have a style attribute, this is never used.
 

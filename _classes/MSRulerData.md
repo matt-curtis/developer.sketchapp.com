@@ -5,7 +5,7 @@ rels:
   - MSArtboardGroup
 ---
 
-## Overview
+
 
 Stores the guides used on its ruler. [MSPage](/docs/MSPage/) and [MSArtboardGroup](/docs/MSArtboardGroup/) both return their ruler data using `horizontalRulerData` and `verticalRulerData`.
 

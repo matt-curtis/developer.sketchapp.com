@@ -6,7 +6,7 @@ rels:
   - MSStyleFill
 ---
 
-## Overview
+
 
 Represents a border on a layer. Can be either a color or gradient fill.
 

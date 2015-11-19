@@ -4,7 +4,7 @@ rels:
   - MSPluginBundle
 ---
 
-## Overview
+
 
 Represents a single command within a plugin bundle. This can be used to access metadata about the currently executing command, and to store arbitrary metadata on layers for later use.
 

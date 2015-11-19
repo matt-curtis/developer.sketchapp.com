@@ -7,7 +7,7 @@ rels:
   - MSRulerData
 ---
 
-## Overview
+
 
 Since Sketch 2.2, an Artboard is just special kind of layer.
 

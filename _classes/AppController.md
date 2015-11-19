@@ -7,7 +7,7 @@ rels:
   - MSPluginCommand
 ---
 
-## Overview
+
 
 `AppController` contains a number of useful methods to control Sketch. The fastest way to get to them in your scripts is by calling `NSApp.delegate()`, which will return an AppController instance:
 

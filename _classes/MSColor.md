@@ -4,7 +4,7 @@ date: 2015-09-25
 author: Ale Muñoz
 ---
 
-## Overview
+
 
 MSColor is used to represent color instances internally.
 
