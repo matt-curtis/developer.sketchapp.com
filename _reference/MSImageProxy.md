@@ -6,13 +6,11 @@ rels:
   - MSImageData
 ---
 
-## Description
-
 MSImageProxy is designed to hang off model objects that need an image ([MSBitmapLayer](/docs/MSBitmapLayer/) and [MSStyleFill](/docs/MSStyleFill/) for example). It's designed to not store actual image-data itself unless there's no other option as it's designed to work together with [MSImageCollection](/docs/MSImageCollection/) which holds the real data.
 
 Note that MSImageProxy is an immutable class, so making a copy returns itself.
 
-[MSImageCollection](/docs/MSImageCollection/) holds on to a dictionary of sha1 -> [MSImageData](/docs/MSImageData/) objects. 
+[MSImageCollection](/docs/MSImageCollection/) holds on to a dictionary of sha1 -> [MSImageData](/docs/MSImageData/) objects.
 
 MSImageData contains the image, the hash and pre-coded NSData for archiving. MSImageProxy never encodes the imageData it holds on to, it just encodes the sha1, trusting that it can retrieve the MSImageData from the ImageCollection after decoding.
 
