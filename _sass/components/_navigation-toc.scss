@@ -1,0 +1,100 @@
+/*TOC navigation*/
+.toc-nav h1 {
+  margin-bottom: 1.125rem;
+}
+
+.toc-nav h2,
+.toc-nav nav > ol > li {
+  font-size: 1rem;
+  line-height: 1.73125rem; //27.7px
+  font-weight: $font-regular;
+  margin: 0;
+  padding: 0
+}
+
+  @include tablet-and-above {
+    .toc-nav li:not(:first-child) h2,
+    .toc-nav nav > ol > li:not(:first-child) {
+      margin: .25rem 0; //4px
+    }
+  }
+
+.toc-nav a.active {
+  color: $text-dark-high;
+}
+
+/*Active triangle indicator*/
+.toc-nav a.active::before {
+  content: "\2023";
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  margin-left: -.65rem;
+  margin-right: .25rem;
+  font-size: 1.2rem;
+}
+
+.toc-nav li {
+  max-width: 100%;
+  //padding-left: .25rem; /*4px*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: list-item;
+  font-size: .8125rem; //13px
+  line-height: 1.23125rem; //19.7px
+}
+
+  @include tablet-and-above {
+    .toc-nav li {
+      margin: .125rem 0; //2px
+    }
+  }
+
+@include tablet-and-below {
+  .toc-nav {
+    margin: -2.5rem -.5rem 0;
+    padding: .594rem 1rem;
+    width: calc(100% + 1rem); //fucking hack
+    border: 1px solid $border-dark-high;
+    border-radius: $radius-normal;
+  }
+
+  .toc-nav ol {
+    display: none;
+  }
+
+  .toc-nav li {
+    line-height: 1.5;
+  }
+
+  .toc-nav h2,
+  .toc-nav ol ol a {
+    display: block;
+    padding: .5rem 0;
+  }
+
+  .toc-nav .nav-toggle {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    font-size: .875rem; //14px
+    margin: -.594rem -1rem;
+    padding: .594rem 1rem;
+  }
+
+    .toc-nav .nav-toggle.active {
+      border-bottom: 1px solid $divider-dark;
+      margin-bottom: 1rem;
+    }
+
+  .toc-nav .nav-toggle::after {
+    float: right;
+    top: .7rem;
+    border-top-color: $text-dark-high;
+  }
+
+  .toc-nav .nav-toggle.active::after {
+    top: .7rem;
+    border-bottom-color: $text-dark-high;
+  }
+}

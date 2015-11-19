@@ -1,0 +1,257 @@
+/*Main Navigation*/
+.main-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+body:not(.hero) > .main-nav {
+  box-shadow: 0 1px 0 $border-dark;
+  border-bottom: 1px solid transparent;
+  background: rgba( $background-light, .99 );
+}
+
+  body.hero > .main-nav {
+    border: 0;
+    border-bottom-width: 1px;
+    border-image: linear-gradient(90deg,
+      hsla(0, 100%, 100%, 0),
+      hsla(0, 100%, 100%, .15) 50%,
+      hsla(0, 100%, 100%, 0) 100%) 5%;
+    background: rgba( $background-dark, .99 );
+  }
+
+/*Logo*/
+.main-nav h1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 1.625rem; /*26px*/
+  font-weight: $font-regular;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+body:not(.hero) .main-nav h1 a {
+  color: $text-dark-high;
+}
+
+  body.hero .main-nav h1 a {
+    color: $text-light-high;
+  }
+
+[role="banner"] {
+  width: 1em; /*26px*/
+  height: .923076923em; /*24px*/
+}
+
+  [role="banner"] * {
+    fill: $text-dark-high;
+  }
+
+  .hero [role="banner"] * {
+    fill: $text-light-high;
+  }
+
+.main-nav .nav-toggle {
+  display: none;
+}
+
+.main-nav a {
+  display: block;
+}
+
+  .main-nav a:active,
+  .main-nav a.active {
+    color: $text-dark-high;
+  }
+
+  .hero .main-nav a {
+    color: $text-light-ultra-low;
+    &:hover,
+    &:focus { color: $text-light; }
+    &:active,
+    &.active { color: $text-light-high; }
+  }
+
+.main-nav a > * {
+  vertical-align: middle;
+}
+
+@include tablet-and-above {
+  body {
+    padding-top: 4.3125rem; //69px
+  }
+
+  .main-nav {
+    margin-top: -4.3125rem; //69px
+    padding-top: 1.125rem ; /*18px*/
+    padding-bottom: 1.125rem ; /*18px*/
+    overflow: hidden; //easy auto clearing
+  }
+
+  .main-nav ul {
+    float: right;
+  }
+
+  .main-nav li {
+    margin-left: 2rem; /*32px*/
+  }
+
+  .main-nav a.buy {
+    padding: .2rem .625rem;
+    border: 1px solid $action-border;
+    border-radius: $radius-normal;
+      &:hover,
+      &:active,
+      &:focus {
+        color: $text-light-high;
+        background: $action;
+      }
+  }
+
+    .hero .main-nav a.buy {
+      color: $text-light;
+      border-color: rgba($text-light-high,.3);
+        &:hover,
+        &:active,
+        &:focus {
+          background: rgba($text-light-high,.04);
+          color: $text-light-high;
+          border-color: rgba($text-light-high,.4);
+        }
+    }
+}
+
+[id]:target {
+  padding-top: .001rem; //Hack to make targets scroll below the main navigation (as it's fixed)
+  margin-top: -.001rem;
+  animation: target-fade 1s 1; //"Yellow" fade technique (Blue in this case)
+}
+
+  @keyframes target-fade {
+    0% { background-color: rgba( $action-high, .08 ); }
+    100% { background-color: rgba(0,0,0,0); }
+  }
+
+@include tablet-and-below {
+  body {
+    padding-top: 3.8125rem; //61px
+  }
+
+  .main-nav {
+    margin-top: -3.8125rem; //61px
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .main-nav h1 {
+    font-size: 1.4375rem; //23px
+  }
+
+  .main-nav ul {
+    margin-top: 1.0625rem;
+    margin-left: -1rem;
+    margin-bottom: -1.0625rem !important;
+    padding-left: 1rem;
+    margin-right: -1rem;
+    border-top: 1px solid $border-dark;
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity .1s ease-out, max-height .1s cubic-bezier(0.165, 0.840, 0.440, 1.000); /* Up */
+  }
+
+    .main-nav ul.active {
+      max-height: 999px;
+      opacity: 1;
+      transition: opacity .05s ease-in,
+      max-height 1.2s cubic-bezier(0.075, 0.820, 0.165, 1.000); /* Down */
+    }
+
+    .hero .main-nav ul {
+      border-top-color: $divider-light;
+    }
+
+  .main-nav li:not(:last-child) {
+    padding: 0;
+    border-bottom: 1px solid $border-dark;
+  }
+
+    body.hero .main-nav li {
+      border-bottom-color: $divider-light;
+    }
+
+  .main-nav ul a {
+    display: block;
+    padding: 1rem 0;
+    position: relative;
+  }
+
+    //Disclosure indicator arrows
+    .main-nav ul a:not(.active)::before {
+      content: ""; //\203a
+      display: inline-block;
+      width: .375rem; //6px
+      height: .625rem; //10px
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('data:image/svg+xml;utf8,<svg width="8" height="13" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg"><title>Disclosure Indicator</title><path d="M0,1.5 L1.5,0 L7.29201249,5.79201249 C7.68302319,6.18302319 7.68649149,6.81350851 7.29201249,7.20798751 L1.5,13 L0,11.5 L4.29422684,7.20577316 C4.68401459,6.81598541 4.68722761,6.18722761 4.29422684,5.79422684 L0,1.5 Z" fill="#207cdf" fill-rule="evenodd"/></svg>');
+      background-size: contain;
+      opacity: .25;
+    }
+
+    .hero .main-nav ul a:not(.active)::before {
+      -webkit-filter: hue-rotate(276deg) saturate(0) saturate(0) brightness(100%);
+      filter: hue-rotate(276deg) saturate(0) saturate(0) brightness(100%);
+    }
+
+  // Navigation Toggle
+  .main-nav .nav-toggle {
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    color: $action-high;
+
+    font-weight: $font-regular;
+    position: relative;
+    top: 2px;
+    padding: 1rem; //Fitts
+    margin: -1rem; //Compensating
+  }
+
+    .hero .main-nav .nav-toggle {
+      color: $text-light-high;
+    }
+
+  .nav-toggle {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba( $action-high, .08 );
+  }
+
+  .nav-toggle::after {
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 0;
+    position: relative;
+    top: -2px;
+    margin-left: .375rem; /*4px*/
+    border-left: .25rem solid transparent;
+    border-right: .25rem solid transparent;
+    border-top: .25rem solid $action-high;
+    transition: transform .12s ease-out;
+  }
+
+    .hero .nav-toggle::after {
+      border-top-color: $text-light-high;
+    }
+
+    .nav-toggle.active::after {
+      transform: rotate(180deg);
+    }
+}

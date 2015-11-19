@@ -1,0 +1,73 @@
+/*Easier sizing*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*:last-child {
+  margin-bottom: 0 !important;
+}
+
+@include tablet-and-above {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5.6%; //This forces me to use 1056 as main reference for the columns
+    margin-bottom: -5.6% !important; //Compensating columns' margin bottom
+  }
+
+    /*Horizontally center the columns*/
+    .row.center-h,
+    .col.center-h {
+      justify-content: center;
+    }
+
+    /*Justify elements without known width ('.col' + no '.span-*' class*/
+    .row.justify {
+      justify-content: space-between;
+      justify-content: justify;
+    }
+
+    /*Distribute elements without known width ('.col' + no '.span-*' class*/
+    .row.distribute {
+      justify-content: space-around;
+    }
+
+    .row.col-reverse {
+      flex-direction: column-reverse;
+    }
+
+  .col {
+    margin-bottom: 05.3030303% !important; /*56/1056*/
+    /*Gap between columns*/
+    margin-left: 05.3030303%; /*56/1056*/
+  }
+
+    /*To vertically center contents inside each block (needs div wrapping the contents inside)*/
+    .row.center-v > .col {
+      display: flex;
+      align-items: center;
+    }
+
+    /*Has no visual impact, but it's more elegant*/
+    .row.justify .col + .col,
+    .row.distribute .col + .col {
+      margin-left: 0;
+    }
+
+  /*Column span sizes*/
+  //1000px of the main container + 56px of the negative margin I used to compensate
+  .span-1  { width: 03.030303%; /*32px*/ }
+  .span-2  { width: 11.3636364%; /*120px*/ }
+  .span-3  { width: 19.6969697%; /*208px*/ }
+  .span-4  { width: 28.030303%; /*296px*/ }
+  .span-5  { width: 36.3636364%; /*384px*/ }
+  .span-6  { width: 44.6969697%; /*472px*/ }
+  .span-7  { width: 53.030303%; /*560px*/ }
+  .span-8  { width: 61.3636364%; /*648px*/ }
+  .span-9  { width: 69.6969697%; /*736px*/ }
+  .span-10 { width: 78.030303%; /*824px*/ }
+  .span-11 { width: 86.3636364%; /*912px*/ }
+  .span-12 { width: 94.6969697%; /*1000px*/ }
+}

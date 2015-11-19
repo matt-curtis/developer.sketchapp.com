@@ -1,0 +1,56 @@
+body::after {
+  content: "";
+  display: block;
+  width: 62.5rem;
+  background: url(images/grid.png) repeat left top;
+  background-size: 88px 8px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: calc(-62.5rem / 2);
+  z-index: 9999;
+  pointer-events: none;
+  image-rendering: pixelated;
+}
+
+display-1,
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  background: lime;
+  position: relative;
+}
+
+.display-1 {
+  position: relative;
+  top: -7px;
+  line-height: 3.5rem;
+  margin: calc(3rem -.375rem) 0 calc(3rem -.5rem); /*48px-6px 0 48px-8px*/
+}
+
+.display-1::before,
+.display-1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background: yellow;
+  position: absolute;
+}
+
+  .display-1::before {
+    height: 6px;
+    top: 0;
+  }
+
+  .display-1::after {
+    height: 7px;
+    bottom: 0;
+  }
+
+// .hidden {
+//   display: none;
+// }
