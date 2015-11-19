@@ -1,0 +1,23 @@
+{
+  "name": "developer.sketchapp.com",
+  "version": "1.0.0",
+  "description": "This repository powers the development site for [Sketch](http://sketchapp.com), that lives at [developer.sketchapp.com](http://developer.sketchapp.com).",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BohemianCoding/developer.sketchapp.com.git"
+  },
+  "author": "Ale Muñoz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BohemianCoding/developer.sketchapp.com/issues"
+  },
+  "homepage": "https://github.com/BohemianCoding/developer.sketchapp.com#readme",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp-shell": "^0.5.1",
+    "lodash": "^3.10.1"
+  }
+}

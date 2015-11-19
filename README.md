@@ -13,7 +13,10 @@ We use [Jekyll](http://jekyllrb.com) as our content backend, so make sure to rea
 If you want to get the site working locally, run this:
 
 ```
+brew instal node # if you don't have it already
+sudo npm install -g gulp # if you don't have it already
 sudo gem install jekyll pygments.rb
+npm install
 ```
 
 and then run
