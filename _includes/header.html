@@ -13,10 +13,10 @@
       </h1>
       <span class="nav-toggle">Sections</span>
       <ul>
-        <li><a href="/introduction/">Introduction</a></li>
-        <li><a href="/code-examples/">Code Examples</a></li>
-        <li><a href="/reference/">Reference</a></li>
-        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/introduction/" {% if page.url contains '/introduction/' %} class="active"{% endif %}>Introduction</a></li>
+        <li><a href="/code-examples/" {% if page.url contains '/code-examples/' %} class="active"{% endif %}>Code Examples</a></li>
+        <li><a href="/reference/" {% if page.url contains '/reference/' %} class="active"{% endif %}>Reference</a></li>
+        <li><a href="/resources/" {% if page.url contains '/resources/' %} class="active"{% endif %}>Resources</a></li>
       </ul>
     </nav>
   </div>
