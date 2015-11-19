@@ -56,10 +56,12 @@
       margin-left: 0;
     }
 
+    //If there's only a span, center it
     [class^="span"]:only-child {
       margin: 0 auto;
     }
 
+    // Span sizes
     .span-1  { width: 03.2%; /*32px*/ }
     .span-2  { width: 12.0%; /*120px*/ }
     .span-3  { width: 20.8%; /*208px*/ }
