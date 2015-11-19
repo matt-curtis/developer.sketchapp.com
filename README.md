@@ -22,7 +22,7 @@ npm install
 and then run
 
 ```
-jekyll serve
+gulp
 ```
 
-to start the server, and open <http://0.0.0.0:4000> to see the site.
+to start the server and open a browser automatically.
