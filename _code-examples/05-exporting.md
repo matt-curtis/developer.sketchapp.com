@@ -1,7 +1,7 @@
 ---
 title:  "Exporting Examples"
 date: 2015-09-23
-permalink: /examples/exporting/
+permalink: /code-examples/exporting/
 ---
 
 Work in progress

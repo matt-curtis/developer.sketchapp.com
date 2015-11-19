@@ -18,9 +18,9 @@ collections:
   classes:
     output: true
     permalink: /docs/:path/
-  examples:
+  code-examples:
     output: true
-    permalink: /examples/:path/
+    permalink: /code-examples/:path/
 
 # Defaults
 defaults:
