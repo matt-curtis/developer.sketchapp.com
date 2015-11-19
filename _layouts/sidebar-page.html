@@ -31,7 +31,7 @@ layout: base
           <h2 class="h5">Inherits from:</h2>
           <ul>
             {% for inherit in page.inherits %}
-            <li><a href="/docs/{{inherit}}/">{{ inherit }}</a></li>
+            <li><a href="/reference/{{inherit}}/">{{ inherit }}</a></li>
             {% endfor %}
           </ul>
           {% endif %}
@@ -40,7 +40,7 @@ layout: base
           <h2 class="h5">Related classes:</h2>
           <ul>
             {% for rel in page.rels %}
-            <li><a href="/docs/{{rel}}/">{{ rel }}</a></li>
+            <li><a href="/reference/{{rel}}/">{{ rel }}</a></li>
             {% endfor %}
           </ul>
           {% endif %}
@@ -72,3 +72,13 @@ layout: base
     </div>
   </div>
 </section>
+
+<script>
+$(function(){
+  $(".toc-nav a").each(function(){
+    if ($(this).prop('href') == window.location.href) {
+            $(this).addClass('active');
+        }
+  });
+});
+</script>
