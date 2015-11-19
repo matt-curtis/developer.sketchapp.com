@@ -9,9 +9,9 @@ layout: default
     </div>
     <div class="page-metadata">
       {% if page.date %}
-      Last update: {{page.date}} •
+      <em>Last update: {{page.date}}</em>
       {% endif %}
-      Something wrong? <a href="{{site.github_repo}}/tree/gh-pages/{% if page.relative_path %}{{page.relative_path}}{% else %}{{page.path}}{% endif %}">Improve this page</a>
+      See something wrong? <a href="{{site.github_repo}}/tree/gh-pages/{% if page.relative_path %}{{page.relative_path}}{% else %}{{page.path}}{% endif %}">Improve this page</a>
     </div>
   </div>
 </section>
