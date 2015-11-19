@@ -1,16 +1,3 @@
-.page-metadata {
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid $divider-dark;
-  font-size: .8125rem;
-  text-align: right;
-  color: $text-dark-ultra-low;
-}
-
-.page-metadata em {
-  float: left;
-}
-
 @include tablet-and-above {
   .main-nav li > a {
     padding: .2625rem 0; //to compensate there's no buy button here
@@ -37,4 +24,19 @@ body > section + footer {
 
 body > section:nth-child(even):last-of-type + footer {
   background: $background-light-dark;
+}
+
+.page-metadata {
+  margin-top: 3rem;
+  padding: 1rem;
+  background: $background-light-dark;
+  border: 1px solid $border-dark;
+  border-radius: $radius-small;
+  font-size: .8125rem;
+  text-align: right;
+  color: $text-dark-ultra-low;
+}
+
+.page-metadata em {
+  float: left;
 }
