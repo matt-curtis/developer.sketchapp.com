@@ -11,6 +11,7 @@ redcarpet:
   extensions: ['smart', 'no_intra_emphasis', 'fenced_code_blocks', 'autolink', 'with_toc_data']
 sass:
   style: compressed
+exclude: [node_modules, gulpfile.js]
 
 # Dynamic Content
 collections:
