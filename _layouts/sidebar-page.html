@@ -1,0 +1,68 @@
+---
+layout: base
+---
+<!-- Sidebar layout -->
+<section class="sidebar">
+  <div class="wrapper">
+    <div class="row">
+      <aside class="col span-3 toc-nav" role="complementary">
+        <h1 class="h3 nav-toggle">Contents</h1>
+        <nav role="navigation">
+          <ul>
+            {% for class in site.classes %}
+            <li><a href="{{ class.url | prepend: site.baseurl }}">{{ class.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </aside>
+      <article class="col span-9" role="main">
+        {{ content }}
+
+        {% if page.inherits or page.rels %}
+        <footer>
+          <h1 class="h4">See also…</h1>
+          {% if page.inherits %}
+          <h2 class="h5">Inherits from:</h2>
+          <ul>
+            {% for inherit in page.inherits %}
+            <li><a href="/docs/{{inherit}}/">{{ inherit }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+
+          {% if page.rels %}
+          <h2 class="h5">Related classes:</h2>
+          <ul>
+            {% for rel in page.rels %}
+            <li><a href="/docs/{{rel}}/">{{ rel }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+
+          {% if page.pages %}
+          <h2 class="h5">Related content:</h2>
+          <ul>
+            {% for rel in page.pages %}
+            <li><a href="{{rel.path}}">{{ rel.name }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+
+        </footer>
+        {% endif %}
+
+        <!-- <div>
+          {% if page.previous != nil %}
+          Previous
+          {% endif %}
+
+          {% if page.next %}
+          Next
+          {% endif %}
+        </div> -->
+
+      </div>
+      </article>
+    </div>
+  </div>
+</section>

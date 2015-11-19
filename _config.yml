@@ -27,9 +27,9 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: "page"
+      layout: "single-page"
   - scope:
       path: "docs"
       type: "classes"
     values:
-      layout: "class"
+      layout: "sidebar-page"
