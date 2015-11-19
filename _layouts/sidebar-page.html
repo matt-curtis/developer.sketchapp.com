@@ -8,11 +8,16 @@ layout: base
       <aside class="col span-3 toc-nav" role="complementary">
         <h1 class="h3 nav-toggle">Contents</h1>
         <nav role="navigation">
-          <ul>
-            {% for class in site.classes %}
-            <li><a href="{{ class.url | prepend: site.baseurl }}">{{ class.title }}</a></li>
-            {% endfor %}
-          </ul>
+          <ol>
+            <li>
+              <h2>Classes</h2>
+              <ol>
+                {% for class in site.classes %}
+                <li><a href="{{ class.url | prepend: site.baseurl }}">{{ class.title }}</a></li>
+                {% endfor %}
+              </ol>
+            </li>
+          </ol>
         </nav>
       </aside>
       <article class="col span-9" role="main">
