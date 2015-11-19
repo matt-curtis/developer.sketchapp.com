@@ -150,18 +150,10 @@ p {
 ul, ol {
   list-style-position: outside;
   margin-top: 0;
-  padding-left: 1em;
+  padding-left: 1.2em;
   &.row,
   &.row { padding-left: 0; }
 }
-
-  @include tablet-and-above {
-    //Hanging punctuation
-    ul:not(.row), ol:not(.row) {
-      margin-left: -1.2em;
-      padding-left: 1.2em;
-    }
-  }
 
 ul {
   list-style-type: square;
