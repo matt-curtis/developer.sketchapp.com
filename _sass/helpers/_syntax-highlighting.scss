@@ -1,7 +1,7 @@
 /**
  * Syntax highlighting styles
  */
-$spacing-unit:     30px;
+$spacing-unit: 30px;
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -16,7 +16,7 @@ ul, ol, dl, figure,
   background: #fff;
   @extend %vertical-rhythm;
 
-  pre { background-color: #272822; }
+  //pre { background-color: #272822; }
 
   .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
   .c { color: #75715e } /* Comment */
@@ -81,4 +81,8 @@ ul, ol, dl, figure,
   .vg { color: #f8f8f2 } /* Name.Variable.Global */
   .vi { color: #f8f8f2 } /* Name.Variable.Instance */
   .w { color: #f8f8f2 } /* Text.Whitespace */
+}
+
+code > span {
+  text-shadow: none;
 }
