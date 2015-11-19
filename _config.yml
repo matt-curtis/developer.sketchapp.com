@@ -15,9 +15,9 @@ exclude: [node_modules, gulpfile.js]
 
 # Dynamic Content
 collections:
-  classes:
+  reference:
     output: true
-    permalink: /docs/:path/
+    permalink: /reference/:path/
   code-examples:
     output: true
     permalink: /code-examples/:path/
@@ -29,7 +29,7 @@ defaults:
     values:
       layout: "single-page"
   - scope:
-      path: "docs"
-      type: "classes"
+      path: "reference"
+      type: "reference"
     values:
       layout: "sidebar-page"
