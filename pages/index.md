@@ -1,5 +1,6 @@
 ---
 title: Hello, World
+permalink: /
 ---
 
 ## Welcome to Sketch's Developer Site
