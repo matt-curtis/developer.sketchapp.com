@@ -1,4 +1,10 @@
 /*TOC navigation*/
+@include tablet-and-above {
+  .toc-nav {
+    margin-top: 1rem;
+  }
+}
+
 .toc-nav h1 {
   margin-bottom: 1.125rem;
 }

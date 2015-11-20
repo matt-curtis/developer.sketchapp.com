@@ -80,7 +80,7 @@ td {
    margin-left: .25rem;
    font-size: .75rem;
    vertical-align: top;
-   transform: scaleX(-1);
+   transform: scaleX(-1); //Flipping, as this char doesn't exist that way
 }
 
 .developer .content footer {
