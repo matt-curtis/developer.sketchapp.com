@@ -11,7 +11,7 @@ MSImageProxy is designed to hang off model objects that need an image ([MSBitmap
 
 Note that MSImageProxy is an immutable class, so making a copy returns itself.
 
-[MSImageCollection](/reference/MSImageCollection/) holds on to a dictionary of sha1 -> [MSImageData](/reference/MSImageData/) objects.
+[MSImageCollection](/reference/MSImageCollection/) holds on to a dictionary of sha1 → [MSImageData](/reference/MSImageData/) objects.
 
 MSImageData contains the image, the hash and pre-coded NSData for archiving. MSImageProxy never encodes the imageData it holds on to, it just encodes the sha1, trusting that it can retrieve the MSImageData from the ImageCollection after decoding.
 
