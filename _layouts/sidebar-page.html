@@ -22,7 +22,8 @@ layout: base
               <li>
                 <h2>Classes</h2>
                 <ol>
-                  {% for class in site.reference %}
+                  {% assign classes = site.reference | sort:"title"%}
+                  {% for class in classes %}
                   <li><a href="{{class.url}}">{{ class.title }}</a></li>
                   {% endfor %}
                 </ol>
