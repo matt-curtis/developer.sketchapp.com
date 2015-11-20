@@ -21,6 +21,9 @@ collections:
   code-examples:
     output: true
     permalink: /code-examples/:path/
+  introduction:
+    output: true
+    permalink: /introduction/:path/
 
 # Defaults
 defaults:
@@ -36,5 +39,10 @@ defaults:
   - scope:
       path: "code-examples"
       type: "code-examples"
+    values:
+      layout: "sidebar-page"
+  - scope:
+      path: "introduction"
+      type: "introduction"
     values:
       layout: "sidebar-page"
