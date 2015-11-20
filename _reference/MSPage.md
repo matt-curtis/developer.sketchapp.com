@@ -1,7 +1,6 @@
 ---
 title: MSPage
-summary: MSPage is a subclass of MSLayerGroup that represents a page of the document.
-The <code>frame</code> parameter of an MSPage is not useful as its not guaranteed to contain all layers on the page.
+summary: MSPage is a subclass of MSLayerGroup that represents a page of the document. The <code>frame</code> parameter of an MSPage is not useful as its not guaranteed to contain all layers on the page.
 rels:
   - GKRect
   - MSRulerData
