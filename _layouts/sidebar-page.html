@@ -69,7 +69,8 @@ layout: base
         </footer>
         {% endif %}
 
-        <!-- <div>
+        {% comment %}
+        <div>
           {% if page.previous != nil %}
           Previous
           {% endif %}
@@ -77,7 +78,8 @@ layout: base
           {% if page.next %}
           Next
           {% endif %}
-        </div> -->
+        </div>
+        {% endcomment %}
 
         {% include contribute.html %}
       </div>
