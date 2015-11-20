@@ -26,17 +26,16 @@ body > section:nth-child(even):last-of-type + footer {
   background: $background-light-dark;
 }
 
-.page-metadata {
+.page-contribute {
   margin-top: 3rem;
   padding: 1rem;
   background: $background-light-dark;
   border: 1px solid $border-dark;
   border-radius: $radius-small;
   font-size: .8125rem;
-  text-align: right;
   color: $text-dark-ultra-low;
 }
 
-.page-metadata em {
-  float: left;
+.page-contribute em {
+  float: right;
 }
