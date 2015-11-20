@@ -1,4 +1,5 @@
 ---
+layout: sidebar-page
 title: Code Examples
 permalink: /code-examples/
 ---

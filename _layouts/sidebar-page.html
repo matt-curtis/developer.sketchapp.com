@@ -1,7 +1,6 @@
 ---
 layout: base
 ---
-<!-- Sidebar layout -->
 <section class="sidebar">
   <div class="wrapper">
     <div class="row">
@@ -9,14 +8,21 @@ layout: base
         <h1 class="h3 nav-toggle">Contents</h1>
         <nav role="navigation">
           <ol>
-            <li>
-              <h2>Classes</h2>
-              <ol>
-                {% for class in site.reference %}
-                <li><a href="{{ class.url | prepend: site.baseurl }}">{{ class.title }}</a></li>
-                {% endfor %}
-              </ol>
-            </li>
+              {% if page.url contains '/reference/' %}
+                <li>
+                  <h2>Classes</h2>
+                  <ol>
+                    {% for class in site.reference %}
+                    <li><a href="{{class.url}}">{{ class.title }}</a></li>
+                    {% endfor %}
+                  </ol>
+                </li>
+              {% endif %}
+              {% if page.url contains '/code-examples/' %}
+                  {% for example in site.code-examples %}
+                    <li><a href="{{example.url}}">{{example.title}}</a></li>
+                  {% endfor %}
+              {% endif %}
           </ol>
         </nav>
       </aside>

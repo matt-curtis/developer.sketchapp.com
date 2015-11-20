@@ -33,3 +33,8 @@ defaults:
       type: "reference"
     values:
       layout: "sidebar-page"
+  - scope:
+      path: "code-examples"
+      type: "code-examples"
+    values:
+      layout: "sidebar-page"
