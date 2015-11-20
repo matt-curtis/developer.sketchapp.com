@@ -18,11 +18,11 @@ body > section:nth-child(odd) {
   background-color: $background-light-dark;
 }
 
-body > section + footer {
+body > section ~ footer {
   background: $background-light;
 }
 
-body > section:nth-child(even):last-of-type + footer {
+body > section:nth-child(even):last-of-type ~ footer {
   background: $background-light-dark;
 }
 
