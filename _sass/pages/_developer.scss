@@ -45,26 +45,23 @@ table {
   border-collapse: separate;
   border-spacing: 0;
   border-radius: $radius-small;
-  border: 1px solid #eee;
-  background-color: $background-light-dark;
+  border: 1px solid $border-dark-high;
+  background-color: rgba( $action , .05 );
+  box-shadow: 0 1px 2px $border-dark;
   color: $text-dark;
 }
 
 td {
   width: 50%;
   padding: 1rem;
-  border-bottom: 1px solid #eee;
-  border-right: 1px solid #eee;
+  border-bottom: 1px solid $border-dark;
+  //border-right: 1px solid $border-dark;
   vertical-align: top;
 }
 
-  td:last-child {
-    border-right: 0;
-  }
-
-  tr:last-child {
-    display: none;
-  }
+  // td:last-child {
+  //   border-right: 0;
+  // }
 
   // FIXME It's inserting more trs than it should
   tr:nth-last-child(2) td {
