@@ -5,7 +5,7 @@ permalink: /introduction/legacy-plugins/
 
 ## Legacy Script Support
 
-In previous versions of Sketch, a Plugin was just a single text file containing some CocoaScript code.
+In previous versions of Sketch (prior to 3.4), a Plugin was just a single text file containing some CocoaScript code.
 
 These scripts were executed within the global scope, and had access to some variables:
 
