@@ -56,24 +56,24 @@
       margin-left: 0;
     }
 
+  // Span sizes
+  .span-1  { width: 03.2%; /*32px*/ }
+  .span-2  { width: 12.0%; /*120px*/ }
+  .span-3  { width: 20.8%; /*208px*/ }
+  .span-4  { width: 29.6%; /*296px*/ }
+  .span-5  { width: 38.4%; /*384px*/ }
+  .span-6  { width: 47.2%; /*472px*/ }
+  .span-7  { width: 56%.0; /*560px*/ }
+  .span-8  { width: 64.8%; /*648px*/ }
+  .span-9  { width: 73.6%; /*736px*/ }
+  .span-10 { width: 82.4%; /*824px*/ }
+  .span-11 { width: 91.2%; /*912px*/ }
+  .span-12 { width: 100%; /*1000px*/ }
+
     //If there's only a span, center it
     [class*="span"]:only-child {
       margin: 0 auto;
     }
-
-    // Span sizes
-    .span-1  { width: 03.2%; /*32px*/ }
-    .span-2  { width: 12.0%; /*120px*/ }
-    .span-3  { width: 20.8%; /*208px*/ }
-    .span-4  { width: 29.6%; /*296px*/ }
-    .span-5  { width: 38.4%; /*384px*/ }
-    .span-6  { width: 47.2%; /*472px*/ }
-    .span-7  { width: 56%.0; /*560px*/ }
-    .span-8  { width: 64.8%; /*648px*/ }
-    .span-9  { width: 73.6%; /*736px*/ }
-    .span-10 { width: 82.4%; /*824px*/ }
-    .span-11 { width: 91.2%; /*912px*/ }
-    .span-12 { width: 100%; /*1000px*/ }
 
   /*Column span sizes*/
   //1000px of the main container + 56px of the negative margin I used to compensate
