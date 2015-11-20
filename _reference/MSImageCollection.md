@@ -25,7 +25,7 @@ Add images with known SHAs to the collection. Typically the dictionary passed in
 
 ### (MSImageData)imageWithSHA1:(NSData*)sha1
 
-Return an image from the collection matching a given SHA1. This is used by [MSBitmapLayer](/docs/MSBitmapLayer/) to retrieve the actual image to draw.
+Return an image from the collection matching a given SHA1. This is used by [MSBitmapLayer](/reference/MSBitmapLayer/) to retrieve the actual image to draw.
 
 ### (void)purgeImagesNotMatchingSHAs:(NSSet)shas
 

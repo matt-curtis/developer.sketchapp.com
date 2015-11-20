@@ -16,11 +16,11 @@ MSLayer is the base class that represents a layer object.
 
 ### frame: (readonly)
 
-An instance of [MSRect](/docs/MSRect/). Determines size and position on the canvas.
+An instance of [MSRect](/reference/MSRect/). Determines size and position on the canvas.
 
 ### style: (readonly)
 
-An instance of [MSStyle](/docs/MSStyle/). Determines all style-related attributes such as Borders, Fills, Shadows and more
+An instance of [MSStyle](/reference/MSStyle/). Determines all style-related attributes such as Borders, Fills, Shadows and more
 
 ### name: setName:(NSString)name
 
@@ -73,7 +73,7 @@ layer.isFlippedHorizontal()
 
 ### parentGroup:
 
-Returns the parent group of this layer. Note that this can return an [MSPage](/docs/MSPage/) or [MSArtboardGroup](/docs/MSArtboardGroup/) as well as an [MSLayerGroup](/docs/MSLayerGroup/)
+Returns the parent group of this layer. Note that this can return an [MSPage](/reference/MSPage/) or [MSArtboardGroup](/reference/MSArtboardGroup/) as well as an [MSLayerGroup](/reference/MSLayerGroup/)
 
 ### isSelected:, setIsSelected:
 
@@ -85,7 +85,7 @@ Check the [Working with Selections](/examples/working-with-selections/) section 
 
 ### absoluteRect: (readonly)
 
-Returns a [MSAbsoluteRect](/docs/MSAbsoluteRect/) object that returns the bounds of this layer in absolute coordinates; it takes into account the layer’s rotation and that of any of its parents.
+Returns a [MSAbsoluteRect](/reference/MSAbsoluteRect/) object that returns the bounds of this layer in absolute coordinates; it takes into account the layer’s rotation and that of any of its parents.
 
 ### duplicate:
 

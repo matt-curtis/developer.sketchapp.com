@@ -8,7 +8,7 @@ inherits:
   - MSLayerGroup
 ---
 
-MSPage is a subclass of [MSLayerGroup](/docs/MSLayerGroup/) that represents a page of the document.
+MSPage is a subclass of [MSLayerGroup](/reference/MSLayerGroup/) that represents a page of the document.
 The `frame` parameter of an MSPage is not useful as its not guaranteed to contain all layers on the page.
 
 Hoever do check out MSLayerGroup as there are useful methods in there as well.
@@ -17,11 +17,11 @@ Hoever do check out MSLayerGroup as there are useful methods in there as well.
 
 ### currentArtboard:
 
-Returns the currently active [MSArtboardGroup](/docs/MSArtboardGroup/)
+Returns the currently active [MSArtboardGroup](/reference/MSArtboardGroup/)
 
 ### contentBounds:
 
-If you want a rectangle around everything on the canvas, use this. It returns a [GKRect](/docs/GKRect/) object that you can use to export from.
+If you want a rectangle around everything on the canvas, use this. It returns a [GKRect](/reference/GKRect/) object that you can use to export from.
 
 ### exportableLayers:
 
@@ -33,7 +33,7 @@ Returns a readonly array of all artboards on the page. If you want to add a new 
 
 ### addLayers:(NSArray)array
 
-Adds an array of [MSLayer](/docs/MSLayer/) objects to the page. For example, if you want to add an 800x600 artboard to the current page, you'd do this:
+Adds an array of [MSLayer](/reference/MSLayer/) objects to the page. For example, if you want to add an 800x600 artboard to the current page, you'd do this:
 
 ```javascript
 var artboard = MSArtboardGroup.new()
@@ -69,7 +69,7 @@ doc.setCurrentPage(newPage)
 
 ### horizontalRulerData / verticalRulerData
 
-Both return the [MSRulerData](/docs/MSRulerData/) object used to store rulers for their respective axes. Note that this data is only used if there’s no artboard on the page ([MSArtboardGroup](/docs/MSArtboardGroup/) has similar methods for itself).
+Both return the [MSRulerData](/reference/MSRulerData/) object used to store rulers for their respective axes. Note that this data is only used if there’s no artboard on the page ([MSArtboardGroup](/reference/MSArtboardGroup/) has similar methods for itself).
 
 ### selectedLayers:
 

@@ -5,7 +5,7 @@ rels:
   - MSStyle
 ---
 
-Basically a wrapper around an array that holds style objects such as fill, border and more. See [MSStyle](/docs/MSStyle/) for possible values.
+Basically a wrapper around an array that holds style objects such as fill, border and more. See [MSStyle](/reference/MSStyle/) for possible values.
 
 ## Methods & Attributes
 

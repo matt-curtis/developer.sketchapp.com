@@ -58,11 +58,11 @@ var onRun = function(context) {
 
 All Plugins in Sketch have access to the following default variables:
 
-- **command**: an [`MSPluginCommand`](/docs/MSPluginCommand/) object representing the script command currently executing
-- **document**: an [`MSDocument`](/docs/MSDocument/) object representing the current document
+- **command**: an [`MSPluginCommand`](/reference/MSPluginCommand/) object representing the script command currently executing
+- **document**: an [`MSDocument`](/reference/MSDocument/) object representing the current document
 - **scriptPath**: an `NSString` containing the full path to the currently executing script
 - **scriptURL**: like **scriptPath**, but as an NSURL object
-- **selection**, an `NSArray` of the layer(s) that are selected in the current document; each item of this array is an [`MSLayer`](/docs/MSLayer/) object
+- **selection**, an `NSArray` of the layer(s) that are selected in the current document; each item of this array is an [`MSLayer`](/reference/MSLayer/) object
 
 
 ## Trying Out Scripts

@@ -7,7 +7,7 @@ rels:
   - MSColor
 ---
 
-Sketch uses [MSColor](/docs/MSColor/) instances to represent colors internally, but NSColor is used in some places. On top of the default [NSColor methods](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSColor_Class/), Sketch adds the following methods:
+Sketch uses [MSColor](/reference/MSColor/) instances to represent colors internally, but NSColor is used in some places. On top of the default [NSColor methods](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSColor_Class/), Sketch adds the following methods:
 
 ## Methods & Attributes
 

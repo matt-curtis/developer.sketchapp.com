@@ -27,7 +27,7 @@ Returns `1` is both color instances are equal, `0` otherwise.
 
 ### colorWithNSColor:(NSColor)color
 
-Creates an MSColor instance from an [NSColor](/docs/NSColor/)
+Creates an MSColor instance from an [NSColor](/reference/NSColor/)
 
 ```JavaScript
 var blackColor = MSColor.colorWithNSColor(NSColor.colorWithGray(0.0))

@@ -50,7 +50,7 @@ Runs the specified command from the Plugins menu.
 
 ### runPluginCommandWithIdentifier:(NSString)identifier fromBundleAtURL:(NSURL)url
 
-Runs the specified command `identifier` from the plugin bundle at `url`. See [MSPluginBundle](/docs/MSPluginBundle/) for more information.
+Runs the specified command `identifier` from the plugin bundle at `url`. See [MSPluginBundle](/reference/MSPluginBundle/) for more information.
 
 Example (copy [this plugin](/downloads/plugins/hi.sketchplugin.zip) to your Desktop):
 

@@ -6,7 +6,7 @@ rels:
   - MSLayer
 ---
 
-Represents a size and position of a layer on the screen. See [MSLayer](/docs/MSLayer/) for more information
+Represents a size and position of a layer on the screen. See [MSLayer](/reference/MSLayer/) for more information
 
 
 ## Methods & Attributes
@@ -69,4 +69,4 @@ Get / set the constrainProportions property, which controls whether the width an
 
 ### GKRect
 
-Returns a [GKRect](/docs/GKRect/) representation of the rectangle
+Returns a [GKRect](/reference/GKRect/) representation of the rectangle

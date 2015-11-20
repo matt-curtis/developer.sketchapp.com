@@ -5,7 +5,7 @@ inherits:
   - MSLayer
 ---
 
-Represents text. Subclass of [MSLayer](/docs/MSLayer/).
+Represents text. Subclass of [MSLayer](/reference/MSLayer/).
 
 Only the most basic of properties have yet been exposed.
 

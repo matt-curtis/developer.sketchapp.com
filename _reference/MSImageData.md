@@ -13,7 +13,7 @@ rels:
 
 ### (NSImage)image:
 
-### ([MSImageCollection](/docs/MSImageCollection/))collection:
+### ([MSImageCollection](/reference/MSImageCollection/))collection:
 
 ### (NSDictionary)imageInfo:
 
