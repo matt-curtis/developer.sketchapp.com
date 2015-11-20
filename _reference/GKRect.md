@@ -2,6 +2,7 @@
 title: GKRect
 date: 2015-09-25
 author: Pieter Omvlee
+summary: GKRect is nowadays mostly unused in the app, but there are a few places where it can still be set. Using the plain NSRect struct from Foundation is preferred; many objects will have a setRect method which accepts an NSRect, not a GKRect.
 rels:
   - MSRect
   - MSLayer

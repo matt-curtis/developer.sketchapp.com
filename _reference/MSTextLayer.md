@@ -1,10 +1,9 @@
 ---
 title: MSTextLayer
+summary: Represents text. Subclass of MSLayer.
 inherits:
   - MSLayer
 ---
-
-
 
 Represents text. Subclass of [MSLayer](/docs/MSLayer/).
 

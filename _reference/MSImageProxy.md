@@ -1,5 +1,6 @@
 ---
 title: MSImageProxy
+summary: MSImageProxy is designed to hang off model objects that need an image (MSBitmapLayer and MSStyleFill for example). It's designed to not store actual image-data itself unless there's no other option as it's designed to work together with MSImageCollection which holds the real data.
 rels:
   - MSImageCollection
   - MSBitmapLayer

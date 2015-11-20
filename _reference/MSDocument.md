@@ -2,11 +2,10 @@
 title: MSDocument
 date: 2015-09-25
 author: Ale Muñoz
+summary: MSDocument represents a document object. The current document can be accessed using the <code>context.document</code> variable defined by the preamble.
 rels:
   - MSContentDrawView
 ---
-
-
 
 MSDocument represents a document object. The current document can be accessed using the `context.document` variable defined by the preamble.
 

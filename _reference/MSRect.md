@@ -1,11 +1,10 @@
 ---
 title: MSRect
+summary: Represents a size and position of a layer on the screen. See MSLayer for more information.
 rels:
   - GKRect
   - MSLayer
 ---
-
-
 
 Represents a size and position of a layer on the screen. See [MSLayer](/docs/MSLayer/) for more information
 

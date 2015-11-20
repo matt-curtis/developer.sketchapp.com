@@ -1,11 +1,10 @@
 ---
 title: MSGradient
+summary: Represents a gradient for either a border or fill.
 rels:
   - MSStyleFill
   - MSGradientStop
 ---
-
-
 
 Represents a gradient for either a border or fill.
 

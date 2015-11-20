@@ -1,10 +1,9 @@
 ---
 title: MSGraphicsContextSettings
+summary: This class holds Opacity and Blending for its associated layer or style. Each layer fill also has a ContextSettings such that we can vary opacity between fills.
 rels:
   - MSDocument
 ---
-
-
 
 This class holds Opacity and Blending for its associated layer or style. Each layer fill also has a ContextSettings such that we can vary opacity between fills.
 

@@ -2,6 +2,7 @@
 title: NSColor
 date: 2015-09-23
 author: Ale Muñoz
+summary: Sketch uses MSColor instances to represent colors internally, but NSColor is used in some places. On top of the default NSColor methods.
 rels:
   - MSColor
 ---

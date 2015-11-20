@@ -1,12 +1,11 @@
 ---
 title: MSStyleBorder
+summary: Represents a border on a layer. Can be either a color or gradient fill.
 rels:
   - MSStyle
   - MSGradient
   - MSStyleFill
 ---
-
-
 
 Represents a border on a layer. Can be either a color or gradient fill.
 

@@ -1,5 +1,6 @@
 ---
 title: MSStyle
+summary: Represents all style attributes on a layer. Whatever kind of layer you have, each has a valid style object.
 rels:
   - MSStylePartCollection
   - MSStyleBorder
@@ -8,8 +9,6 @@ rels:
   - MSStyleInnerShadow
   - MSGraphicsContextSettings
 ---
-
-
 
 Represents all style attributes on a layer. Whatever kind of layer you have, each has a valid style object.
 

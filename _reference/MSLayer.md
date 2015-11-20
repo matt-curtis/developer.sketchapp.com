@@ -1,5 +1,6 @@
 ---
 title: MSLayer
+summary: MSLayer is the base class that represents a layer object.
 rels:
   - MSLayerGroup
   - MSRect
@@ -8,8 +9,6 @@ rels:
   - MSPage
   - MSShapeGroup
 ---
-
-
 
 MSLayer is the base class that represents a layer object.
 

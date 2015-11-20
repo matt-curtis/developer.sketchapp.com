@@ -2,6 +2,7 @@
 title: AppController
 date: 2015-10-13
 author: Ale Muñoz
+summary: <code>AppController</code> contains a number of useful methods to control Sketch. The fastest way to get to them in your scripts is by calling <code>NSApp.delegate()</code>, which will return an AppController instance.
 rels:
   - MSPluginBundle
   - MSPluginCommand

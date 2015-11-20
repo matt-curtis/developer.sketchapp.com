@@ -1,11 +1,10 @@
 ---
 title: MSLayerGroup
+summary: MSLayerGroup represents a group in the document, but is an MSLayer itself. Two important subclasses of MSLayerGroup are MSArtboardGroup and MSPage.
 rels:
   - MSArtboardGroup
   - MSLayer
 ---
-
-
 
 MSLayerGroup represents a group in the document, but is an [MSLayer](/docs/MSLayer/) itself. Two important subclasses of MSLayerGroup are [MSArtboardGroup](/docs/MSArtboardGroup/) and [MSPage](/docs/MSPage/).
 

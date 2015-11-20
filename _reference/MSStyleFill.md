@@ -1,12 +1,11 @@
 ---
 title: MSStyleFill
+summary: Represents a fill on a layer. Can be either a color or gradient fill.
 rels:
   - MSStyle
   - MSStyleBorder
   - MSGradient
 ---
-
-
 
 Represents a fill on a layer. Can be either a color or gradient fill.
 

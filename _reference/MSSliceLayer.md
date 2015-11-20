@@ -1,13 +1,12 @@
 ---
 title: MSSliceLayer
+summary: Subclass of MSLayer representing a slice in the document. Although it may have a style attribute, this is never used.
 inherits:
   - MSLayer
 rels:
   - MSRect
   - MSArtboardGroup
 ---
-
-
 
 Subclass of [MSLayer](/docs/MSLayer/) representing a slice in the document. Although it may have a style attribute, this is never used.
 

@@ -2,9 +2,8 @@
 title: MSColor
 date: 2015-09-25
 author: Ale Muñoz
+summary: MSColor is used to represent color instances internally.
 ---
-
-
 
 MSColor is used to represent color instances internally.
 

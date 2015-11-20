@@ -1,11 +1,10 @@
 ---
 title: MSRulerData
+Stores the guides used on its ruler. MSPage and MSArtboardGroup both return their ruler data using <code>horizontalRulerData</code> and <code>verticalRulerData</code>.
 rels:
   - MSPage
   - MSArtboardGroup
 ---
-
-
 
 Stores the guides used on its ruler. [MSPage](/docs/MSPage/) and [MSArtboardGroup](/docs/MSArtboardGroup/) both return their ruler data using `horizontalRulerData` and `verticalRulerData`.
 

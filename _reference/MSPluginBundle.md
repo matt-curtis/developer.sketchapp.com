@@ -1,5 +1,6 @@
 ---
 title: MSPluginBundle
+summary: Represents a bundle of MSPluginCommands. This can be used to access metadata about the currently executing command's bundle.
 rels:
   - MSPluginCommand
   - AppController
@@ -7,8 +8,6 @@ pages:
   - name: Plugin Bundles
     path: /introduction/plugin-bundles/
 ---
-
-
 
 Represents a bundle of MSPluginCommands. This can be used to access metadata about the currently executing command's bundle.
 

@@ -1,10 +1,9 @@
 ---
 title: MSGradientStop
+summary: Represents a gradient stop on a gradient line.
 rels:
   - MSGradient
 ---
-
-
 
 Represents a gradient stop on a gradient line.
 

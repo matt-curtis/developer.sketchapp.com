@@ -5,7 +5,6 @@ rels:
   - MSImageData
 ---
 
-
 ## Methods & Attributes
 
 ### (NSUInteger)uniqueImageCount:
