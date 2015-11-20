@@ -9,7 +9,8 @@ Work in progress
 ## List of classes
 <table>
   <tbody>
-  {% for class in site.reference %}
+  {% assign classes = site.reference | sort: 'title' %}
+  {% for class in classes %}
     <tr>
       <td><a href="{{class.url}}">{{class.title}}</a></td>
       <td>{{class.summary}}</td>

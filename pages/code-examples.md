@@ -11,7 +11,8 @@ Sometimes the best way of learning how to do something is reading about it. So h
 ## Contents
 <table>
   <tbody>
-  {% for example in site.code-examples %}
+  {% assign examples = site.code-examples | sort: 'order' %}
+  {% for example in examples %}
     <tr>
       <td><a href="{{example.url}}">{{example.title}}</a></td>
       <td>{{example.summary}}</td>
