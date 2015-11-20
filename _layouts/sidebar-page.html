@@ -8,21 +8,26 @@ layout: base
         <h1 class="h3 nav-toggle">Contents</h1>
         <nav role="navigation">
           <ol>
-              {% if page.url contains '/reference/' %}
-                <li>
-                  <h2>Classes</h2>
-                  <ol>
-                    {% for class in site.reference %}
-                    <li><a href="{{class.url}}">{{ class.title }}</a></li>
-                    {% endfor %}
-                  </ol>
-                </li>
-              {% endif %}
-              {% if page.url contains '/code-examples/' %}
-                  {% for example in site.code-examples %}
-                    <li><a href="{{example.url}}">{{example.title}}</a></li>
+            {% if page.url contains '/introduction/' %}
+                {% for introduction in site.introduction %}
+                  <li><a href="{{introduction.url}}">{{introduction.title}}</a></li>
+                {% endfor %}
+            {% endif %}
+            {% if page.url contains '/code-examples/' %}
+                {% for example in site.code-examples %}
+                  <li><a href="{{example.url}}">{{example.title}}</a></li>
+                {% endfor %}
+            {% endif %}
+            {% if page.url contains '/reference/' %}
+              <li>
+                <h2>Classes</h2>
+                <ol>
+                  {% for class in site.reference %}
+                  <li><a href="{{class.url}}">{{ class.title }}</a></li>
                   {% endfor %}
-              {% endif %}
+                </ol>
+              </li>
+            {% endif %}
           </ol>
         </nav>
       </aside>
@@ -72,7 +77,8 @@ layout: base
           Next
           {% endif %}
         </div> -->
-
+        
+        {% include contribute.html %}
       </div>
       </article>
     </div>

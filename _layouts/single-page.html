@@ -6,11 +6,8 @@ layout: base
     <div class="span-10">
       <h1>{{ page.title }}</h1>
       {{ content }}
-      <div class="page-contribute">
-        {% if page.date %}
-        <em>Last update: {{page.date}}</em>
-        {% endif %}
-        See something wrong or incomplete? <a href="{{site.github_repo}}/tree/gh-pages/{% if page.relative_path %}{{page.relative_path}}{% else %}{{page.path}}{% endif %}">Help us improving this page</a>.
+
+      {% include contribute.html %}
     </div>
   </div>
 </section>
