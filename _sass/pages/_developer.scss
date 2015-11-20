@@ -39,3 +39,34 @@ body > section:nth-child(even):last-of-type + footer {
 .page-contribute em {
   float: right;
 }
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: $radius-small;
+  border: 1px solid #eee;
+  background-color: $background-light-dark;
+  color: $text-dark;
+}
+
+td {
+  width: 50%;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  vertical-align: top;
+}
+
+  td:last-child {
+    border-right: 0;
+  }
+
+  tr:last-child {
+    display: none;
+  }
+
+  // FIXME It's inserting more trs than it should
+  tr:nth-last-child(2) td {
+    border-bottom: 0;
+  }

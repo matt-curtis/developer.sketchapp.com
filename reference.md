@@ -8,8 +8,14 @@ Helvetica chicharrones austin, meggings locavore vice waistcoat salvia williamsb
 
 Plaid bitters chia cred, helvetica butcher meditation single-origin coffee letterpress jean shorts. Franzen church-key flannel blue bottle trust fund thundercats, semiotics brunch hella dreamcatcher.
 
-<ul>
+## List of classes
+<table>
+  <tbody>
   {% for class in site.reference %}
-  <li><a href="{{class.url}}">{{ class.title }}</a>  {{reference.summary}}</li>
+    <tr>
+      <td><a href="{{class.url}}">{{class.title}}</a></td>
+      <td>{{reference.summary}}</td>
+    <tr>
   {% endfor %}
-</ul>
+  </tbody>
+</table>

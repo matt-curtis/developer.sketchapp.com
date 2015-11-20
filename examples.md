@@ -8,8 +8,14 @@ permalink: /code-examples/
 
 Sometimes the best way of learning how to do something is reading about it. So here are some examples of basic techniques you'll probably want to use on your own plugins:
 
-<ul>
-{% for example in site.code-examples %}
-  <li><a href="{{example.url}}">{{example.title}}</a> {{example.summary}}</li>
-{% endfor %}
-</ul>
+## Contents
+<table>
+  <tbody>
+  {% for example in site.code-examples %}
+    <tr>
+      <td><a href="{{example.url}}">{{example.title}}</a></td>
+      <td>{{example.summary}}</td>
+    <tr>
+  {% endfor %}
+  </tbody>
+</table>
