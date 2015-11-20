@@ -68,3 +68,13 @@ td {
   tr:nth-last-child(2) td {
     border-bottom: 0;
   }
+
+  .content a[href^="http://"]:not([href*="sketchapp.com"]):after,
+  .content a[href^="https://"]:not([href*="sketchapp.com"]):after {
+     content: "\21F1"; //⇱
+     display: inline-block;
+     margin-left: .25rem;
+     font-size: .75em;
+     vertical-align: top;
+     transform: scaleX(-1);
+  }

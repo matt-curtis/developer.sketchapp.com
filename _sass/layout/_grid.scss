@@ -57,7 +57,7 @@
     }
 
     //If there's only a span, center it
-    [class^="span"]:only-child {
+    [class*="span"]:only-child {
       margin: 0 auto;
     }
 
