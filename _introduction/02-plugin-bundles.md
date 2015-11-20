@@ -1,6 +1,7 @@
 ---
 title: Plugin Bundles
 permalink: /introduction/plugin-bundles/
+order: 200
 ---
 
 A Plugin is a collection of one or more **scripts**. Each script defines one or more **commands** which extend Sketch in some way.

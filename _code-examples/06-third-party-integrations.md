@@ -2,6 +2,7 @@
 title: Third Party Integrations
 date: 2015-10-13
 permalink: /code-examples/third-party-integrations/
+order: 600
 ---
 
 ## Introduction

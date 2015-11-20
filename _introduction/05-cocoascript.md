@@ -2,6 +2,7 @@
 title: More on CocoaScript
 permalink: /introduction/cocoascript/
 summary: Some more details on how to use CocoaScript
+order: 500
 ---
 
 ## CocoaScript

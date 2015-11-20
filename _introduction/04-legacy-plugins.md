@@ -1,6 +1,7 @@
 ---
 title: Legacy Plugins and Implicit Menus
 permalink: /introduction/legacy-plugins/
+order: 400
 ---
 
 ## Legacy Script Support

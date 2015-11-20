@@ -2,6 +2,7 @@
 title: Plugin Basics
 summary: Basic concepts for plugin users.
 permalink: /introduction/
+order: 100
 ---
 
 ## What is a Plugin?

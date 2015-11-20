@@ -2,6 +2,7 @@
 title: User Input & Feedback
 summary: Techniques to show information to users and interact with them.
 permalink: /code-examples/user-interaction/
+order: 200
 ---
 
 Making awesome stuff behind the courtains is cool, but sometimes you’ll want to communicate to your users the results of your complex operations.

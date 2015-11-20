@@ -2,6 +2,7 @@
 title: Debugging
 permalink: /code-examples/debugging/
 summary: Techniques for making your plugins work when they don’t.
+order: 300
 ---
 
 Currently there is no built-in debugger for Sketch plugins, so for the most part you will have to fall back to 'printf debugging' -- in other words, logging output to the console from various places in your code, then checking the values to see if they are what you expected.

@@ -2,6 +2,7 @@
 title: Working with Selections
 summary: Techniques for selecting objects.
 permalink: /code-examples/working-with-selections/
+order: 100
 ---
 
 One of the first things you’ll probably want to do with a plugin is to modify the current selection.
