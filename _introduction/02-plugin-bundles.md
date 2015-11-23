@@ -138,6 +138,10 @@ Sketch uses this string internally to track the Plugin, store settings for it, e
 
 A string specifying the [version][Semantic Versioning] of Sketch in which the author has tested the Plugin, for example `3`, `3.1`, `3.2.2`.
 
+At the moment (Sketch 3.4) this is an optional key, but we could use it as a filtering option in the [Plugins page](https://www.sketchapp.com/plugins/) at some point.
+
+Internally it uses the [BCCompareVersions](https://github.com/BohemianCoding/BCFoundation/blob/develop/Source/BCVersionComparison.m#L11) function, which splits the string by `.`, then compares the integer value of each component.
+
 #### Bundle Version
 
 The version for the layout of the bundle an metadata. If excluded it is assumed the value is 1.
