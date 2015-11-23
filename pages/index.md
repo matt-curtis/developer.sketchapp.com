@@ -9,7 +9,7 @@ We’ve worked very hard to make Sketch the dream “designer toolbox”, but ev
 
 Luckily, Sketch includes a plugin engine so that developers can extend its functionality.
 
-For example, there are already plugins out there to do such diverse things as [design specs](https://github.com/utom/sketch-measure), [mobile prototyping](https://github.com/bomberstudios/sketch-framer) and [code generation for Android apps](https://github.com/malkomalko/sketch-android-kit).
+For example, there are already plugins out there to do such diverse things as [design specs](https://github.com/utom/sketch-measure), [content generation](https://github.com/timuric/Content-generator-sketch-plugin) and [perspective transformations](https://github.com/jamztang/MagicMirror).
 
 Every week a new plugin comes out that does amazing stuff we hadn’t even thought possible!
 
