@@ -3,16 +3,14 @@
   font-family: 'Aktiv-Grotesk';
   font-weight: 300;
   font-style: normal;
-  src: url('webfonts/aktivgrotesk-light-webfont.woff2') format('woff2'),
-       url('webfonts/aktivgrotesk-light-webfont.woff') format('woff');
+  src: url('webfonts/aktivgrotesk-light-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Aktiv-Grotesk';
   font-weight: 300;
   font-style: italic;
-  src: url('webfonts/aktivgrotesk-lightitalic-webfont.woff2') format('woff2'),
-       url('webfonts/aktivgrotesk-lightitalic-webfont.woff') format('woff');
+  src: url('webfonts/aktivgrotesk-lightitalic-webfont.woff') format('woff');
 }
 
 /* Regular */
@@ -20,33 +18,12 @@
   font-family: 'Aktiv-Grotesk';
   font-weight: 400;
   font-style: normal;
-  src: url('webfonts/aktivgrotesk-regular-webfont.woff2') format('woff2'),
-       url('webfonts/aktivgrotesk-regular-webfont.woff') format('woff');
+  src: url('webfonts/aktivgrotesk-regular-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Aktiv-Grotesk';
   font-weight: 400;
   font-style: italic;
-  src: url('webfonts/aktivgrotesk-italic-webfont.woff2') format('woff2'),
-       url('webfonts/aktivgrotesk-italic-webfont.woff') format('woff');
+  src: url('webfonts/aktivgrotesk-italic-webfont.woff') format('woff');
 }
-
-/* Medium */
-// @font-face {
-//   font-family: 'Aktiv-Grotesk';
-//   font-weight: 500;
-//   font-style: normal;
-//   src:
-//        url('webfonts/aktivgrotesk-medium-webfont.woff2') format('woff2'),
-//        url('webfonts/aktivgrotesk-medium-webfont.woff') format('woff');
-// }
-//
-// @font-face {
-//   font-family: 'Aktiv-Grotesk';
-//   font-weight: 500;
-//   font-style: italic;
-//   src:
-//        url('webfonts/aktivgrotesk-mediumitalic-webfont.woff2') format('woff2'),
-//        url('webfonts/aktivgrotesk-mediumitalic-webfont.woff') format('woff');
-// }
