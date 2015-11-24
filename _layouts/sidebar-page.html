@@ -11,13 +11,13 @@ layout: base
             {% if page.url contains '/introduction/' %}
                 {% assign introductions = site.introduction | sort:"order" %}
                 {% for introduction in introductions %}
-                  <li><a href="{{introduction.url}}">{{introduction.title}}</a></li>
+                  <li><a href="{{introduction.url}}" {% if page.url == introduction.url %} class="active"{% endif %}>{{introduction.title}}</a></li>
                 {% endfor %}
             {% endif %}
             {% if page.url contains '/code-examples/' %}
                 {% assign examples = site.code-examples | sort:"order" %}
                 {% for example in examples %}
-                  <li><a href="{{example.url}}">{{example.title}}</a></li>
+                  <li><a href="{{example.url}}" {% if page.url == example.url %} class="active"{% endif %}>{{example.title}}</a></li>
                 {% endfor %}
             {% endif %}
             {% if page.url contains '/reference/' %}
@@ -26,7 +26,7 @@ layout: base
                 <ol>
                   {% assign classes = site.reference | sort:"title"%}
                   {% for class in classes %}
-                  <li><a href="{{class.url}}">{{ class.title }}</a></li>
+                  <li><a href="{{class.url}}" {% if page.url == class.url %} class="active"{% endif %}>{{ class.title }}</a></li>
                   {% endfor %}
                 </ol>
               </li>
@@ -91,12 +91,3 @@ layout: base
 </section>
 
 {% include scripts.html %}
-<script>
-$(function(){
-  $(".toc-nav a").each(function(){
-    if ($(this).prop('href') == window.location.href) {
-            $(this).addClass('active');
-        }
-  });
-});
-</script>
