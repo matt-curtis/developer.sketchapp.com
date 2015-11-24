@@ -19,14 +19,13 @@ $(".nav-overlay").click(function(){
 });
 
 //TODO make this work
-// $(document).ready(function() {
-//   if(window.innerWidth < 767) {
-    $(".toc-nav .nav-toggle").click(function(){
-      $(this).toggleClass("active");
-      $(".toc-nav ol").toggle();
-    });
-//   }
-// });
+$(document).ready(function() {
+  $(".toc-nav .nav-toggle").click(function(){
+    if (window.innerWidth > 767) { return }
+    $(this).toggleClass("active");
+    $(".toc-nav ol").toggle();
+  });
+});
 
 $(window).resize(function(){
   if(window.innerWidth > 767) {
