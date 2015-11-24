@@ -1,6 +1,0 @@
-  {
-    "id": {{ forloop.index }},
-    "url": "{{ page.url }}",
-    "title": "{{ page.title }}",
-    "body": "{{ page.content | strip_html | strip_newlines | remove:'"' }}"
-  }
