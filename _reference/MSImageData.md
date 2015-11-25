@@ -1,7 +1,7 @@
 ---
 title: MSImageData
 rels:
-  - MSImageCollextion
+  - MSImageCollection
   - MSBitmapLayer
 ---
 
