@@ -51,9 +51,9 @@ Returns an [MSArtboardGroup](/reference/MSArtboardGroup/) object, representing t
 
 Takes you to the the export tool. Pass nil as the argument.
 
-### showMessage:
+### showMessage:(NSString)message
 
-Pass a string to be displayed at the top of the canvas momentarily. The same method used for displaying the current zoom level and other tips.
+Pass a string to be displayed at the bottom of the canvas momentarily. The same method used for displaying the current zoom level and other tips.
 
 ### artboards:
 
