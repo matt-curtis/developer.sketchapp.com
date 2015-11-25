@@ -69,7 +69,7 @@ Returns an array of all pages in the document. Each page is an [MSPage](/referen
 
 ### askForUserInput:(NSString)label initialValue:(NSString)defaultString
 
-Asks for user input and returns the value they chosen. The first argument is the label for the dialog panel, the second argument can be used to provide a default value. See the [User Input & Feedback](/examples/user-interaction/) section for examples.
+Asks for user input and returns the value they chosen. The first argument is the label for the dialog panel, the second argument can be used to provide a default value. See the [User Input & Feedback](/code-examples/user-interaction/) section for examples.
 
 ### saveArtboardOrSlice:toFile:
 
