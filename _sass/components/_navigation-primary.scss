@@ -77,9 +77,28 @@ body:not(.hero) .main-nav h1 a {
   vertical-align: middle;
 }
 
+// [id]:target {
+//   animation: target-fade 1s 1; //"Yellow" fade technique (Blue in this case)
+// }
+
+[id]:target::before {
+  content: "";
+  display: block;
+}
+
+  // @keyframes target-fade {
+  //   0% { background-color: rgba( $action-high, .08 ); }
+  //   100% { background-color: rgba(0,0,0,0); }
+  // }
+
 @include tablet-and-above {
   body {
     padding-top: 4.3125rem; //69px
+  }
+
+  [id]:target::before {
+    padding-top: 4.3125rem; //Hack to make targets scroll below the main navigation (as it's fixed)
+    margin-top: -4.3125rem;
   }
 
   .main-nav {
@@ -122,20 +141,14 @@ body:not(.hero) .main-nav h1 a {
     }
 }
 
-[id]:target {
-  padding-top: .001rem; //Hack to make targets scroll below the main navigation (as it's fixed)
-  margin-top: -.001rem;
-  animation: target-fade 1s 1; //"Yellow" fade technique (Blue in this case)
-}
-
-  @keyframes target-fade {
-    0% { background-color: rgba( $action-high, .08 ); }
-    100% { background-color: rgba(0,0,0,0); }
-  }
-
 @include tablet-and-below {
   body {
     padding-top: 3.8125rem; //61px
+  }
+
+  [id]:target::before {
+    padding-top: 3.8125rem; //Hack to make targets scroll below the main navigation (as it's fixed)
+    margin-top: -3.8125rem;
   }
 
   .main-nav {
