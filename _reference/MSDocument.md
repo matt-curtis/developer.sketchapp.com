@@ -51,9 +51,9 @@ Returns an [MSArtboardGroup](/reference/MSArtboardGroup/) object, representing t
 
 Takes you to the the export tool. Pass nil as the argument.
 
-### showMessage:
+### showMessage:(NSString)message
 
-Pass a string to be displayed at the top of the canvas momentarily. The same method used for displaying the current zoom level and other tips.
+Pass a string to be displayed at the bottom of the canvas momentarily. The same method used for displaying the current zoom level and other tips.
 
 ### artboards:
 
@@ -69,7 +69,7 @@ Returns an array of all pages in the document. Each page is an [MSPage](/referen
 
 ### askForUserInput:(NSString)label initialValue:(NSString)defaultString
 
-Asks for user input and returns the value they chosen. The first argument is the label for the dialog panel, the second argument can be used to provide a default value. See the [User Input & Feedback](/examples/user-interaction/) section for examples.
+Asks for user input and returns the value they chosen. The first argument is the label for the dialog panel, the second argument can be used to provide a default value. See the [User Input & Feedback](/code-examples/user-interaction/) section for examples.
 
 ### saveArtboardOrSlice:toFile:
 

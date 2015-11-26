@@ -68,7 +68,7 @@ Runs a legacy-format plugin located at `url`.
 
 ### runPluginScript:(NSString)script name:(NSString)name
 
-Runs the specified `script` as a plugin. This is useful if you want to execute dynamically generated code (for example, if you want to integrate Sketch with some third party tool, see [Third Party Integrations](/examples/third-party-integrations/) for more information):
+Runs the specified `script` as a plugin. This is useful if you want to execute dynamically generated code (for example, if you want to integrate Sketch with some third party tool, see [Third Party Integrations](/code-examples/third-party-integrations/) for more information):
 
 ```javascript
 var app = NSApp.delegate()

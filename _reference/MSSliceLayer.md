@@ -20,4 +20,4 @@ var slice = doc.currentPage().slices().firstObject()
 doc.saveArtboardOrSlice_toFile(slice,"~/desktop/test.png")
 ```
 
-(See the [Exporting](/examples/exporting/) section for more advanced examples.)
+(See the [Exporting](/code-examples/exporting/) section for more advanced examples.)

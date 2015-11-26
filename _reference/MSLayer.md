@@ -81,7 +81,7 @@ True if the layer is selected, false otherwise.
 
 ### select:byExpandingSelection
 
-Check the [Working with Selections](/examples/working-with-selections/) section for some examples.
+Check the [Working with Selections](/code-examples/working-with-selections/) section for some examples.
 
 ### absoluteRect: (readonly)
 
@@ -90,3 +90,7 @@ Returns a [MSAbsoluteRect](/reference/MSAbsoluteRect/) object that returns the b
 ### duplicate:
 
 Duplicates the layer and insert the copy above itself.
+
+### userInfo:
+
+Returns a dictionary of metadata keys and values, if they have been using the corresponding methods in [MSPluginCommand](/reference/MSPluginCommand/) (`setValue:forKey:onLayer:` or `setValue:forKey:onLayer:forPluginIdentifier:`)
