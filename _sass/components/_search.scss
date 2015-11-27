@@ -1,8 +1,24 @@
-.search_form {
-  padding: 1em;
+.search-form {
+  width: 100%;
   display: none;
-  #search_field {
-    padding: .3rem;
-  }
+  position: fixed;
+  z-index: 1000;
+  top: 100px;
+  pointer-events: none;
+}
 
+.search-form .span-6 {
+  background: $background-light;
+  pointer-events: all;
+  border-radius: $radius-normal;
+}
+
+.search-field {
+  width: 100%;
+  padding: .3rem 1rem;
+  border: 0;
+  border-radius: $radius-normal;
+  font-size: 1.625rem; /*26px*/
+  font-weight: $font-regular;
+  //line-height: 1;
 }

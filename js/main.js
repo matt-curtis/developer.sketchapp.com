@@ -24,7 +24,8 @@ $(".overlay").click(function(){
   $(".main-nav .nav-toggle").toggleClass("active");
   $(".main-nav ul").toggleClass("active");
   $('body').removeAttr('style');
-  $(".overlay").toggleClass("active");
+  $(".overlay").removeClass("active all");
+  $('.search-form').hide();
 });
 
 // Window resize changes needed
@@ -47,6 +48,12 @@ $(window).resize(function(){
 });
 
 // Search logic
+$(".search-toggle").click(function(){
+  $(".overlay").toggleClass("active all");
+  $('.search-form').show();
+  $( ".search-field" ).focus();
+});
+
 $(document).ready(function(){
   var documentCollection,
       lunrIndex = lunr(function () {
@@ -74,8 +81,7 @@ $(document).ready(function(){
   })
 
   function search_enable() {
-    $('.search_form').show()
-    $('.search_form #search_field').on('keyup', function(){
+    $('.search-form .search-field').on('keyup', function(){
       var searchTerm = $(this).val()
       if (searchTerm.length > 3) {
         search(searchTerm)
@@ -90,6 +96,6 @@ $(document).ready(function(){
       htmlOutput += "<li><a href='" + searchResult.url + "'>" + searchResult.title + "</a></li>"
     })
     htmlOutput += "</ul>"
-    $('.search_results').html(htmlOutput)
+    $('.search-results').html(htmlOutput)
   }
 })

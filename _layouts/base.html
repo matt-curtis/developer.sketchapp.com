@@ -6,13 +6,13 @@
 {{content}}
 {% include footer.html %}
 <div class="overlay"></div>
-<div class="search-form hide">
+<div class="search-form  hide">
   <form action="" method="get" accept-charset="utf-8" autocomplete="off" autocorrect="off" autocapitalize="off">
-    <div>
-      <input type="search" name="yo" placeholder="Search the docs" value="" id="search_field"/>
+    <div class="span-6">
+      <input type="search" name="yo" placeholder="Search" value="" class="search-field"/>
+      <nav class="search-results"></nav>
     </div>
   </form>
-  <div class="search_results"></div>
 </div>
 {% include scripts.html %}
 </body>
