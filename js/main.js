@@ -1,16 +1,25 @@
+// Main navigation logic
 $(".main-nav .nav-toggle").click(function(){
   $(this).toggleClass("active");
   $(".main-nav ul").toggleClass("active");
 
   if ($('body').attr('style')) {
-        $('body').removeAttr('style');
+      $('body').removeAttr('style');
     } else {
-        $('body').attr("style","overflow:hidden;");
+      $('body').attr("style","overflow:hidden;"); //Avoids scrolling of the underlying content TODO fix on Safari Mobile
     }
 
   $(".nav-overlay").toggleClass("active");
 });
 
+// TOC navigation logic
+$(".toc-nav .nav-toggle").click(function(){
+  if (window.innerWidth > 767) { return }
+  $(this).toggleClass("active");
+  $(".toc-nav ol").toggle();
+});
+
+// Overlay logic (dismiss everything when you click it)
 $(".nav-overlay").click(function(){
   $(".main-nav .nav-toggle").toggleClass("active");
   $(".main-nav ul").toggleClass("active");
@@ -18,15 +27,7 @@ $(".nav-overlay").click(function(){
   $(".nav-overlay").toggleClass("active");
 });
 
-//TODO make this work
-$(document).ready(function() {
-  $(".toc-nav .nav-toggle").click(function(){
-    if (window.innerWidth > 767) { return }
-    $(this).toggleClass("active");
-    $(".toc-nav ol").toggle();
-  });
-});
-
+// Window resize changes needed
 $(window).resize(function(){
   if(window.innerWidth > 767) {
     $(".main-nav ul").removeClass("active");
@@ -45,6 +46,7 @@ $(window).resize(function(){
   // }
 });
 
+// Search logic
 $(document).ready(function(){
   var documentCollection,
       lunrIndex = lunr(function () {
