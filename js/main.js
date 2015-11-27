@@ -9,7 +9,7 @@ $(".main-nav .nav-toggle").click(function(){
       $('body').attr("style","overflow:hidden;"); //Avoids scrolling of the underlying content TODO fix on Safari Mobile
     }
 
-  $(".nav-overlay").toggleClass("active");
+  $(".overlay").toggleClass("active");
 });
 
 // TOC navigation logic
@@ -20,11 +20,11 @@ $(".toc-nav .nav-toggle").click(function(){
 });
 
 // Overlay logic (dismiss everything when you click it)
-$(".nav-overlay").click(function(){
+$(".overlay").click(function(){
   $(".main-nav .nav-toggle").toggleClass("active");
   $(".main-nav ul").toggleClass("active");
   $('body').removeAttr('style');
-  $(".nav-overlay").toggleClass("active");
+  $(".overlay").toggleClass("active");
 });
 
 // Window resize changes needed
@@ -33,7 +33,7 @@ $(window).resize(function(){
     $(".main-nav ul").removeClass("active");
     $(".nav-toggle").removeClass("active");
     $("body").removeAttr("style");
-    $(".nav-overlay").removeClass("active");
+    $(".overlay").removeClass("active");
     $(".toc-nav ol").removeAttr("style");
   }
 
