@@ -34,8 +34,9 @@ $(window).resize(function(){
     $(".main-nav ul").removeClass("active");
     $(".nav-toggle").removeClass("active");
     $("body").removeAttr("style");
-    $(".overlay").removeClass("active");
+    $(".overlay").removeClass("active all");
     $(".toc-nav ol").removeAttr("style");
+    $('.search-form').hide();
   }
 
   //TODO make this work
@@ -83,7 +84,7 @@ $(document).ready(function(){
   function search_enable() {
     $('.search-form .search-field').on('keyup', function(){
       var searchTerm = $(this).val()
-      if (searchTerm.length > 3) {
+      if (searchTerm.length > 2) {
         search(searchTerm)
       }
     })
