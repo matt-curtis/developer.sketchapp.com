@@ -65,6 +65,8 @@ $(document).ready(function(){
       var searchTerm = $(this).val()
       if (searchTerm.length > 2) {
         search(searchTerm)
+      } else if (searchTerm.length <= 2) {
+        $('.search-results').html('');
       }
     })
   }
@@ -81,6 +83,7 @@ $(document).ready(function(){
   }
 
   function search_close() {
+    $('body').removeClass('stop-scrolling');
     $('.overlay').removeClass('active all');
     $('.search-form').hide();
   }
@@ -89,7 +92,7 @@ $(document).ready(function(){
     $('body').addClass('stop-scrolling');
     $('.overlay').addClass('active all');
     $('.search-field').val('');
-    $('.search-results').html('')
+    $('.search-results').html('');
     $('.search-form').show();
     $('.search-field').focus();
   });
