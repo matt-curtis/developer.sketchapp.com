@@ -11,14 +11,14 @@
   background: $background-light;
   pointer-events: all;
   border-radius: $radius-normal;
+  box-shadow: 0 1px 0 $border-dark-high, 0 1px 4px 1px $border-dark-high;
 }
 
 .search-field {
   width: 100%;
-  padding: .3rem 1rem;
+  padding: .6875rem 1rem .9375rem;
   border: 0;
   border-radius: $radius-normal;
   font-size: 1.625rem; /*26px*/
   font-weight: $font-regular;
-  //line-height: 1;
 }
