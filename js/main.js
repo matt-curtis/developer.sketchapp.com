@@ -44,7 +44,7 @@ $(window).resize(function(){
 $('.search-toggle').click(function(){
   $('.overlay').toggleClass('active all');
   $('.search-form').show();
-  $( ".search-field" ).focus();
+  $('.search-field').focus();
 });
 
 $(document).ready(function(){
