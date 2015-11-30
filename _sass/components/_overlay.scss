@@ -1,3 +1,8 @@
+body.stop-scrolling {
+  overflow: hidden;
+  position: fixed;
+}
+
 .overlay {
   position: fixed;
   z-index: 98;

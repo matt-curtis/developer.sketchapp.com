@@ -1,15 +1,9 @@
 // Main navigation logic
 $('.main-nav .nav-toggle').click(function(){
+  $('body').addClass('stop-scrolling');
+  $('.overlay').toggleClass('active');
   $(this).toggleClass('active');
   $('.main-nav ul').toggleClass('active');
-
-  if ($('body').attr('style')) {
-      $('body').removeAttr('style');
-    } else {
-      $('body').attr('style","overflow:hidden;'); //Avoids scrolling of the underlying content TODO fix on Safari Mobile
-    }
-
-  $('.overlay').toggleClass('active');
 });
 
 // TOC navigation logic
@@ -21,32 +15,25 @@ $('.toc-nav .nav-toggle').click(function(){
 
 // Overlay logic (dismiss everything when you click it)
 $('.overlay').click(function(){
-  $('.main-nav .nav-toggle').toggleClass('active');
-  $('.main-nav ul').toggleClass('active');
-  $('body').removeAttr('style');
+  $('body').removeClass('stop-scrolling');
   $('.overlay').removeClass('active all');
+  $('.main-nav .nav-toggle').removeClass('active');
+  $('.main-nav ul').removeClass('active');
   $('.search-form').hide();
 });
 
 // Window resize changes needed
 $(window).resize(function(){
   if(window.innerWidth > 767) {
+    $('body').removeClass('stop-scrolling');
+    $('.overlay[class="active"]').removeClass('active');
     $('.main-nav ul').removeClass('active');
-    $('.nav-toggle').removeClass('active');
-    $('body').removeAttr('style');
-    //$('.overlay').removeClass('active all');
     $('.toc-nav ol').removeAttr('style');
-    //$('.search-form').hide();
+    $('.nav-toggle').removeClass('active');
   }
 });
 
 // Search logic
-$('.search-toggle').click(function(){
-  $('.overlay').toggleClass('active all');
-  $('.search-form').show();
-  $('.search-field').focus();
-});
-
 $(document).ready(function(){
   var documentCollection,
       lunrIndex = lunr(function () {
@@ -92,4 +79,20 @@ $(document).ready(function(){
     htmlOutput += '</ul>'
     $('.search-results').html(htmlOutput)
   }
+
+  function search_close() {
+    $('.overlay').removeClass('active all');
+    $('.search-form').hide();
+  }
+
+  $('.search-toggle').click(function(){
+    $('body').addClass('stop-scrolling');
+    $('.overlay').addClass('active all');
+    $('.search-form').show();
+    $('.search-field').focus();
+  });
+
+  $('.search-close').click(function(){
+    search_close();
+  });
 })
