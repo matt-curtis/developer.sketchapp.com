@@ -86,7 +86,7 @@ $(document).ready(function(){
         htmlOutput = '<ul>'
     $.each(results, function(index, result){
       var searchResult = documentCollection[result.ref - 1] // Because Lunr results are 0-based, and Jekyll collections are 1-based
-      htmlOutput += '<li><a href='" + searchResult.url + "'>' + searchResult.title + '</a></li>'
+      htmlOutput += "<li><a href='" + searchResult.url + "'>" + searchResult.title + '</a></li>'
     })
     htmlOutput += '</ul>'
     $('.search-results').html(htmlOutput)
