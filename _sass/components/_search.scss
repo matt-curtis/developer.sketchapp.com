@@ -3,14 +3,12 @@
   display: none;
   position: fixed;
   z-index: 1000;
-  top: 100px;
   pointer-events: none;
 }
 
-.search-form .span-6 {
+.search-form .search-contents {
   background: $background-light;
   pointer-events: all;
-  border-radius: $radius-normal;
   box-shadow: 0 1px 0 $border-dark-high, 0 1px 4px 1px $border-dark-high;
 }
 
@@ -18,7 +16,92 @@
   width: 100%;
   padding: .6875rem 1rem .9375rem;
   border: 0;
-  border-radius: $radius-normal;
   font-size: 1.625rem; /*26px*/
   font-weight: $font-regular;
+}
+
+.search-results ul {
+  overflow: auto;
+  border-top: 1px solid $border-dark-high;
+}
+
+.search-results li {
+  display: block;
+  margin-left: 1rem;
+}
+
+  .search-results li:last-child {
+    border-bottom: 0;
+  }
+
+.search-results a {
+  display: block;
+  padding: 1rem 0;
+  border-bottom: 1px solid $border-dark;
+  position: relative;
+  &:hover,
+  &:active,
+  &:focus {
+    margin-left: -1rem; //To remove the separation
+    padding-left: 1rem; //To compensate the negative margin
+    margin-top: -.0625rem; //-1px to cover the previous elements' bottom line;
+    padding-top: 1.0625rem; //16px + 1px
+    background-color: $action-ultra-low; //must be solid to avoid overlapping
+  }
+}
+
+  //Top Line
+  .search-results a:hover::before,
+  .search-results a:active::before,
+  .search-results a:focus::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: $border-dark;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+@include tablet-and-above {
+  .search-form {
+    top: 100px;
+  }
+
+  .search-form .search-contents,
+  .search-field {
+    border-radius: $radius-normal;
+  }
+
+  .search-results ul {
+    max-height: 14.2rem; //Aproximately 4 results
+    position: relative; //To crop the bottom elements on hover
+    border-radius: 0 0 $radius-normal $radius-normal; //To crop the bottom elements on hover
+  }
+}
+
+@include tablet-and-below {
+  .search-form {
+    padding: 0;
+    top: 0;
+  }
+
+  .search-results ul {
+    max-height: calc(100vh - 3.6875rem);
+  }
+
+  .search-results a::after {
+    content: "";
+    display: inline-block;
+    width: .375rem; //6px
+    height: .625rem; //10px
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('data:image/svg+xml;utf8,<svg width="8" height="13" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg"><title>Disclosure Indicator</title><path d="M0,1.5 L1.5,0 L7.29201249,5.79201249 C7.68302319,6.18302319 7.68649149,6.81350851 7.29201249,7.20798751 L1.5,13 L0,11.5 L4.29422684,7.20577316 C4.68401459,6.81598541 4.68722761,6.18722761 4.29422684,5.79422684 L0,1.5 Z" fill="#207cdf" fill-rule="evenodd"/></svg>');
+    background-size: contain;
+    opacity: .25;
+  }
 }

@@ -34,9 +34,9 @@ $(window).resize(function(){
     $('.main-nav ul').removeClass('active');
     $('.nav-toggle').removeClass('active');
     $('body').removeAttr('style');
-    $('.overlay').removeClass('active all');
+    //$('.overlay').removeClass('active all');
     $('.toc-nav ol').removeAttr('style');
-    $('.search-form').hide();
+    //$('.search-form').hide();
   }
 });
 
@@ -81,6 +81,7 @@ $(document).ready(function(){
       }
     })
   }
+
   function search(text){
     var results = lunrIndex.search(text),
         htmlOutput = '<ul>'
