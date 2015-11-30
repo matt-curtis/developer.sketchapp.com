@@ -88,6 +88,8 @@ $(document).ready(function(){
   $('.search-toggle').click(function(){
     $('body').addClass('stop-scrolling');
     $('.overlay').addClass('active all');
+    $('.search-field').val('');
+    $('.search-results').html('')
     $('.search-form').show();
     $('.search-field').focus();
   });
