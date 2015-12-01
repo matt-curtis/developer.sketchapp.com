@@ -2,6 +2,7 @@
 layout: sidebar-page
 title: Code Examples
 permalink: /code-examples/
+script: /js/search.js
 ---
 
 ## Learn by reading

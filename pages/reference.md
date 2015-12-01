@@ -2,6 +2,7 @@
 layout: sidebar-page
 title: Reference
 permalink: /reference/
+script: /js/search.js
 ---
 
 Work in progress
