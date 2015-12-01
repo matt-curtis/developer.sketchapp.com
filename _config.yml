@@ -37,6 +37,7 @@ defaults:
       type: "reference"
     values:
       layout: "sidebar-page"
+      script: "/js/search.js"
   -
     scope:
       type: "code-examples"
