@@ -27,22 +27,25 @@ collections:
 
 # Defaults
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
     values:
       layout: "single-page"
-  - scope:
-      path: "reference"
+  -
+    scope:
       type: "reference"
     values:
       layout: "sidebar-page"
-  - scope:
-      path: "code-examples"
+  -
+    scope:
       type: "code-examples"
     values:
       layout: "sidebar-page"
-  - scope:
-      path: "introduction"
+      script: "/js/search.js"
+  -
+    scope:
       type: "introduction"
     values:
       layout: "sidebar-page"
+      script: "/js/search.js"

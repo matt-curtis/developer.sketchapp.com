@@ -6,15 +6,18 @@
 {{content}}
 {% include footer.html %}
 <div class="overlay"></div>
-<div class="search-form hide">
-  <form action="" method="get" accept-charset="utf-8" autocomplete="off" autocorrect="off" autocapitalize="off" class="wrapper">
-    <div class="search-contents span-6">
-      <input type="search" name="yo" placeholder="Search" value="" class="search-field"/>
-      <span class="search-close"></span>
-      <nav class="search-results"></nav>
-    </div>
-  </form>
-</div>
 {% include scripts.html %}
+{% if page.script %}
+  <div class="search-form hide">
+    <form action="" method="get" accept-charset="utf-8" autocomplete="off" autocorrect="off" autocapitalize="off" class="wrapper">
+      <div class="search-contents span-6">
+        <input type="search" name="yo" placeholder="Search" value="" class="search-field"/>
+        <span class="search-close"></span>
+        <nav class="search-results"></nav>
+      </div>
+    </form>
+  </div>
+  <script src="{{ page.script }}"></script>
+{% endif %}
 </body>
 </html>

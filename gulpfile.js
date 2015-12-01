@@ -3,7 +3,7 @@ var shell = require('gulp-shell');
 var browserSync = require('browser-sync').create();
 
 // Task for building site when something changed:
-gulp.task('build', shell.task(['jekyll build --incremental --watch']));
+gulp.task('build', shell.task(['jekyll build --watch']));
 
 // Task for serving site with Browsersync
 gulp.task('serve', function () {
