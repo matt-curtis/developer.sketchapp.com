@@ -103,6 +103,7 @@
 
   .search-results ul {
     max-height: calc(100vh - 3.6875rem);
+    -webkit-overflow-scrolling: touch;
   }
 
   .search-results a::after {

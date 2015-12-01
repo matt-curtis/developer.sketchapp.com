@@ -1,6 +1,16 @@
+//if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+// $(window).scroll(function () {
+//     $currentScrollPos = $(document).scrollTop();
+// });
+
+var tempScrollTop;
+
 // Main navigation logic
 $('.main-nav .nav-toggle').click(function(){
-  $('body').addClass('stop-scrolling');
+  //$('html, body, main').toggleClass('stop-scrolling');
+  // $('body').css('overflow','hidden');
+  tempScrollTop = $(window).scrollTop();
+  $('body').toggleClass('stop-scrolling');
   $('.overlay').toggleClass('active');
   $(this).toggleClass('active');
   $('.main-nav ul').toggleClass('active');
@@ -16,6 +26,7 @@ $('.toc-nav .nav-toggle').click(function(){
 // Overlay logic (dismiss everything when you click it)
 $('.overlay').click(function(){
   $('body').removeClass('stop-scrolling');
+  $(window).scrollTop(tempScrollTop);
   $('.overlay').removeClass('active all');
   $('.main-nav .nav-toggle').removeClass('active');
   $('.main-nav ul').removeClass('active');
@@ -26,6 +37,7 @@ $('.overlay').click(function(){
 $(window).resize(function(){
   if(window.innerWidth > 767) {
     $('body').removeClass('stop-scrolling');
+    $(window).scrollTop(tempScrollTop);
     $('.overlay[class="active"]').removeClass('active');
     $('.main-nav ul').removeClass('active');
     $('.toc-nav ol').removeAttr('style');

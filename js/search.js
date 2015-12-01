@@ -49,12 +49,14 @@ $(document).ready(function(){
 
   function search_close() {
     $('body').removeClass('stop-scrolling');
+    $(window).scrollTop(tempScrollTop);
     $('.overlay').removeClass('active all');
     $('.search-form').hide();
   }
 
   $('.search-toggle').click(function(){
-    $('body').addClass('stop-scrolling');
+    tempScrollTop = $(window).scrollTop();
+    $('body').toggleClass('stop-scrolling');
     $('.overlay').addClass('active all');
     $('.search-field').val('');
     $('.search-results').html('');
