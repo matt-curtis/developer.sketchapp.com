@@ -33,6 +33,7 @@ $(document).ready(function(){
         if (e.keyCode == 27) {
            search_close();
          }
+        $('.search-results').html('');
       } else if (searchTerm.length > 2) {
         search(searchTerm)
       } else if (searchTerm.length <= 2) {
