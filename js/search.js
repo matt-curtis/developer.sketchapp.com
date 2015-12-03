@@ -48,23 +48,41 @@ $(document).ready(function(){
   }
 
   function search_close() {
+    //iOS only workaround to prevent scrolling when we have the modal open, as overflow doesn't work on iOS. Scrolling position is saved in a JS variable, then restored when we remove the class so we can keep the scroll position
+    if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+      $('body').removeClass('ios');
+      $(window).scrollTop(tempScrollTop);
+    }
     $('body').removeClass('stop-scrolling');
-    $(window).scrollTop(tempScrollTop);
-    $('.overlay').removeClass('active all');
+    $('.overlay').removeClass('active cover-all');
     $('.search-form').hide();
   }
-
-  $('.search-toggle').click(function(){
-    tempScrollTop = $(window).scrollTop();
-    $('body').toggleClass('stop-scrolling');
-    $('.overlay').addClass('active all');
-    $('.search-field').val('');
-    $('.search-results').html('');
-    $('.search-form').show();
-    $('.search-field').focus();
-  });
 
   $('.search-close').click(function(){
     search_close();
   });
-})
+
+  $('.search-toggle').click(function(){
+    //iOS only workaround to prevent scrolling when we have the modal open, as overflow doesn't work on iOS. Scrolling position is saved in a JS variable, then restored when we remove the class so we can keep the scroll position
+    if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+      $('body').toggleClass('ios');
+      $(window).scrollTop(tempScrollTop);
+      //Preventing losing tap focus
+      $('.search-results').on('tap', 'a',function (e) {
+        var href = this.getAttribute('href');
+        if (e.defaultPrevented || !href) { return; }
+        e.preventDefault();
+        location.href= href;
+      })
+    }
+    $('body').toggleClass('stop-scrolling');
+    $('.overlay').addClass('active cover-all');
+    $('.search-field').val('');
+    $('#search-form').submit(function(e){
+        return false;
+    });
+    $('.search-results').html('');
+    $('.search-form').show();
+    $('.search-field').focus();
+  });
+});

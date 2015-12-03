@@ -32,6 +32,13 @@
   top: 0;
   right: 0;
   cursor: pointer;
+  &:hover,
+  &:active,
+  &:focus {
+    //http://stackoverflow.com/questions/29037023/how-to-calculate-required-hue-rotate-to-generate-specific-colour
+    -webkit-filter: hue-rotate(1deg) saturate(83%) brightness(95%);
+    filter: hue-rotate(1deg) saturate(83%) brightness(95%);
+  }
 }
 
 .search-results ul {
@@ -102,9 +109,17 @@
   }
 
   .search-results ul {
-    max-height: calc(100vh - 3.6875rem);
-    -webkit-overflow-scrolling: touch;
+    max-height: calc(100vh - 3.6875rem); //So it covers the screen (minus the nav bar) at max
   }
+
+    .ios .search-results ul {
+      max-height: calc(100vh - 7.9375rem); //So it covers the screen (minus the nav bar and the toolbar) at max
+    }
+
+    .ios .search-results ul a {
+      -webkit-transform: translate3d(0,0,0); //Increasing performance of scrolling
+      z-index: 10000; //Increasing reliability of scrolling
+    }
 
   .search-results a::after {
     content: "";

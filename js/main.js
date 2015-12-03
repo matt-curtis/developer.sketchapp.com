@@ -7,9 +7,11 @@ var tempScrollTop;
 
 // Main navigation logic
 $('.main-nav .nav-toggle').click(function(){
-  //$('html, body, main').toggleClass('stop-scrolling');
-  // $('body').css('overflow','hidden');
-  tempScrollTop = $(window).scrollTop();
+  //iOS only workaround to prevent scrolling when we have the modal open, as overflow doesn't work on iOS. Scrolling position is saved in a JS variable, then restored when we remove the class so we can keep the scroll position
+  if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+    tempScrollTop = $(window).scrollTop();
+    $('body').toggleClass('ios');
+  }
   $('body').toggleClass('stop-scrolling');
   $('.overlay').toggleClass('active');
   $(this).toggleClass('active');
@@ -25,9 +27,13 @@ $('.toc-nav .nav-toggle').click(function(){
 
 // Overlay logic (dismiss everything when you click it)
 $('.overlay').click(function(){
+  //iOS only workaround to prevent scrolling when we have the modal open, as overflow doesn't work on iOS. Scrolling position is saved in a JS variable, then restored when we remove the class so we can keep the scroll position
+  if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+    $('body').removeClass('ios');
+    $(window).scrollTop(tempScrollTop);
+  }
   $('body').removeClass('stop-scrolling');
-  $(window).scrollTop(tempScrollTop);
-  $('.overlay').removeClass('active all');
+  $('.overlay').removeClass('active cover-all');
   $('.main-nav .nav-toggle').removeClass('active');
   $('.main-nav ul').removeClass('active');
   $('.search-form').hide();
@@ -36,8 +42,12 @@ $('.overlay').click(function(){
 // Window resize changes needed
 $(window).resize(function(){
   if(window.innerWidth > 767) {
+    //iOS only workaround to prevent scrolling when we have the modal open, as overflow doesn't work on iOS. Scrolling position is saved in a JS variable, then restored when we remove the class so we can keep the scroll position
+    if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+      $('body').removeClass('ios');
+      $(window).scrollTop(tempScrollTop);
+    }
     $('body').removeClass('stop-scrolling');
-    $(window).scrollTop(tempScrollTop);
     $('.overlay[class="active"]').removeClass('active');
     $('.main-nav ul').removeClass('active');
     $('.toc-nav ol').removeAttr('style');

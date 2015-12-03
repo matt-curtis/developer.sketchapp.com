@@ -1,8 +1,12 @@
 .stop-scrolling {
   overflow: hidden;
-  position: fixed;
-  width: 100%;
 }
+
+  //iOS only workaround to prevent scrolling when we have the modal open, as overflow doesn't work on iOS. Scrolling position is saved in a JS variable, then restored when we remove the class so we can keep the scroll position
+  .stop-scrolling.ios {
+    position: fixed;
+    width: 100%;
+  }
 
 .overlay {
   position: fixed;
@@ -25,6 +29,6 @@
     transition-timing-function: ease-in;
   }
 
-.overlay.all {
-  z-index: 999;
-}
+  .overlay.cover-all {
+    z-index: 999; //To pass over the navigation bar
+  }
