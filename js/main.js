@@ -9,7 +9,11 @@ var tempScrollTop;
 $('.main-nav .nav-toggle').click(function(){
   //iOS only workaround to prevent scrolling when we have the modal open, as overflow doesn't work on iOS. Scrolling position is saved in a JS variable, then restored when we remove the class so we can keep the scroll position
   if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
-    tempScrollTop = $(window).scrollTop();
+    if ($(this).hasClass('active')) {
+      $(window).scrollTop(tempScrollTop);
+    } else {
+      tempScrollTop = $(window).scrollTop();
+    }
     $('body').toggleClass('ios');
   }
   $('body').toggleClass('stop-scrolling');
