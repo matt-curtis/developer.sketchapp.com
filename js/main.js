@@ -1,8 +1,3 @@
-//if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
-// $(window).scroll(function () {
-//     $currentScrollPos = $(document).scrollTop();
-// });
-
 var tempScrollTop;
 
 // Main navigation logic
