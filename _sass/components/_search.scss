@@ -32,12 +32,14 @@
   top: 0;
   right: 0;
   cursor: pointer;
+  -webkit-transition: -webkit-filter .1s ease-out;
+  transition: filter .1s ease-out;
   &:hover,
   &:active,
   &:focus {
     //http://stackoverflow.com/questions/29037023/how-to-calculate-required-hue-rotate-to-generate-specific-colour
-    -webkit-filter: hue-rotate(1deg) saturate(83%) brightness(95%);
-    filter: hue-rotate(1deg) saturate(83%) brightness(95%);
+    -webkit-filter: hue-rotate(1deg) saturate(117%) brightness(105%);
+    filter: hue-rotate(1deg) saturate(117%) brightness(105%);
   }
 }
 

@@ -3,6 +3,32 @@
   .toc-nav {
     margin-top: 1rem;
   }
+
+  .nav-toggle {
+    display: inline-block;
+  }
+
+  .toc-nav header {
+    position: relative;
+  }
+
+  .search-toggle {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    float: right;
+    margin-top: .4rem;
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Fill 853</title><path d="M12 0C5.373 0 0 5.373 0 12c0 6.628 5.373 12 12 12s12-5.372 12-12c0-6.627-5.373-12-12-12zm6.34 18.346c-.214.212-.5.316-.78.316h-.003c-.32 0-.643-.13-.89-.376l-3.58-3.58c-.787.494-1.72.78-2.715.78-2.817 0-5.102-2.283-5.102-5.1 0-2.818 2.285-5.103 5.102-5.103s5.1 2.285 5.102 5.103c0 .99-.285 1.918-.775 2.7l3.583 3.585c.245.247.374.57.374.89 0 .283-.1.57-.318.786zM10.37 7.54c-1.568.002-2.842 1.278-2.845 2.846.003 1.567 1.277 2.842 2.845 2.845 1.567-.002 2.842-1.277 2.845-2.844-.003-1.568-1.278-2.844-2.845-2.846" fill="#207CDF" fill-rule="evenodd"/></svg>');
+    -webkit-transition: -webkit-filter .1s ease-out;
+    transition: filter .1s ease-out;
+    &:hover,
+    &:active,
+    &:focus {
+      //http://stackoverflow.com/questions/29037023/how-to-calculate-required-hue-rotate-to-generate-specific-colour
+      -webkit-filter: hue-rotate(1deg) saturate(117%) brightness(105%);
+      filter: hue-rotate(1deg) saturate(117%) brightness(105%);
+    }
+  }
 }
 
 .toc-nav h1 {
