@@ -65,7 +65,9 @@ $(document).ready(function(){
   $('.search-toggle').click(function(){
     //iOS only workaround to prevent scrolling when we have the modal open, as overflow doesn't work on iOS. Scrolling position is saved in a JS variable, then restored when we remove the class so we can keep the scroll position
     if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+      //Adds position:fixed to the element
       $('body').toggleClass('ios');
+      //Return scroll position broken by position:fixed (value comes from main.js)
       $(window).scrollTop(tempScrollTop);
       //Preventing losing tap focus
       $('.search-results').on('tap', 'a',function (e) {
@@ -77,10 +79,13 @@ $(document).ready(function(){
     }
     $('body').toggleClass('stop-scrolling');
     $('.overlay').addClass('active cover-all');
+    //Resetting form value to 0 on each reload
     $('.search-field').val('');
+    //Preventing submit on hitting enter
     $('#search-form').submit(function(e){
         return false;
     });
+    //Removing the search results contents
     $('.search-results').html('');
     $('.search-form').show();
     $('.search-field').focus();

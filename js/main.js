@@ -12,6 +12,7 @@ $('.main-nav .nav-toggle').click(function(){
     if ($(this).hasClass('active')) {
       $(window).scrollTop(tempScrollTop);
     } else {
+      //Saving the current scroll value so we can recover it later
       tempScrollTop = $(window).scrollTop();
     }
     $('body').toggleClass('ios');
