@@ -49,7 +49,7 @@ If you double-click a .sketchplugin file, Sketch will copy it into the Plugins f
 
 Alternatively, you can install plugins by simply moving them into the Plugins folder yourself.
 
-*Note: Sketch also supports using aliases and links to individual Plugins, or to the Plugins folder itself. For versions of Sketch bought from our website, this allows you to place them elsewhere if necessary (when using the version of Sketch bought through the App store, sandboxing imposes some restrictions).*
+*Note: Sketch also supports using aliases and links to individual Plugins, or to the Plugins folder itself. This allows you to place them elsewhere (for example, a Dropbox folder to keep multiple installs of Sketch synced).*
 
 
 ### Removing Plugins
