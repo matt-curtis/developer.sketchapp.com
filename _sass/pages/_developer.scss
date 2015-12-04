@@ -71,16 +71,10 @@ td {
 @include tablet-and-above {
   td {
     width: 50%;
-
     border-bottom: 1px solid $border-dark;
-    //border-right: 1px solid $border-dark;
     vertical-align: top;
   }
 }
-
-  // td:last-child {
-  //   border-right: 0;
-  // }
 
   // FIXME It's inserting more trs than it should
   tr:nth-last-child(2) td {
