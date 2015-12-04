@@ -161,4 +161,12 @@
     top: 0;
     left: -1rem;
   }
+
+  .toc-nav a.active::before {
+    line-height: 1;
+  }
+
+    .toc-nav nav > ol > li > a.active::before {
+      margin-top: .25rem;
+    }
 }
