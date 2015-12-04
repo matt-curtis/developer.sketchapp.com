@@ -28,15 +28,13 @@ $(document).ready(function(){
   function search_enable() {
     $('.search-form .search-field').on('keyup', function(e){
       var searchTerm = $(this).val()
-      if (searchTerm.length == 0) {
+      if (searchTerm.length > 2) {
+        search(searchTerm)
+      } else {
         //If we hit Esc, we close the search
         if (e.keyCode == 27) {
            search_close();
          }
-        $('.search-results').html('');
-      } else if (searchTerm.length > 2) {
-        search(searchTerm)
-      } else if (searchTerm.length <= 2) {
         $('.search-results').html('');
       }
     })
