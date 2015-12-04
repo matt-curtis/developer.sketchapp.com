@@ -21,16 +21,6 @@ Plugin scripts are written using [CocoaScript](https://github.com/ccgus/CocoaScr
 
 When Sketch starts up, it scans a folder on your disk looking for Plugins.
 
-Exactly where this folder actually lives depends on whether you bought Sketch from the App Store, or from our website:
-
-- If you bought via the App Store, the location will be
-
-```
-~/Library/Containers/com.bohemiancoding.sketch3/Data/Library/Application Support/sketch/Plugins
-```
-
-- If you bought from our website, it will be
-
 ```
 ~/Library/Application Support/com.bohemiancoding.sketch3/Plugins
 ```
