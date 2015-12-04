@@ -38,10 +38,19 @@ body > section:nth-child(even):last-of-type ~ footer {
   color: $text-dark-ultra-low;
 }
 
-.page-contribute em {
-  float: right;
-  margin-left: 1rem;
-}
+  @include tablet-and-above {
+    .page-contribute em {
+      float: right;
+      margin-left: 1rem;
+    }
+  }
+
+  @include tablet-and-below {
+    .page-contribute em {
+      display: block;
+      margin-bottom: .5rem;
+    }
+  }
 
 //Tables
 table {
