@@ -46,7 +46,7 @@ $(document).ready(function(){
     var results = lunrIndex.search(text),
         htmlOutput = '<ul>'
     $.each(results, function(index, result){
-      var searchResult = documentCollection[result.ref - 1] // Because Lunr results are 0-based, and Jekyll collections are 1-based
+      var searchResult = documentCollection[result.ref]
       htmlOutput += "<li><a href='" + searchResult.url + "'>" + searchResult.title + '</a></li>'
     })
     htmlOutput += '</ul>'

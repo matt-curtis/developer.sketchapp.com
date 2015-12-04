@@ -3,7 +3,7 @@ layout: null
 ---
 [{% for page in site.documents %}
     {
-      "id": {{ forloop.index }},
+      "id": {{ forloop.index0 }},
       "url": "{{ page.url }}",
       "title": "{{ page.title }}",
       "body": "{{ page.content | strip_html | strip_newlines | remove:'"' }}"
