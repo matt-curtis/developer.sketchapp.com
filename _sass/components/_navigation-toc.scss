@@ -1,4 +1,18 @@
 /*TOC navigation*/
+.search-toggle {
+  background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Oval 1</title><path d="M13.46 14.39c-.78.586-1.748.933-2.8.933-2.573 0-4.66-2.087-4.66-4.66C6 8.086 8.087 6 10.66 6c2.575 0 4.662 2.087 4.662 4.662 0 1.05-.348 2.02-.935 2.8.075.035.144.082.205.143l3.2 3.2c.275.275.28.717.004.992-.273.273-.72.27-.992-.003l-3.2-3.2c-.062-.06-.11-.13-.143-.205zM12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12zm-1.34-9.61c2.06 0 3.73-1.67 3.73-3.728 0-2.06-1.67-3.73-3.73-3.73-2.058 0-3.728 1.67-3.728 3.73s1.67 3.73 3.73 3.73z" fill="#207CDF" fill-rule="evenodd"/></svg>');
+  -webkit-transition: -webkit-filter .1s ease-out;
+  transition: filter .1s ease-out;
+  &:hover,
+  &:active,
+  &:focus {
+    //http://stackoverflow.com/questions/29037023/how-to-calculate-required-hue-rotate-to-generate-specific-colour
+    -webkit-filter: hue-rotate(1deg) saturate(117%) brightness(105%);
+    filter: hue-rotate(1deg) saturate(117%) brightness(105%);
+  }
+}
+
+
 @include tablet-and-above {
   .toc-nav {
     margin-top: 1rem;
@@ -18,16 +32,6 @@
     cursor: pointer;
     float: right;
     margin-top: .4rem;
-    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Oval 1</title><path d="M13.46 14.39c-.78.586-1.748.933-2.8.933-2.573 0-4.66-2.087-4.66-4.66C6 8.086 8.087 6 10.66 6c2.575 0 4.662 2.087 4.662 4.662 0 1.05-.348 2.02-.935 2.8.075.035.144.082.205.143l3.2 3.2c.275.275.28.717.004.992-.273.273-.72.27-.992-.003l-3.2-3.2c-.062-.06-.11-.13-.143-.205zM12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12zm-1.34-9.61c2.06 0 3.73-1.67 3.73-3.728 0-2.06-1.67-3.73-3.73-3.73-2.058 0-3.728 1.67-3.728 3.73s1.67 3.73 3.73 3.73z" fill="#207CDF" fill-rule="evenodd"/></svg>');
-    -webkit-transition: -webkit-filter .1s ease-out;
-    transition: filter .1s ease-out;
-    &:hover,
-    &:active,
-    &:focus {
-      //http://stackoverflow.com/questions/29037023/how-to-calculate-required-hue-rotate-to-generate-specific-colour
-      -webkit-filter: hue-rotate(1deg) saturate(117%) brightness(105%);
-      filter: hue-rotate(1deg) saturate(117%) brightness(105%);
-    }
   }
 }
 
@@ -131,16 +135,6 @@
     position: absolute;
     right: 0;
     top: 0;
-    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Oval 1</title><path d="M13.46 14.39c-.78.586-1.748.933-2.8.933-2.573 0-4.66-2.087-4.66-4.66C6 8.086 8.087 6 10.66 6c2.575 0 4.662 2.087 4.662 4.662 0 1.05-.348 2.02-.935 2.8.075.035.144.082.205.143l3.2 3.2c.275.275.28.717.004.992-.273.273-.72.27-.992-.003l-3.2-3.2c-.062-.06-.11-.13-.143-.205zM12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12zm-1.34-9.61c2.06 0 3.73-1.67 3.73-3.728 0-2.06-1.67-3.73-3.73-3.73-2.058 0-3.728 1.67-3.728 3.73s1.67 3.73 3.73 3.73z" fill="#207CDF" fill-rule="evenodd"/></svg>');
-    background-position: center center;
-    -webkit-transition: -webkit-filter .1s ease-out;
-    transition: filter .1s ease-out;
-    &:hover,
-    &:active,
-    &:focus {
-      //http://stackoverflow.com/questions/29037023/how-to-calculate-required-hue-rotate-to-generate-specific-colour
-      -webkit-filter: hue-rotate(1deg) saturate(117%) brightness(105%);
-      filter: hue-rotate(1deg) saturate(117%) brightness(105%);
     }
   }
 
