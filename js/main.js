@@ -22,6 +22,7 @@ $('.main-nav .nav-toggle').click(function(){
 $('.toc-nav .nav-toggle').click(function(){
   if (window.innerWidth > 767) { return }
   $(this).toggleClass('active');
+  $('.toc-nav nav').toggleClass('active');
   $('.toc-nav ol').toggle();
 });
 
