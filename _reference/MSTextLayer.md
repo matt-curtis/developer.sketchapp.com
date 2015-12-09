@@ -22,3 +22,5 @@ Only the most basic of properties have yet been exposed.
 ### characterSpacing
 
 ### lineSpacing
+
+### stringValue
