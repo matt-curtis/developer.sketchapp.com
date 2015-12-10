@@ -17,6 +17,7 @@
   "homepage": "https://github.com/BohemianCoding/developer.sketchapp.com#readme",
   "devDependencies": {
     "browser-sync": "latest",
-    "gulp-shell": "^0.5.1"
+    "gulp-shell": "^0.5.1",
+    "run-sequence": "^1.1.5"
   }
 }

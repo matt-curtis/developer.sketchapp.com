@@ -1,20 +1,23 @@
 var browserSync  = require('browser-sync').create()
 var exec         = require('child_process').exec
 var gulp         = require('gulp')
+var runSequence  = require('run-sequence') // This is temporary, until Gulp 4.0 ships with support for sequential tasks
 var shell        = require('gulp-shell')
 
-gulp.task('build', shell.task(['jekyll build --incremental']) )
+gulp.task('build:jekyll', function() {
+  return shell.task(['jekyll build --incremental'])
+})
 
-gulp.task('watch', ['build'], function() {
-  exec('jekyll build --incremental --watch', function(err, stdout, stderr) {
+gulp.task('watch', function() {
+  return exec('jekyll build --incremental --watch', function(err, stdout, stderr) {
     if (err) {
       console.log(err, stdout, stderr)
     }
   })
 })
 
-gulp.task('serve', ['watch'], function() {
-  browserSync.init({
+gulp.task('serve', function() {
+  return browserSync.init({
     server: "./_site",
     files: './_site/**/*.*',
     notify: false,
@@ -28,4 +31,6 @@ gulp.task('serve', ['watch'], function() {
   })
 })
 
-gulp.task('default', ['serve'])
+gulp.task('default', function(callback){
+  runSequence('build:jekyll', 'watch', 'serve')
+})
