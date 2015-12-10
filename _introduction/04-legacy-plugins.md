@@ -33,7 +33,7 @@ Commands in scripts with a `.cocoascript` file extension and an `onRun` command 
 For a bundle like this:
 
 ```
-Select Shapes.sketchpluginbundle
+Select Shapes.sketchplugin
   Contents/
     Sketch/
       manifest.json

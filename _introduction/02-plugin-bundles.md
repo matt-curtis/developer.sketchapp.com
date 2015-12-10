@@ -34,7 +34,7 @@ Bundles contain a `manifest.json` file, one or more `.cocoascript` files (contai
 Here’s an example:
 
 ```
-mrwalker.sketchpluginbundle
+mrwalker.sketchplugin
   Contents/
     Sketch/
       manifest.json
