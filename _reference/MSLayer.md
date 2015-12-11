@@ -79,7 +79,7 @@ Returns the parent group of this layer. Note that this can return an [MSPage](/r
 
 True if the layer is selected, false otherwise.
 
-### select:byExpandingSelection
+### select:byExpandingSelection:
 
 Check the [Working with Selections](/code-examples/working-with-selections/) section for some examples.
 
